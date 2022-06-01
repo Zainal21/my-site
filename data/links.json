@@ -1,0 +1,14 @@
+[
+  {
+    "link": "/blog",
+    "name": "Blog"
+  },
+  {
+    "link": "/projects",
+    "name": "Projects"
+  },
+  {
+    "link": "/contact",
+    "name": "Contact"
+  }
+]

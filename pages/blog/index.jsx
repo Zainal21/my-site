@@ -12,7 +12,12 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div className="content">
+        <div
+          className="content"
+          style={{
+            height: "100vh",
+          }}
+        >
           <div className="container mx-auto">
             <div className="py-10 lg:py-10">
               <PageTitle title="/Blogs" />

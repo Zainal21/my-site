@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <Container>
+        <Container className="mt-20">
           <div className="border-b mx-auto">
             <div className="py-10 lg:py-10">
               <h1 className="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">

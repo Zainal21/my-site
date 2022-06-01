@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Container from "@/components/atoms/container";
 import PageTitle from "@/components/atoms/page-title";
+import MainWrapped from "@/components/base/main-wrapped";
 
 export default function uses() {
   return (
@@ -11,7 +12,7 @@ export default function uses() {
         <meta name="description" content="Coming Soon My Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="main-wrapped">
+      <MainWrapped>
         <div className="mt-10">
           <div className="container mx-auto">
             <div className="py-10 lg:py-10">
@@ -112,7 +113,7 @@ export default function uses() {
             </div>
           </div>
         </div>
-      </main>
+      </MainWrapped>
     </Container>
   );
 }

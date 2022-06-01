@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-6 lg:py-10">
           <div className="flex items-center">
-            <p className="hidden font-body text-2xl font-bold text-primary dark:text-white lg:block">
+            <p className=" font-body text-2xl font-bold text-primary dark:text-white lg:block">
               <Link href="/">Muhamadzain.</Link>
             </p>
           </div>

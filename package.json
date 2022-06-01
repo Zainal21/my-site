@@ -16,9 +16,11 @@
     "react-dom": "18.1.0"
   },
   "devDependencies": {
+    "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^10.4.7",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
+    "next-purgecss": "^4.0.0",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.24"
   }

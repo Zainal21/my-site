@@ -1,15 +1,16 @@
 import React from "react";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Container from "@/components/atoms/container";
+
 export default function uses() {
   return (
-    <div className={styles.container}>
+    <Container className="mx-auto">
       <Head>
         <title>Uses | Coming Soon</title>
         <meta name="description" content="Coming Soon My Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main className="main-wrapped">
         <div className="mt-10">
           <div className="container mx-auto">
             <div className="py-10 lg:py-10">
@@ -110,6 +111,6 @@ export default function uses() {
           </div>
         </div>
       </main>
-    </div>
+    </Container>
   );
 }

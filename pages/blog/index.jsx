@@ -1,14 +1,16 @@
-import styles from "../../styles/Home.module.css";
 import Head from "next/head";
+import Container from "@/components/atoms/container";
+import MainWrapped from "@/components/base/main-wrapped";
+
 export default function index() {
   return (
-    <div className={styles.container}>
+    <Container className="mx-auto">
       <Head>
         <title>About | Coming Soon</title>
         <meta name="description" content="Coming Soon My Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <MainWrapped>
         <div className="content">
           <div className="container mx-auto">
             <div className="py-10 lg:py-10">
@@ -108,7 +110,7 @@ export default function index() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </MainWrapped>
+    </Container>
   );
 }

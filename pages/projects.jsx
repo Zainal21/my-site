@@ -1,17 +1,18 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Container from "@/components/atoms/container";
+import MainWrapped from "@/components/base/main-wrapped";
 
 export default function Projects() {
   return (
-    <div className={styles.container}>
+    <Container className="mx-auto">
       <Head>
         <title>Project | Muhamadzain.dev</title>
         <meta name="description" content="Coming Soon My Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <MainWrapped>
         <div className="content">
-          <div className="container mx-auto">
+          <Container className="mx-auto">
             <div className="py-10 lg:py-10">
               <h1 className="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
                 /Projects
@@ -107,9 +108,9 @@ export default function Projects() {
                 </ul>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
-      </main>
-    </div>
+      </MainWrapped>
+    </Container>
   );
 }

@@ -1,20 +1,21 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Container from "@/components/atoms/container";
+import MainWrapped from "@/components/base/main-wrapped";
 import StoryIcon from "../public/assets/icon-story.png";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Container className="mx-auto">
       <Head>
         <title>Muhamadzain.dev - Software Engineer</title>
         <meta name="description" content="Coming Soon My Personal Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className="container mx-auto">
-          <div className="container border-b mx-auto">
+      <MainWrapped>
+        <Container>
+          <div className="border-b mx-auto">
             <div className="py-10 lg:py-10">
               <h1 className="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
                 Hi,👋 I’m Muhamad Zainal Arifin.
@@ -66,8 +67,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-      </main>
-    </div>
+        </Container>
+      </MainWrapped>
+    </Container>
   );
 }

@@ -43,6 +43,7 @@ export default function Home() {
                   href="https://www.karanganyarkab.go.id"
                   target="_blank"
                   className="font-medium hover:underline"
+                  rel="noreferrer"
                 >
                   Karanganyar,
                 </a>
@@ -51,6 +52,7 @@ export default function Home() {
                 <a
                   href="https://www.smkn2kra.sch.id"
                   className="font-medium hover:underline"
+                  rel="noreferrer"
                 >
                   VHS 2 Karanganyar{" "}
                 </a>

@@ -68,6 +68,7 @@ export default function uses() {
                         href="https://dbeaver.io/"
                         target="_blank"
                         className="font-bold hover:underline"
+                        rel="noreferrer"
                       >
                         DBeaver
                       </a>{" "}
@@ -76,6 +77,7 @@ export default function uses() {
                         href="https://www.phpmyadmin.net/"
                         className="font-bold hover:underline"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         PhpMyAdmin
                       </a>{" "}
@@ -90,6 +92,7 @@ export default function uses() {
                         href="https://ohmyz.sh/"
                         target="_blank"
                         className="font-bold hover:underline"
+                        rel="noreferrer"
                       >
                         Oh My ZSH,
                       </a>

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Container from "@/components/atoms/container";
+import PageTitle from "@/components/atoms/page-title";
 
 export default function uses() {
   return (
@@ -14,9 +15,7 @@ export default function uses() {
         <div className="mt-10">
           <div className="container mx-auto">
             <div className="py-10 lg:py-10">
-              <h1 className="pt-5 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
-                /uses
-              </h1>
+              <PageTitle title="/Uses" />
               <div className="pr-2 pt-3">
                 <span className="font-body text-xl font-light text-primary dark:text-white">
                   This page lists my usual applications.

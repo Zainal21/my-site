@@ -4,7 +4,7 @@ import HeaderLink from "../atoms/header-link";
 import ButtomLink from "../atoms/bottom-link";
 import links from "../../data/links.json";
 
-export default function header() {
+export default function Header() {
   const [toggleMobile, setToggleMobile] = useState(false);
   return (
     <header

@@ -35,8 +35,8 @@ export default function Home() {
             </div>
             <div>
               <p className="font-body text-xl font-normal text-primary dark:text-white">
-                I'm currently working fulltime Software Enginner at a company in
-                Yogyakarta{" "}
+                I&apos;m currently working fulltime Software Enginner at a
+                company in Yogyakarta{" "}
                 <span className="font-medium hover:underline">(CIKAJOGJA)</span>
                 . Born in
                 <a

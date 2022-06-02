@@ -2,7 +2,7 @@ import React from "react";
 
 export default function footer() {
   return (
-    <footer className="container mx-auto">
+    <footer className="container mx-auto footer">
       <div className="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
         <div className="mr-auto flex flex-col items-center sm:flex-row">
           <p className="pt-5 font-bold font-light text-primary dark:text-white sm:pt-0">

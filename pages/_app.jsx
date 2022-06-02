@@ -7,11 +7,8 @@ import Footer from "@/components/base/footer";
 function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
-      <main className="bg-gray-900">
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
-      </main>
+      <Header />
+      <Component {...pageProps} />
     </React.Fragment>
   );
 }

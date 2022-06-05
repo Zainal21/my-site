@@ -1,14 +1,14 @@
 import "../styles/globals.css";
 import "boxicons/css/boxicons.min.css";
 import React from "react";
-import Header from "@/components/base/header";
-import Footer from "@/components/base/footer";
+import MainLayout from "@/components/layouts/main-layout";
 
 function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
-      <Header />
-      <Component {...pageProps} />
+      <MainLayout>
+        <Component {...pageProps} />
+      </MainLayout>
     </React.Fragment>
   );
 }

@@ -8,9 +8,7 @@ export default function Header() {
   const [toggleMobile, setToggleMobile] = useState(false);
   return (
     <header
-      className={`${
-        toggleMobile ? "max-h-screen overflow-hidden relative" : ""
-      }`}
+      className={`${toggleMobile ? "max-h-screen overflow-hidden " : ""}`}
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between py-6 lg:py-10">

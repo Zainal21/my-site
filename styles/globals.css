@@ -7,9 +7,9 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  position: relative;
+  /* position: relative; */
   background-color: #1f2937;
+  height: 100vh;
 }
 
 .container {
@@ -18,27 +18,10 @@ body {
 
 .main-wrapped {
   padding: 4rem 0;
-  max-height: 100vh;
-  position: relative;
+  /* position: relative; */
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }

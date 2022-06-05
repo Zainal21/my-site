@@ -11,15 +11,9 @@ export default function index() {
     {
       id: 2,
     },
-    {
-      id: 3,
-    },
-    {
-      id: 4,
-    },
   ];
   return (
-    <Container className="mx-auto relative">
+    <Container className="mx-auto ">
       <Head>
         <title>About | Coming Soon</title>
         <meta name="description" content="Coming Soon My Personal Website" />
@@ -41,13 +35,13 @@ export default function index() {
                   knowledge that I can share
                 </span>
               </div>
-              <div className="pt-16 lg:pt-20">
-                <div className="pt-10 lg:pt-20">
-                  <ul className="list-disc -mx-4 space-y-4">
+              <div className="pt-16 lg:pt-20 relative">
+                <div className="pt-2 lg:pt-4">
+                  <ul className="mx-4 space-y-4">
                     {posts.map((item, index) => (
                       <li
                         key={index}
-                        className="group flex relative flex-col p-4 sm:hover:bg-gray-800 sm:rounded-xl bg-gray-800"
+                        className=" flex flex-col p-4 sm:hover:bg-gray-800 sm:rounded-xl bg-gray-800"
                       >
                         <h4 className="mb-2 text-xl py-4 font-bold line-clamp-3 text-white hover:underline">
                           Lorem ipsum dolor sit, amet consectetur adipisicing

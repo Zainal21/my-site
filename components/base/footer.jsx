@@ -1,30 +1,31 @@
 import React from "react";
+import Icon from "../atoms/icon";
+import SocialMediaLinks from "../../data/social-media-links.json";
 
 export default function footer() {
   return (
-    <footer className="container mx-auto footer">
-      <div className="flex flex-col items-center justify-between border-t border-grey-lighter py-10 sm:flex-row sm:py-12">
-        <div className="mr-auto flex flex-col items-center sm:flex-row">
-          <p className="pt-5 font-bold font-light text-primary dark:text-white sm:pt-0">
-            ©2022 Muhamadzain. Built ❤️ Next.JS and TailwindCSS
-          </p>
-        </div>
-        <div className="mr-auto flex items-center pt-5 sm:mr-0 sm:pt-0">
-          <a
-            rel="noreferrer"
-            href="https://github.com/Zainal21 "
-            target="_blank"
-          >
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/muhammad-zainal-arifin/ "
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="text-4xl text-primary dark:text-white pl-5 hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-linkedin"></i>
-          </a>
-        </div>
+    <footer className="flex flex-col items-center py-8 my-16 text-2xs text-center text-neutral-400 mt-10 ">
+      <p className="mb-2">
+        Made using Next.js and Tailwind CSS. Hosted on Vercel.
+      </p>
+      <p>
+        <a
+          className="hover:text-neutral-300 underline"
+          href="https://github.com/grikomsn/griko.id"
+        >
+          MIT License
+        </a>{" "}
+        &copy; {new Date().getFullYear()} Muhamadzain.
+      </p>
+      <br />
+      <div className="flex items-center space-x-6">
+        {SocialMediaLinks.map((item, index) => (
+          <Icon
+            iconClassName={item.name}
+            linkIcon={item.link}
+            key={index}
+          ></Icon>
+        ))}
       </div>
     </footer>
   );

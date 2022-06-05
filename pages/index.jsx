@@ -14,19 +14,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <Container className="mt-20">
+        <Container className="mt-30">
           <div className="border-b mx-auto">
             <div className="py-10 lg:py-10">
-              <h1 className="pt-3 font-body text-4xl font-semibold text-primary dark:text-white md:text-5xl lg:text-6xl">
+              <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary dark:text-white ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
-              <p className="pt-3 font-body text-2xl font-light text-primary dark:text-white">
+              <p className="pt-3 font-body lg:text-2xl text-medium font-light text-primary dark:text-white">
                 20 y.o, A Software Engineer. Mostly code in PHP and Javascript
                 but sometime in Kotlin.
               </p>
             </div>
           </div>
-          <div className=" border-grey-lighter py-16 lg:py-20">
+          <div className=" border-grey-lighter py-16 lg:py-20 ">
             <div className="flex items-center pb-6">
               <Image src={StoryIcon} alt="icon story" />
               <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
@@ -34,7 +34,7 @@ export default function Home() {
               </h3>
             </div>
             <div>
-              <p className="font-body text-xl font-normal text-primary dark:text-white">
+              <p className="font-body text-medium font-normal text-primary dark:text-white">
                 I&apos;m currently working fulltime Software Enginner at a
                 company in Yogyakarta{" "}
                 <span className="font-medium hover:underline">(CIKAJOGJA)</span>

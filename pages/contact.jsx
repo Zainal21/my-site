@@ -12,19 +12,14 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div
-          className="content"
-          style={{
-            height: "100vh",
-          }}
-        >
+        <div className="content max-w-6xl">
           <Container className="mx-auto">
             <div className="py-10 lg:py-10">
               <PageTitle title="/Contact Me" />
               <div className="pr-2 pt-3">
                 <span className="font-body text-xl font-light text-primary dark:text-white">
                   Talk about business ? can contact me on various platforms to
-                  discuss business with you
+                  discuss
                 </span>
               </div>
 

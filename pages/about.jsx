@@ -12,13 +12,13 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div className="content" style={{ height: "100vh" }}>
+        <div className="content">
           <Container className="mx-auto">
             <div className="py-10 lg:py-10">
               <PageTitle title="/About Me" />
               <div className="pr-2 pt-3">
                 <span className="font-body text-xl font-light text-primary dark:text-white">
-                  This page lists my usual applications.
+                  This page is more about me 😃
                 </span>
               </div>
 

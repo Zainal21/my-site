@@ -20,19 +20,14 @@ export default function index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div
-          className="content"
-          style={{
-            height: "100vh",
-          }}
-        >
+        <div className="content max-w-6xl">
           <div className="container mx-auto">
             <div className="py-10 lg:py-10 flex flex-col">
               <PageTitle title="/Blogs" />
               <div className="pt-3">
                 <span className="font-body text-xl font-light text-primary dark:text-white">
-                  Some of the tweets in the form of stories, experiences and
-                  knowledge that I can share
+                  tweets in the form of my stories, experiences and knowledge
+                  that I can share
                 </span>
               </div>
               <div className="pt-16 lg:pt-20 relative">

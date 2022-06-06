@@ -13,7 +13,7 @@ export default function Projects() {
       </Head>
       <MainWrapped>
         <div
-          className="content"
+          className="content max-w-6xl"
           style={{
             height: "100vh",
           }}
@@ -24,7 +24,7 @@ export default function Projects() {
               <div className="pr-2 pt-3">
                 <span className="font-body text-xl font-light text-primary dark:text-white">
                   A recent project to fill my spare time and to learn some new
-                  web technologies as well as my portfolio
+                  technologies
                 </span>
               </div>
 

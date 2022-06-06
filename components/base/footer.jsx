@@ -11,7 +11,7 @@ export default function footer() {
       <p>
         <a
           className="hover:text-neutral-300 underline"
-          href="https://github.com/grikomsn/griko.id"
+          href="https://github.com/Zainal21"
         >
           MIT License
         </a>{" "}

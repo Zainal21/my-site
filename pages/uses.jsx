@@ -13,9 +13,9 @@ export default function uses() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div className="mt-10">
+        <div className="content max-w-6xl">
           <div className="container mx-auto">
-            <div className="py-10 lg:py-10">
+            <div className="py-10 lg:py-10 flex flex-col">
               <PageTitle title="/Uses" />
               <div className="pr-2 pt-3">
                 <span className="font-body text-xl font-light text-primary dark:text-white">

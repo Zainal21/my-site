@@ -4,6 +4,7 @@ const withPurgeCss = require("next-purgecss");
 
 const nextConfig = {
   reactStrictMode: true,
+  optimizeFonts: true,
 };
 
 module.exports = withCss(

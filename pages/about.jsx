@@ -3,15 +3,12 @@ import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
+import MetaTag from "@/components/base/meta-tag";
 
 export default function About() {
   return (
     <Container className="mx-auto">
-      <Head>
-        <title>About | Coming Soon</title>
-        <meta name="description" content="Coming Soon My Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag title="About" />
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">

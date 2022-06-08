@@ -3,10 +3,13 @@ import Container from "@/components/ui/container";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
+import { DefaultSeo } from "next-seo";
+import SEO from "next-seo.config";
 export default function Contact() {
   return (
     <Container className="mx-auto">
       <MetaTag title="Contact | Muhamadzain.dev" />
+      <DefaultSeo {...SEO} />
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">

@@ -12,11 +12,6 @@ export default function Home() {
   return (
     <Container className="mx-auto">
       <MetaTag title="Muhamadzain.dev - Software Engineer" />
-      {/* <Head>
-        <title>Muhamadzain.dev - Software Engineer</title>
-        <meta name="description" content="Coming Soon My Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
       <DefaultSeo {...SEO} />
       <MainWrapped>
         <Container className="mt-30">

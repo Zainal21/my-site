@@ -1,18 +1,23 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Container from "@/components/atoms/container";
+import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import StoryIcon from "../public/assets/icon-story.png";
+import MetaTag from "@/components/base/meta-tag";
+import SEO from "next-seo.config";
+import { DefaultSeo } from "next-seo";
 
 export default function Home() {
   return (
     <Container className="mx-auto">
-      <Head>
+      <MetaTag title="Muhamadzain.dev - Software Engineer" />
+      {/* <Head>
         <title>Muhamadzain.dev - Software Engineer</title>
         <meta name="description" content="Coming Soon My Personal Website" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
+      <DefaultSeo {...SEO} />
       <MainWrapped>
         <Container className="mt-30">
           <div className="border-b mx-auto">

@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Container from "@/components/atoms/container";
+import Container from "@/components/ui/container";
+import PageContent from "@/components/base/page-content";
 import MainWrapped from "@/components/base/main-wrapped";
-import PageTitle from "@/components/atoms/page-title";
+import PageTitle from "@/components/ui/page-title";
 
 export default function Projects() {
   return (
@@ -12,12 +13,7 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div
-          className="content max-w-6xl"
-          style={{
-            height: "100vh",
-          }}
-        >
+        <PageContent>
           <Container className="mx-auto">
             <div className="py-10 lg:py-10">
               <PageTitle title="/Projects" />
@@ -27,7 +23,6 @@ export default function Projects() {
                   technologies
                 </span>
               </div>
-
               <div className="pt-16 lg:pt-20">
                 <h3 className="pb-8 font-body text-2xl font-semibold text-primary dark:text-white">
                   Coming Soon
@@ -36,7 +31,7 @@ export default function Projects() {
               </div>
             </div>
           </Container>
-        </div>
+        </PageContent>
       </MainWrapped>
     </Container>
   );

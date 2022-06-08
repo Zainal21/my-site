@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Container from "@/components/atoms/container";
+import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
-import PageTitle from "@/components/atoms/page-title";
+import PageTitle from "@/components/ui/page-title";
+import PageContent from "@/components/base/page-content";
 
 export default function About() {
   return (
@@ -12,7 +13,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div className="content">
+        <PageContent>
           <Container className="mx-auto">
             <div className="py-10 lg:py-10">
               <PageTitle title="/About Me" />
@@ -30,7 +31,7 @@ export default function About() {
               </div>
             </div>
           </Container>
-        </div>
+        </PageContent>
       </MainWrapped>
     </Container>
   );

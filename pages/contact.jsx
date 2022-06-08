@@ -1,18 +1,14 @@
-import Head from "next/head";
 import MainWrapped from "@/components/base/main-wrapped";
-import Container from "@/components/atoms/container";
-import PageTitle from "@/components/atoms/page-title";
-
+import Container from "@/components/ui/container";
+import PageTitle from "@/components/ui/page-title";
+import PageContent from "@/components/base/page-content";
+import MetaTag from "@/components/base/meta-tag";
 export default function Contact() {
   return (
     <Container className="mx-auto">
-      <Head>
-        <title>Contact | Muhamadzain.dev</title>
-        <meta name="description" content="Coming Soon My Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag title="Contact | Muhamadzain.dev" />
       <MainWrapped>
-        <div className="content max-w-6xl">
+        <PageContent>
           <Container className="mx-auto">
             <div className="py-10 lg:py-10">
               <PageTitle title="/Contact Me" />
@@ -22,7 +18,6 @@ export default function Contact() {
                   discuss
                 </span>
               </div>
-
               <div className="pt-16 lg:pt-20">
                 <h3 className="pb-8 font-body text-2xl font-semibold text-primary dark:text-white">
                   Coming Soon
@@ -31,7 +26,7 @@ export default function Contact() {
               </div>
             </div>
           </Container>
-        </div>
+        </PageContent>
       </MainWrapped>
     </Container>
   );

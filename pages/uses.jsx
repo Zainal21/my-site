@@ -1,8 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Container from "@/components/atoms/container";
-import PageTitle from "@/components/atoms/page-title";
+import Container from "@/components/ui/container";
+import PageTitle from "@/components/ui/page-title";
 import MainWrapped from "@/components/base/main-wrapped";
+import PageContent from "@/components/base/page-content";
+import container from "@/components/ui/container";
 
 export default function uses() {
   return (
@@ -13,8 +15,8 @@ export default function uses() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <MainWrapped>
-        <div className="content max-w-6xl">
-          <div className="container mx-auto">
+        <PageContent>
+          <container className="mx-auto">
             <div className="py-10 lg:py-10 flex flex-col">
               <PageTitle title="/Uses" />
               <div className="pr-2 pt-3">
@@ -111,8 +113,8 @@ export default function uses() {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
+          </container>
+        </PageContent>
       </MainWrapped>
     </Container>
   );

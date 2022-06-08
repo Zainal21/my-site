@@ -9,5 +9,11 @@
     }
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.jsx"]
+  "include": [
+    "**/*.js",
+    "**/*.cjs",
+    "**/*.mjs",
+    "**/*.jsx",
+    "pages/_document.jss"
+  ]
 }

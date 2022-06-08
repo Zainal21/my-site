@@ -6,5 +6,9 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = withCss(withPurgeCss());
+module.exports = withCss(
+  withPurgeCss({
+    purgeCssPaths: ["pages/**/*", "components/**/*"],
+  })
+);
 module.exports = nextConfig;

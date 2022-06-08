@@ -1,10 +1,10 @@
 import React from "react";
-import Icon from "../atoms/icon";
+import Icon from "../ui/icon";
 import SocialMediaLinks from "../../data/social-media-links.json";
 
 export default function footer() {
   return (
-    <footer className="flex flex-col items-center py-8 my-16 text-2xs text-center text-neutral-400 mt-10 ">
+    <footer className="flex flex-col items-center py-8 my-16 text-2xs text-center text-neutral-400 mt-10 mx-8">
       <p className="mb-2">
         Made using Next.js and Tailwind CSS. Hosted on Vercel.
       </p>
@@ -18,7 +18,7 @@ export default function footer() {
         &copy; {new Date().getFullYear()} Muhamadzain.
       </p>
       <br />
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center">
         {SocialMediaLinks.map((item, index) => (
           <Icon
             iconClassName={item.name}

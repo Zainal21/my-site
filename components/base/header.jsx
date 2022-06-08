@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import HeaderLink from "../atoms/header-link";
-import ButtomLink from "../atoms/bottom-link";
+import HeaderLink from "../ui/header-link";
+import ButtomLink from "../ui/bottom-link";
 import links from "../../data/links.json";
 
 export default function Header() {

@@ -36,7 +36,7 @@ const SEO = {
     { name: "application-name", content: "Muhamad Zainal Arifin" },
     {
       name: "google-site-verification",
-      content: "w0K-2LpCNTZjm0SAM9nJJ9S-tS4BZW8oB8-UwkMsrQ4",
+      content: "bpIEdZTFG-7tgxqceWzSGdLwvr6UDxjFDcgsaTIgFZc",
     },
     { name: "msapplication-TileColor", content: "#da532c" },
     { name: "msapplication-config", content: "/favicon/browserconfig.xml" },

@@ -3,7 +3,7 @@ import MetaTag from "@/components/base/meta-tag";
 import Container from "@/components/ui/container";
 import PageTitle from "@/components/ui/page-title";
 import MainWrapped from "@/components/base/main-wrapped";
-import MarkdownRendered from "@/components/base/markdown-rendered";
+import MarkdownRendered from "@/components/base/blog/markdown-rendered";
 import PageContent from "@/components/base/page-content";
 // import { useRouter } from "next/router";
 import { createClient } from "contentful";

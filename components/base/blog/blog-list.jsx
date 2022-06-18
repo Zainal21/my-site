@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Date from "../ui/date";
+import Date from "../../ui/date";
 
 export default function BlogList({ posts }) {
   const { title, excerpt, publishedAt, slug } = posts.fields;

@@ -5,7 +5,7 @@ import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
 import { DefaultSeo } from "next-seo";
 import SEO from "next-seo.config";
-import LinktreeCard from "@/components/base/linktree-card";
+import LinktreeCard from "@/components/base/contacts/linktree-card";
 import linktree from "../data/linktree.json";
 export default function Contact() {
   return (

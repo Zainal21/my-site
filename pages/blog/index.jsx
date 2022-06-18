@@ -3,7 +3,7 @@ import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
-import BlogList from "@/components/base/blog-list";
+import BlogList from "@/components/base/blog/blog-list";
 import { createClient } from "contentful";
 
 export async function getStaticProps() {
@@ -28,7 +28,7 @@ export default function index({ posts }) {
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">
-            <div className="py-10 lg:py-5 lg:py-10 flex flex-col">
+            <div className="py-10  lg:py-10 flex flex-col">
               <PageTitle title="/Blogs" />
               <div className="pt-3">
                 <span className="font-body text-xl sm:text-medium font-light text-primary dark:text-white">

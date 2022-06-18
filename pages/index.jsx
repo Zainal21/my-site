@@ -4,7 +4,6 @@ import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import StoryIcon from "../public/assets/icon-story.png";
 import MetaTag from "@/components/base/meta-tag";
-
 import ReadingListSection from "@/components/modules/reading-list-section";
 import ContributionSection from "@/components/modules/contributions-section";
 import SEO from "next-seo.config";

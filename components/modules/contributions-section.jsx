@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Container from "../ui/container";
 import Section from "../ui/section";
 export default function ContributionSection() {

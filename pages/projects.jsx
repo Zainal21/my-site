@@ -4,7 +4,7 @@ import PageContent from "@/components/base/page-content";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import MetaTag from "@/components/base/meta-tag";
-import ProjectCard from "@/components/base/project-card";
+import ProjectCard from "@/components/base/projects/project-card";
 import projects from "../data/projects.json";
 
 export default function Projects() {

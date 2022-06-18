@@ -5,6 +5,9 @@ const withPurgeCss = require("next-purgecss");
 const nextConfig = {
   reactStrictMode: true,
   optimizeFonts: true,
+  images: {
+    domains: ["ghchart.rshah.org"],
+  },
 };
 
 module.exports = withCss(

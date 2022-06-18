@@ -3,15 +3,14 @@ import Container from "@/components/ui/container";
 import PageContent from "@/components/base/page-content";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
+import MetaTag from "@/components/base/meta-tag";
+import ProjectCard from "@/components/base/project-card";
+import projects from "../data/projects.json";
 
 export default function Projects() {
   return (
     <Container className="mx-auto">
-      <Head>
-        <title>Project | Muhamadzain.dev</title>
-        <meta name="description" content="Coming Soon My Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag title="Projects | Muhamadzain.dev" />
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">
@@ -24,10 +23,18 @@ export default function Projects() {
                 </span>
               </div>
               <div className="pt-16 lg:pt-20">
-                <h3 className="pb-8 font-body text-2xl font-semibold text-primary dark:text-white">
-                  Coming Soon
-                </h3>
-                <ul className="list-disc pl-10"></ul>
+                <div className="flex flex-wrap justify-center">
+                  {projects.map((item, index) => (
+                    <ProjectCard
+                      key={index}
+                      image={`/assets${item.image}`}
+                      description={item.description}
+                      link={item.link}
+                      stack={item.stack}
+                      projectName={item.project_name}
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </Container>

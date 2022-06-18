@@ -11,14 +11,21 @@
   "dependencies": {
     "boxicons": "^2.1.2",
     "classnames": "^2.3.1",
+    "contentful": "^9.1.32",
+    "date-fns": "^2.28.0",
     "next": "12.1.6",
     "next-seo": "^5.4.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
+    "@cypress/react": "^5.12.5",
+    "@cypress/webpack-dev-server": "^1.8.4",
     "@zeit/next-css": "^1.0.1",
     "autoprefixer": "^10.4.7",
+    "cypress": "^10.0.3",
     "eslint": "8.16.0",
     "eslint-config-next": "12.1.6",
     "next-purgecss": "^4.0.0",

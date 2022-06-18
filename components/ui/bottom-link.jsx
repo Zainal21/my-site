@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-export default function ButtomLink(props) {
+export default function ButtomLink({ link, name }) {
   return (
     <li className="nav-list-item">
-      <Link href={props.link}>
+      <Link href={link}>
         <a className="mb-3 block px-2 font-body text-lg font-medium text-white">
-          {props.name}
+          {name}
         </a>
       </Link>
     </li>

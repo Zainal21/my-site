@@ -1,14 +1,16 @@
-import Head from "next/head";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
+import { DefaultSeo } from "next-seo";
+import SEO from "next-seo.config";
 
 export default function About() {
   return (
     <Container className="mx-auto">
-      <MetaTag title="About" />
+      <MetaTag title="About | Muhamadzain.dev" />
+      <DefaultSeo {...SEO} />
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">
@@ -19,7 +21,6 @@ export default function About() {
                   This page is more about me 😃
                 </span>
               </div>
-
               <div className="pt-16 lg:pt-20">
                 <h3 className="pb-8 font-body text-2xl font-semibold text-primary dark:text-white">
                   Coming Soon

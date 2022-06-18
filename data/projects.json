@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "project_name": "Teman Belajar",
+    "description": "Teman Belajar is an online course platform that provides various web application-based learning videos",
+    "stack": "Laravel + VueJS",
+    "link": "https://www.gitlab.com/zainal21/e-course-learning-system-laravue",
+    "image": "/image1.png"
+  },
+  {
+    "id": 3,
+    "project_name": "Guest Book E-Wedding",
+    "description": "Guest Book E-Wedding is A website for online wedding invitations and can fill out attendance lists at weddings",
+    "stack": "Laravel",
+    "link": "https://www.github.com/Zainal21/The-Guest-Book-Wedding-Project",
+    "image": "/image4.png"
+  },
+  {
+    "id": 5,
+    "project_name": "Kabar Desa",
+    "description": "Kabar Desa is a web-based information system application to organize data collection activities in villages built with laravel",
+    "stack": "Laravel",
+    "link": "https://www.github.com/Zainal21/Kabar-Desa",
+    "image": "/image6.png"
+  },
+  {
+    "id": 6,
+    "project_name": "Farmer Recomendation",
+    "description": "Farmer recommendation system is a simple application for managing needs & recommendation needs for farmers",
+    "stack": "Laravel",
+    "link": "https://github.com/erpeel-a/farmer-Recommendation-System",
+    "image": "/farmer-remodentation.png"
+  },
+  {
+    "id": 7,
+    "project_name": "Food Delivery",
+    "description": "Food Delivery is a landing page for a food ordering website built using wordpress",
+    "stack": "Wordpress",
+    "link": "https://www.gitlab.com/zainal21/food-delivery-wp-project",
+    "image": "/2.png"
+  },
+  {
+    "id": 8,
+    "project_name": "Sistem Pengaduan Sekolah",
+    "description": "Sistem Pengaduan Sekolah is a The information system used by school members to channel their aspirations and complaints online",
+    "stack": "Laravel + Tailwind + React + Blade",
+    "link": "https://www.github.com/erpeel-a/Sistem-Pengaduan-Sekolah-SMKN2Karanganyar",
+    "image": "/image8.png"
+  },
+  {
+    "id": 9,
+    "project_name": "KadangKoding official website (Redesign)",
+    "description": "Website redesign CV. KadangKoding Indonesia to fulfill internship assignments",
+    "stack": "Laravel",
+    "link": "https://www.github.com/Zainal21/kadang-koding-redesign",
+    "image": "/image9.png"
+  }
+]

@@ -1,10 +1,12 @@
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import StoryIcon from "../public/assets/icon-story.png";
 import MetaTag from "@/components/base/meta-tag";
+
+import ReadingListSection from "@/components/modules/reading-list-section";
+import ContributionSection from "@/components/modules/contributions-section";
 import SEO from "next-seo.config";
 import { DefaultSeo } from "next-seo";
 
@@ -69,6 +71,8 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          <ContributionSection />
+          <ReadingListSection />
         </Container>
       </MainWrapped>
     </Container>

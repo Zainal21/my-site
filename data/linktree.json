@@ -1,0 +1,57 @@
+[
+  {
+    "name": "E-mail",
+    "redirect": "mailto:Muhammadzaindev@gmail.com",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Github",
+    "redirect": "https://github.com/Zainal21",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Gitlab",
+    "redirect": "https://gitlab.com/Zainal21",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Whatsapp",
+    "redirect": "https://api.whatsapp.com/send?phone=+6288216756214",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "instagram",
+    "redirect": "https://www.instagram.com/muhamadzain.tsx",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Telegram",
+    "redirect": "https://t.me/muhamadzaindev",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Twitter",
+    "redirect": "https://twitter.com/Penulisduduk",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "LinkedIn",
+    "redirect": "https://www.linkedin.com/in/muhammad-zainal-arifin",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Facebook",
+    "redirect": "https://www.facebook.com/muhammadzaenalariefin.ariefin.7/",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Discord Server",
+    "redirect": "https://discord.gg/kuP3VsJemP",
+    "color": "bg-gray-700"
+  },
+  {
+    "name": "Download My Curriculum vitae",
+    "redirect": "https://muhammadzaindev.vercel.app/muhammadzain-cv.pdf",
+    "color": "bg-gray-700"
+  }
+]

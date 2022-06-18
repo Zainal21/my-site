@@ -1,22 +1,20 @@
 import React from "react";
-import Head from "next/head";
 import Container from "@/components/ui/container";
 import PageTitle from "@/components/ui/page-title";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageContent from "@/components/base/page-content";
-import container from "@/components/ui/container";
+import MetaTag from "@/components/base/meta-tag";
+import { DefaultSeo } from "next-seo";
+import SEO from "next-seo.config";
 
 export default function uses() {
   return (
     <Container className="mx-auto">
-      <Head>
-        <title>Uses | Coming Soon</title>
-        <meta name="description" content="Coming Soon My Personal Website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag title="Uses | Muhamadzain.dev" />
+      <DefaultSeo {...SEO} />
       <MainWrapped>
         <PageContent>
-          <container className="mx-auto">
+          <Container className="mx-auto">
             <div className="py-10 lg:py-10 flex flex-col">
               <PageTitle title="/Uses" />
               <div className="pr-2 pt-3">
@@ -24,7 +22,6 @@ export default function uses() {
                   This page lists my usual applications.
                 </span>
               </div>
-
               <div className="pt-16 lg:pt-20">
                 <h3 className="pb-8 font-body text-2xl font-semibold text-primary dark:text-white">
                   Device
@@ -113,7 +110,7 @@ export default function uses() {
                 </ul>
               </div>
             </div>
-          </container>
+          </Container>
         </PageContent>
       </MainWrapped>
     </Container>

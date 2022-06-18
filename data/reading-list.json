@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Docker, Rancher, & Laravel: Easy & Safe Scalability!",
+    "authors": "Will Bowman",
+    "time_read": "9 Minutes",
+    "excerpt": "I attended Laracon US ’16 and met Luca Critelli who shared how he manages his businesses backend with Docker & Rancher. We both agreed to work on an article to help introduce Rancher to the Laravel community ",
+    "sourceLink": "https://medium.com/@asked_io/docker-rancher-laravel-easy-safe-scalability-4e6eb8758232",
+    "category": "Programming"
+  },
+  {
+    "id": 2,
+    "title": "I Almost Got Fired for Choosing React in Our Enterprise App",
+    "authors": "Razvan Dragomir",
+    "time_read": "8 Minutes",
+    "excerpt": "I love React. I use it for all my personal projects and would love to recommend it for new work initiatives. However, after the unpleasant experience I had, I will not encourage using it for enterprise applications. Not again. ",
+    "sourceLink": "https://betterprogramming.pub/i-almost-got-fired-for-choosing-react-in-our-enterprise-app-846ea840841c",
+    "category": "Programming"
+  },
+  {
+    "id": 3,
+    "title": "Intentional Career Building",
+    "authors": "Kent C. Dodds ",
+    "time_read": "9 Minutes",
+    "excerpt": "A challenge and ideas for you to do something to build your career.One thing I want to do is provide you with some specific ideas of things you can do to improve your skills and get what you want out of your career.  ",
+    "sourceLink": "https://kentcdodds.com/blog/intentional-career-building",
+    "category": "career"
+  }
+]

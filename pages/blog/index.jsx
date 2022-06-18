@@ -1,20 +1,27 @@
-import Head from "next/head";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
 import BlogList from "@/components/base/blog-list";
+import { createClient } from "contentful";
 
-export default function index() {
-  const posts = [
-    {
-      id: 1,
+export async function getStaticProps() {
+  const Client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  });
+  let response = await Client.getEntries({
+    content_type: "myPersonalBlog",
+  });
+  return {
+    props: {
+      posts: response.items,
     },
-    {
-      id: 2,
-    },
-  ];
+  };
+}
+
+export default function index({ posts }) {
   return (
     <Container className="mx-auto ">
       <MetaTag title="Blog | Muhamadzain.dev" />
@@ -32,8 +39,8 @@ export default function index() {
               <div className="pt-16 lg:pt-20 relative">
                 <div className="pt-2 lg:pt-4">
                   <ul className="mx-4">
-                    {posts.map((item, index) => (
-                      <BlogList key={item} />
+                    {posts.map((item) => (
+                      <BlogList key={item.sys.id} posts={item} />
                     ))}
                   </ul>
                 </div>

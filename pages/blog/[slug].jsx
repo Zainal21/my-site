@@ -5,7 +5,6 @@ import PageTitle from "@/components/ui/page-title";
 import MainWrapped from "@/components/base/main-wrapped";
 import MarkdownRendered from "@/components/base/blog/markdown-rendered";
 import PageContent from "@/components/base/page-content";
-// import { useRouter } from "next/router";
 import { createClient } from "contentful";
 
 const Client = createClient({
@@ -22,7 +21,7 @@ export const getStaticPaths = async () => {
   }));
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 };
 
@@ -31,7 +30,6 @@ export const getStaticProps = async ({ params }) => {
     content_type: "myPersonalBlog",
     "fields.slug": params.slug,
   });
-  console.log(response.items);
   return {
     props: {
       blog: response.items[0],
@@ -40,10 +38,7 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export default function index({ blog }) {
-  const { title, publishedAt, thumbnail, markdownContent } = blog.fields;
-  const { file } = thumbnail[0].fields;
-  const { imageSource } = file.url;
-  const { width, height } = file.details.image;
+  const { title, publishedAt, markdownContent } = blog.fields;
   return (
     <Container className="mx-auto ">
       <MetaTag title="Blog | Muhamadzain.dev" />

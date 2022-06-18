@@ -17,7 +17,7 @@ export default function Home() {
       <MainWrapped>
         <Container className="mt-30">
           <div className="border-b mx-auto">
-            <div className="py-10 lg:py-10">
+            <div className="py-10 lg:py-10 px-6">
               <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary dark:text-white ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
@@ -27,7 +27,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" border-grey-lighter py-16 lg:py-20 ">
+          <div className=" border-grey-lighter py-16 lg:py-20 px-6">
             <div className="flex items-center pb-6">
               <Image src={StoryIcon} alt="icon story" />
               <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">

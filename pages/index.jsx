@@ -27,11 +27,6 @@ export default function Home() {
             </div>
           </div>
           <div className=" border-grey-lighter py-16 lg:py-20 px-6">
-            <div className="flex items-center pb-6">
-              <h3 className="ml-3 font-body text-2xl font-semibold text-primary text-gray-200">
-                About Me.
-              </h3>
-            </div>
             <div>
               <p className="font-body lg:text-medium text-base font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a

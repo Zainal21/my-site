@@ -1,4 +1,4 @@
-import Head from "next/head";
+import React from "react";
 import Container from "@/components/ui/container";
 import PageContent from "@/components/base/page-content";
 import MainWrapped from "@/components/base/main-wrapped";
@@ -9,7 +9,7 @@ import projects from "../data/projects.json";
 
 export default function Projects() {
   return (
-    <Container className="mx-auto">
+    <React.Fragment>
       <MetaTag title="Projects | Muhamadzain.dev" />
       <MainWrapped>
         <PageContent>
@@ -40,6 +40,6 @@ export default function Projects() {
           </Container>
         </PageContent>
       </MainWrapped>
-    </Container>
+    </React.Fragment>
   );
 }

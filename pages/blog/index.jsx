@@ -1,3 +1,4 @@
+import React from "react";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
@@ -23,7 +24,7 @@ export async function getStaticProps() {
 
 export default function index({ posts }) {
   return (
-    <Container className="mx-auto ">
+    <React.Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />
       <MainWrapped>
         <PageContent>
@@ -49,6 +50,6 @@ export default function index({ posts }) {
           </Container>
         </PageContent>
       </MainWrapped>
-    </Container>
+    </React.Fragment>
   );
 }

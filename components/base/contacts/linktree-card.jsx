@@ -4,7 +4,7 @@ export default function LinktreeCard({ name, classname, link }) {
   return (
     <div
       className={cn(
-        `w-full my-3 rounded-md shadow-xl py-5  text-white hover:shadow-2xl hover:border-2 border-gray-600 hover:border-gray-600`,
+        `w-full my-3 rounded-md shadow-2xl py-5   px-8 text-white  hover:border-2 border-1 border-gray-600 hover:border-gray-600`,
         classname
       )}
     >

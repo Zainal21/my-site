@@ -7,9 +7,10 @@ import { DefaultSeo } from "next-seo";
 import SEO from "next-seo.config";
 import LinktreeCard from "@/components/base/contacts/linktree-card";
 import linktree from "../data/linktree.json";
+import React from "react";
 export default function Contact() {
   return (
-    <Container className="mx-auto">
+    <React.Fragment>
       <MetaTag title="Contact | Muhamadzain.dev" />
       <DefaultSeo {...SEO} />
       <MainWrapped>
@@ -39,6 +40,6 @@ export default function Contact() {
           </Container>
         </PageContent>
       </MainWrapped>
-    </Container>
+    </React.Fragment>
   );
 }

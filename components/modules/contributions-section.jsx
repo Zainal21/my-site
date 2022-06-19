@@ -13,6 +13,7 @@ export default function ContributionSection() {
           alt="My Contributions"
           style={{
             width: "100%",
+            height: "100%",
           }}
         />
       </Container>

@@ -1,3 +1,4 @@
+import React from "react";
 import Date from "@/components/ui/date";
 import MetaTag from "@/components/base/meta-tag";
 import Container from "@/components/ui/container";
@@ -40,7 +41,7 @@ export const getStaticProps = async ({ params }) => {
 export default function index({ blog }) {
   const { title, publishedAt, markdownContent } = blog.fields;
   return (
-    <Container className="mx-auto ">
+    <React.Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />
       <MainWrapped>
         <PageContent>
@@ -60,6 +61,6 @@ export default function index({ blog }) {
           </Container>
         </PageContent>
       </MainWrapped>
-    </Container>
+    </React.Fragment>
   );
 }

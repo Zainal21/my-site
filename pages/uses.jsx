@@ -9,7 +9,7 @@ import SEO from "next-seo.config";
 
 export default function uses() {
   return (
-    <Container className="mx-auto">
+    <React.Fragment>
       <MetaTag title="Uses | Muhamadzain.dev" />
       <DefaultSeo {...SEO} />
       <MainWrapped>
@@ -113,6 +113,6 @@ export default function uses() {
           </Container>
         </PageContent>
       </MainWrapped>
-    </Container>
+    </React.Fragment>
   );
 }

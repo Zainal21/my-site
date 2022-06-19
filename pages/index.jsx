@@ -5,19 +5,19 @@ import MainWrapped from "@/components/base/main-wrapped";
 import StoryIcon from "../public/assets/icon-story.png";
 import MetaTag from "@/components/base/meta-tag";
 import ReadingListSection from "@/components/modules/reading-list-section";
-import ContributionSection from "@/components/modules/contributions-section";
 import SEO from "next-seo.config";
 import { DefaultSeo } from "next-seo";
+import React from "react";
 
 export default function Home() {
   return (
-    <Container className="mx-auto">
+    <React.Fragment>
       <MetaTag title="Muhamadzain.dev - Software Engineer" />
       <DefaultSeo {...SEO} />
       <MainWrapped>
         <Container className="mt-30">
           <div className="border-b mx-auto">
-            <div className="py-10 lg:py-10 px-6">
+            <div className="py-10  px-6">
               <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary dark:text-white ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
@@ -39,7 +39,7 @@ export default function Home() {
                 I&apos;m currently working fulltime Software Enginner at a
                 company in Yogyakarta{" "}
                 <span className="font-medium hover:underline">(CIKAJOGJA)</span>
-                . Born in
+                . Born in{" "}
                 <a
                   href="https://www.karanganyarkab.go.id"
                   target="_blank"
@@ -70,10 +70,11 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <ContributionSection />
+          {/* <ContributionSection /> */}
           <ReadingListSection />
+          {/* <ImageGallerySection /> */}
         </Container>
       </MainWrapped>
-    </Container>
+    </React.Fragment>
   );
 }

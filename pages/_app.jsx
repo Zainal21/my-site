@@ -8,13 +8,9 @@ import MainLayout from "@/components/layouts/main-layout";
 function MyApp({ Component, pageProps }) {
   const [progressLoad, setProgressLoad] = useState(0);
 
-  Router.events.on("routeChangeStart", () => {
-    setProgressLoad(20);
-  });
-
-  Router.events.on("routeChangeComplete", () => {
-    setProgressLoad(100);
-  });
+  Router.events.on("routeChangeStart", () => setProgressLoad(45));
+  Router.events.on("routeChangeComplete", () => setProgressLoad(100));
+  Router.events.on("routeChangeError", () => setProgressLoad(100));
 
   return (
     <React.Fragment>

@@ -18,10 +18,10 @@ export default function Home() {
         <Container className="mt-30">
           <div className="border-b mx-auto">
             <div className="py-10  px-6">
-              <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary dark:text-white ">
+              <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary text-gray-200 ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
-              <p className="pt-3 font-body lg:text-2xl text-medium font-light text-primary dark:text-white">
+              <p className="pt-3 font-body lg:text-xl text-medium font-light text-primary text-gray-200">
                 20 y.o, A Software Engineer. Mostly code in PHP and Javascript
                 but sometime in Kotlin.
               </p>
@@ -30,12 +30,12 @@ export default function Home() {
           <div className=" border-grey-lighter py-16 lg:py-20 px-6">
             <div className="flex items-center pb-6">
               <Image src={StoryIcon} alt="icon story" />
-              <h3 className="ml-3 font-body text-2xl font-semibold text-primary dark:text-white">
+              <h3 className="ml-3 font-body text-2xl font-semibold text-primary text-gray-200">
                 About Me.
               </h3>
             </div>
             <div>
-              <p className="font-body text-medium font-normal text-primary dark:text-white">
+              <p className="font-body text-medium font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a
                 company in Yogyakarta{" "}
                 <span className="font-medium hover:underline">(CIKAJOGJA)</span>
@@ -64,7 +64,7 @@ export default function Home() {
               </p>
               <br />
               <Link href="/about">
-                <a className="hover:underline mt-20 text-primary dark:text-white text-xl font-semibold">
+                <a className="hover:underline mt-20 text-primary text-gray-200 text-medium font-semibold">
                   More About Me.
                 </a>
               </Link>

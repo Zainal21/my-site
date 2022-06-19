@@ -29,7 +29,6 @@ export default function Contact() {
                   {linktree.map((item, index) => (
                     <LinktreeCard
                       key={index}
-                      classname={item.color}
                       name={item.name}
                       link={item.redirect}
                     />

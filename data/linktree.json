@@ -1,42 +1,34 @@
 [
   {
     "name": "E-mail",
-    "redirect": "mailto:Muhammadzaindev@gmail.com",
-    "color": "bg-blue-500"
+    "redirect": "mailto:Muhammadzaindev@gmail.com"
   },
   {
     "name": "Github",
-    "redirect": "https://github.com/Zainal21",
-    "color": "bg-gray-800"
+    "redirect": "https://github.com/Zainal21"
   },
   {
     "name": "Gitlab",
-    "redirect": "https://gitlab.com/Zainal21",
-    "color": "bg-yellow-600"
+    "redirect": "https://gitlab.com/Zainal21"
   },
   {
     "name": "Whatsapp",
-    "redirect": "https://api.whatsapp.com/send?phone=+6288216756214",
-    "color": "bg-green-800"
+    "redirect": "https://api.whatsapp.com/send?phone=+6288216756214"
   },
   {
     "name": "instagram",
-    "redirect": "https://www.instagram.com/muhamadzain.tsx",
-    "color": "bg-red-600"
+    "redirect": "https://www.instagram.com/muhamadzain.tsx"
   },
   {
     "name": "Twitter",
-    "redirect": "https://twitter.com/muhamadzain.dev",
-    "color": "bg-blue-600"
+    "redirect": "https://twitter.com/muhamadzain.dev"
   },
   {
     "name": "LinkedIn",
-    "redirect": "https://www.linkedin.com/in/muhammad-zainal-arifin",
-    "color": "bg-blue-800"
+    "redirect": "https://www.linkedin.com/in/muhammad-zainal-arifin"
   },
   {
     "name": "Facebook",
-    "redirect": "#",
-    "color": "bg-blue-900"
+    "redirect": "#"
   }
 ]

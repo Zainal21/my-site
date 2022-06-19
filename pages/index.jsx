@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
-import StoryIcon from "../public/assets/icon-story.png";
 import MetaTag from "@/components/base/meta-tag";
 import ReadingListSection from "@/components/modules/reading-list-section";
 import SEO from "next-seo.config";
@@ -29,13 +28,6 @@ export default function Home() {
           </div>
           <div className=" border-grey-lighter py-16 lg:py-20 px-6">
             <div className="flex items-center pb-6">
-              <Image
-                src={StoryIcon}
-                width={20}
-                height={30}
-                alt="icon story"
-                loading="eager"
-              />
               <h3 className="ml-3 font-body text-2xl font-semibold text-primary text-gray-200">
                 About Me.
               </h3>

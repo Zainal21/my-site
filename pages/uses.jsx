@@ -18,7 +18,7 @@ export default function uses() {
             <div className="py-10 lg:py-10 flex flex-col">
               <PageTitle title="/Uses" />
               <div className="pr-2 pt-3">
-                <span className="font-body text-xl font-light text-primary dark:text-white">
+                <span className="font-body lg:text-xl text-medium font-light text-primary dark:text-white">
                   This page lists my usual applications.
                 </span>
               </div>

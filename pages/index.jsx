@@ -21,7 +21,7 @@ export default function Home() {
               <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary text-gray-200 ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
-              <p className="pt-3 font-body lg:text-xl text-medium font-light text-primary text-gray-200">
+              <p className="pt-3 font-body lg:text-xl text-medium text-medium font-light text-primary text-gray-200">
                 20 y.o, A Software Engineer. Mostly code in PHP and Javascript
                 but sometime in Kotlin.
               </p>
@@ -29,13 +29,13 @@ export default function Home() {
           </div>
           <div className=" border-grey-lighter py-16 lg:py-20 px-6">
             <div className="flex items-center pb-6">
-              <Image src={StoryIcon} alt="icon story" />
+              <Image src={StoryIcon} alt="icon story" loading="eager" />
               <h3 className="ml-3 font-body text-2xl font-semibold text-primary text-gray-200">
                 About Me.
               </h3>
             </div>
             <div>
-              <p className="font-body text-medium font-normal text-primary text-gray-200">
+              <p className="font-body lg:text-medium text-base font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a
                 company in Yogyakarta{" "}
                 <span className="font-medium hover:underline">(CIKAJOGJA)</span>

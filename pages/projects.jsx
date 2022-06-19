@@ -17,7 +17,7 @@ export default function Projects() {
             <div className="py-10 lg:py-10">
               <PageTitle title="/Projects" />
               <div className="pr-2 pt-3">
-                <span className="font-body text-xl font-light text-primary dark:text-white">
+                <span className="font-body lg:text-xl text-medium font-light text-primary dark:text-white">
                   A recent project to fill my spare time and to learn some new
                   technologies
                 </span>

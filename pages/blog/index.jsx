@@ -32,7 +32,7 @@ export default function index({ posts }) {
             <div className="py-10  lg:py-10 flex flex-col">
               <PageTitle title="/Blogs" />
               <div className="pt-3">
-                <span className="font-body text-xl sm:text-medium font-light text-primary dark:text-white">
+                <span className="font-body lg:text-xl text-medium sm:text-medium font-light text-primary dark:text-white">
                   tweets in the form of my stories, experiences and knowledge
                   that I can share
                 </span>

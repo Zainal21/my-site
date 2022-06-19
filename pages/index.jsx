@@ -29,7 +29,13 @@ export default function Home() {
           </div>
           <div className=" border-grey-lighter py-16 lg:py-20 px-6">
             <div className="flex items-center pb-6">
-              <Image src={StoryIcon} alt="icon story" loading="eager" />
+              <Image
+                src={StoryIcon}
+                width={20}
+                height={30}
+                alt="icon story"
+                loading="eager"
+              />
               <h3 className="ml-3 font-body text-2xl font-semibold text-primary text-gray-200">
                 About Me.
               </h3>

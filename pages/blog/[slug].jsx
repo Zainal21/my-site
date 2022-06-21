@@ -7,6 +7,7 @@ import MainWrapped from "@/components/base/main-wrapped";
 import MarkdownRendered from "@/components/base/blog/markdown-rendered";
 import PageContent from "@/components/base/page-content";
 import { createClient } from "contentful";
+import Image from "next/image";
 
 const Client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -39,7 +40,9 @@ export const getStaticProps = async ({ params }) => {
 };
 
 export default function index({ blog }) {
-  const { title, publishedAt, markdownContent } = blog.fields;
+  const { title, publishedAt, markdownContent, thumbnail } = blog.fields;
+  const { url, fileName } = thumbnail[0].fields.file;
+  const { width, height } = thumbnail[0].fields.file.details.image;
   return (
     <React.Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />
@@ -48,7 +51,13 @@ export default function index({ blog }) {
           <Container className="mx-auto">
             <div className="py-10 lg:py-10 flex flex-col">
               <PageTitle title={title} />
-              <Date dateString={publishedAt} className="text-gray-100" />
+              <Date dateString={publishedAt} className="text-gray-100 mt-6" />
+              <Image
+                src={`https:${url}`}
+                width={width}
+                height={height}
+                alt={fileName}
+              ></Image>
               <div className="pt-3 w-5/6">
                 <div className="font-body text-xl sm:text-medium font-light text-primary dark:text-white">
                   <MarkdownRendered content={markdownContent} />

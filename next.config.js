@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   optimizeFonts: true,
   images: {
-    domains: ["ghchart.rshah.org"],
+    domains: ["ghchart.rshah.org", "images.ctfassets.net"],
   },
 };
 

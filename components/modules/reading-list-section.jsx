@@ -4,7 +4,7 @@ import readinglist from "../../data/reading-list.json";
 import ReadingListCard from "../base/home/reading-list-card";
 export default function ReadingListSection(props) {
   return (
-    <Section className="container mt-10  mb-6 bg-transparant dark:bg-gray-800">
+    <Section className="mt-10  mb-6 bg-transparant dark:bg-gray-800">
       <h2 className="text-gray-100 text-2xl text-medium font-bold mb-8  mt-8 underline">
         My Recent Reading list
       </h2>

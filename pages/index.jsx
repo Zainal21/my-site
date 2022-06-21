@@ -55,6 +55,15 @@ export default function Home() {
                 sofware engineer who is quite experienced in creating,
                 developing web-based and mobile-based applications.
               </p>
+              <p className="mt-8">
+                I created a{" "}
+                <Link href="/uses">
+                  <a className="text-white hover:underline font-semibold">
+                    /uses
+                  </a>
+                </Link>{" "}
+                page that lists the applications I normally use.
+              </p>
               <br />
               <Link href="/about">
                 <a className="hover:underline mt-20 text-primary text-gray-200 text-medium font-semibold">

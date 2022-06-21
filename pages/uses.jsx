@@ -29,7 +29,7 @@ export default function uses() {
                 <ul className="list-disc pl-10">
                   <li className="font-body text-lg font-light text-primary dark:text-white">
                     <span className="font-medium">
-                      Lenovo Thinkpad T460s + Ubuntu OS
+                      Lenovo Thinkpad T480s + Ubuntu OS
                     </span>{" "}
                     I with specifications (i5/16GB/256gb) for everything (work +
                     personal).

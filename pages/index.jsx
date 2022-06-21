@@ -30,9 +30,7 @@ export default function Home() {
             <div>
               <p className="font-body lg:text-medium text-base font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a
-                company in Yogyakarta{" "}
-                <span className="font-medium hover:underline">(CIKAJOGJA)</span>
-                . Born in{" "}
+                company in Yogyakarta . Born in{" "}
                 <a
                   href="https://www.karanganyarkab.go.id"
                   target="_blank"

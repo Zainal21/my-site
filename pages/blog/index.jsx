@@ -30,7 +30,7 @@ export default function index({ posts }) {
         <PageContent>
           <Container className="mx-auto">
             <div className="py-10  lg:py-10 flex flex-col">
-              <PageTitle title="/Blogs" />
+              <PageTitle title="/Blogs 📖" />
               <div className="pt-3">
                 <span className="font-body lg:text-xl text-medium sm:text-medium font-light text-primary dark:text-white">
                   tweets in the form of my stories, experiences and knowledge

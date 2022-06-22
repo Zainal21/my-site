@@ -14,8 +14,8 @@ export default function Projects() {
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">
-            <div className="py-10 lg:py-10">
-              <PageTitle title="/Projects" />
+            <div className="py-8 lg:py-10">
+              <PageTitle title="/Projects 👨‍💻" />
               <div className="pr-2 pt-3">
                 <span className="font-body lg:text-xl text-medium font-light text-primary dark:text-white">
                   A recent project to fill my spare time and to learn some new

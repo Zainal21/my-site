@@ -17,27 +17,27 @@ export default function Home() {
         <Container className="mt-30">
           <div className="border-b mx-auto">
             <div className="py-10  px-6">
-              <h1 className="pt-3 font-body lg:text-4xl text-2xl font-semibold text-primary text-gray-200 ">
+              <h1 className="pt-3 font-body lg:text-2xl text-xl font-semibold text-primary text-gray-200 ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
-              <p className="pt-3 font-body lg:text-xl text-medium text-medium font-light text-primary text-gray-200">
-                20 y.o, A Software Engineer. Mostly code in PHP and Javascript
-                but sometime in Kotlin.
+              <p className="pt-3 font-body lg:text-lg text-medium text-medium font-light text-primary text-gray-200">
+                A Software Engineer. Mostly code in PHP and Javascript but
+                sometime in Kotlin.
               </p>
             </div>
           </div>
-          <div className=" border-grey-lighter py-16 lg:py-20 px-6">
+          <div className=" border-grey-lighter py-6 lg:py-15 px-6 lg:text-lg text-medium">
             <div>
-              <p className="font-body lg:text-medium text-base font-normal text-primary text-gray-200">
+              <p className="font-body  font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a
-                company in Yogyakarta . Born in{" "}
+                company in Yogyakarta. Born in{" "}
                 <a
                   href="https://www.karanganyarkab.go.id"
                   target="_blank"
                   className="font-medium hover:underline"
                   rel="noreferrer"
                 >
-                  Karanganyar,
+                  Karanganyar,{" "}
                 </a>
                 Central Java, Indonesia Graduated Software Engineering student
                 from{" "}
@@ -53,7 +53,7 @@ export default function Home() {
                 sofware engineer who is quite experienced in creating,
                 developing web-based and mobile-based applications.
               </p>
-              <p className="mt-8">
+              <p className="mt-4">
                 I created a{" "}
                 <Link href="/uses">
                   <a className="text-white hover:underline font-semibold">

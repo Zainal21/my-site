@@ -8,14 +8,14 @@ export default function ContributionSection() {
         My Github Contribution Chart
       </h2>
       <Container className=" mx-auto px-6 py-8">
-        <img
+        {/* <img
           src="https://ghchart.rshah.org/Zainal21"
           alt="My Contributions"
           style={{
             width: "100%",
             height: "100%",
           }}
-        />
+        /> */}
       </Container>
     </Section>
   );

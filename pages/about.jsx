@@ -102,6 +102,7 @@ export default function About() {
                       <a
                         href="https://rplskandakra.org/"
                         target="_blank"
+                        rel="noreferrer"
                         className="font-semibold text-white hover:underline"
                       >
                         RPL Skandakra Dev Community{" "}

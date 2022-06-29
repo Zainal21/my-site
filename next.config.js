@@ -3,7 +3,7 @@ const withCss = require("@zeit/next-css");
 const withPurgeCss = require("next-purgecss");
 
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   optimizeFonts: true,
   images: {
     domains: ["ghchart.rshah.org", "images.ctfassets.net"],

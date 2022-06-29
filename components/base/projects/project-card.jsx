@@ -17,7 +17,7 @@ export default function ProjectCard({
             className="lg:w-full h-auto md:w-full mb-5 rounded object-cover object-center mx-auto"
             width="400%"
             height="200%"
-            loading="lazy"
+            loading="eager"
           />
         </div>
         <a

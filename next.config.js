@@ -3,7 +3,7 @@ const withCss = require("@zeit/next-css");
 const withPurgeCss = require("next-purgecss");
 
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   optimizeFonts: true,
   images: {
     domains: ["ghchart.rshah.org", "images.ctfassets.net"],
@@ -15,4 +15,6 @@ module.exports = withCss(
     purgeCssPaths: ["pages/**/*", "components/**/*"],
   })
 );
+
+
 module.exports = nextConfig;

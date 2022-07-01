@@ -1,28 +1,17 @@
 import "../styles/globals.css";
 import "boxicons/css/boxicons.min.css";
-import LoadingBar from "react-top-loading-bar";
-import Router from "next/router";
-import React, { useRef, useState } from "react";
+import NextNProgress from "nextjs-progressbar";
+import { Fragment } from "react";
 import MainLayout from "@/components/layouts/main-layout";
 
 function MyApp({ Component, pageProps }) {
-  const [progressLoad, setProgressLoad] = useState(0);
-  let persentage = 0;
-  Router.events.on("routeChangeStart", () => setProgressLoad(40));
-  Router.events.on("routeChangeComplete", () => setProgressLoad(100));
-  Router.events.on("routeChangeError", () => setProgressLoad(100));
-
   return (
-    <React.Fragment>
-      <LoadingBar
-        color="#ffff"
-        progress={progressLoad}
-        onLoaderFinished={() => setProgressLoad(100)}
-      />
+    <Fragment>
+      <NextNProgress height={4} color="#4338C9" />
       <MainLayout>
         <Component {...pageProps} />
       </MainLayout>
-    </React.Fragment>
+    </Fragment>
   );
 }
 

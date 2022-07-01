@@ -18,12 +18,12 @@ export default function uses() {
             <div className="py-8 lg:py-10 flex flex-col">
               <PageTitle title="/Uses 💻" />
               <div className="pr-2 pt-3">
-                <span className="font-body lg:text-xl text-medium font-light text-primary dark:text-white">
+                <span className="font-body lg:text-xl text-md font-light text-primary dark:text-white">
                   This page lists my usual applications.
                 </span>
               </div>
               <div className="pt-16 lg:pt-20">
-                <h3 className="pb-8 font-body lg:text-2xl text-lg font-semibold text-primary dark:text-white">
+                <h3 className="pb-8 font-body lg:text-xl text-md font-semibold text-primary dark:text-white">
                   Device
                 </h3>
                 <ul className="list-disc pl-10">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
@@ -22,7 +22,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function index({ posts }) {
+const indexPage = ({ posts }) => {
   return (
     <React.Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />
@@ -52,4 +52,6 @@ export default function index({ posts }) {
       </MainWrapped>
     </React.Fragment>
   );
-}
+};
+
+export default memo(indexPage);

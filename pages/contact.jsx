@@ -8,6 +8,7 @@ import SEO from "next-seo.config";
 import LinktreeCard from "@/components/base/contacts/linktree-card";
 import linktree from "../data/linktree.json";
 import React from "react";
+
 export default function Contact() {
   return (
     <React.Fragment>

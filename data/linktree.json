@@ -30,5 +30,9 @@
   {
     "name": "Facebook",
     "redirect": "#"
+  },
+  {
+    "name": "Download My CV",
+    "redirect": "https://muhamadzain-dev.vercel.app/assets/muhammadzain-cv.pdf"
   }
 ]

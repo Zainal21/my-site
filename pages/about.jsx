@@ -6,11 +6,11 @@ import MetaTag from "@/components/base/meta-tag";
 import { DefaultSeo } from "next-seo";
 import SEO from "next-seo.config";
 import Link from "next/link";
-import React from "react";
+import { Fragment } from "react";
 
 export default function About() {
   return (
-    <React.Fragment>
+    <Fragment>
       <MetaTag title="About | Muhamadzain.dev" />
       <DefaultSeo {...SEO} />
       <MainWrapped>
@@ -128,6 +128,6 @@ export default function About() {
           </Container>
         </PageContent>
       </MainWrapped>
-    </React.Fragment>
+    </Fragment>
   );
 }

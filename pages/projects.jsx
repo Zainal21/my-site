@@ -1,4 +1,4 @@
-import React from "react";
+import { Fragment } from "react";
 import Container from "@/components/ui/container";
 import PageContent from "@/components/base/page-content";
 import MainWrapped from "@/components/base/main-wrapped";
@@ -9,7 +9,7 @@ import projects from "../data/projects.json";
 
 export default function Projects() {
   return (
-    <React.Fragment>
+    <Fragment>
       <MetaTag title="Projects | Muhamadzain.dev" />
       <MainWrapped>
         <PageContent>
@@ -40,6 +40,6 @@ export default function Projects() {
           </Container>
         </PageContent>
       </MainWrapped>
-    </React.Fragment>
+    </Fragment>
   );
 }

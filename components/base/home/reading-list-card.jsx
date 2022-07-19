@@ -21,7 +21,7 @@ export default function ReadingListCard({
             </span>
           </div>
           <a
-            className="block text-gray-100  font-semibold hover:underline text-xl lg:text-2xl mt-3 hover:text-gray-300 hover:text-underline"
+            className="block text-gray-100  font-semibold hover:underline lg:text-xl text-base mt-3 hover:text-gray-300 hover:text-underline"
             target="_blank"
             rel="noreferrer"
             href={linksource}
@@ -29,7 +29,7 @@ export default function ReadingListCard({
             {title}
           </a>
           <p className="lg:text-md text-gray-100 mt-3 text-sm">{excerpt}</p>
-          <span className="px-3 py-1 mt-5 mb-5 float-left  lg:text-sm text-xs text-white font-bold rounded bg-gray-700 hover:bg-gray-600">
+          <span className="px-3 py-1 mt-5 mb-5 float-left  lg:text-sm text-sm text-white font-bold rounded bg-gray-700 hover:bg-gray-600">
             {category}
           </span>
         </div>

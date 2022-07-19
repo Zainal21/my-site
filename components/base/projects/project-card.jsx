@@ -8,7 +8,7 @@ export default function ProjectCard({
   description,
 }) {
   return (
-    <div className="lg:w-2/4 md:w-1/2 p-1 mt-2 w-full">
+    <div className=" lg:w-1/2 p-1 mt-2 w-full">
       <div className="h-full bg-gray-700 card-skills shadow-md hover:border-2  overflow-hidden relative p-8 flex flex-wrap flex-col items-center justify-center hover:shadow-2xl hover:border-1 hover:border-gray-600 border-2 border-gray-700 rounded-lg">
         <div>
           <Image

@@ -8,6 +8,17 @@ const nextConfig = {
   images: {
     domains: ["ghchart.rshah.org", "images.ctfassets.net"],
   },
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: "preact/compat",
+        "react-dom/test-utils": "preact/test-utils",
+        "react-dom": "preact/compat",
+      });
+    }
+
+    return config;
+  },
 };
 
 module.exports = withCss(
@@ -15,6 +26,5 @@ module.exports = withCss(
     purgeCssPaths: ["pages/**/*", "components/**/*"],
   })
 );
-
 
 module.exports = nextConfig;

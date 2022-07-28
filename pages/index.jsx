@@ -6,27 +6,27 @@ import MetaTag from "@/components/base/meta-tag";
 import ReadingListSection from "@/components/modules/reading-list-section";
 import SEO from "next-seo.config";
 import { DefaultSeo } from "next-seo";
-import React from "react";
+import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <Fragment>
       <MetaTag title="Muhamadzain.dev - Software Engineer" />
       <DefaultSeo {...SEO} />
       <MainWrapped>
         <Container className="mt-30">
           <div className="border-b mx-auto">
-            <div className="py-10  px-6">
-              <h1 className="pt-3 font-body lg:text-2xl text-xl font-semibold text-primary text-gray-200 ">
+            <div className="py-8 px-2">
+              <h1 className="pt-3 font-body lg:text-2xl text-lg font-semibold text-primary text-gray-200 ">
                 Hi,👋 I’m Muhamad Zainal Arifin.
               </h1>
-              <p className="pt-3 font-body lg:text-lg text-medium text-medium font-light text-primary text-gray-200">
+              <p className="pt-3 font-body lg:text-lg text-sm text-medium font-light text-primary text-gray-200">
                 A Software Engineer. Mostly code in PHP and Javascript but
                 sometime in Kotlin.
               </p>
             </div>
           </div>
-          <div className=" border-grey-lighter py-6 lg:py-15 px-6 lg:text-lg text-medium">
+          <div className=" border-grey-lighter py-6 lg:py-15 px-6 lg:text-lg text-sm">
             <div>
               <p className="font-body  font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a
@@ -70,11 +70,9 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/* <ContributionSection /> */}
           <ReadingListSection />
-          {/* <ImageGallerySection /> */}
         </Container>
       </MainWrapped>
-    </React.Fragment>
+    </Fragment>
   );
 }

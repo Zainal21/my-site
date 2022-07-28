@@ -1,4 +1,4 @@
-import React from "react";
+import { Fragment } from "react";
 import Date from "@/components/ui/date";
 import MetaTag from "@/components/base/meta-tag";
 import Container from "@/components/ui/container";
@@ -44,7 +44,7 @@ export default function index({ blog }) {
   const { url, fileName } = thumbnail[0].fields.file;
   const { width, height } = thumbnail[0].fields.file.details.image;
   return (
-    <React.Fragment>
+    <Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />
       <MainWrapped>
         <PageContent>
@@ -70,6 +70,6 @@ export default function index({ blog }) {
           </Container>
         </PageContent>
       </MainWrapped>
-    </React.Fragment>
+    </Fragment>
   );
 }

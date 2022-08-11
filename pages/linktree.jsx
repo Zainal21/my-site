@@ -18,7 +18,7 @@ export default function Contact() {
         <PageContent>
           <Container className="mx-auto">
             <div className="py-10 lg:py-10">
-              <PageTitle title="/Contact Me (Linktree) ☎️" />
+              <PageTitle title="/Linktree ☎️" />
               <div className="pr-2 pt-3">
                 <span className="font-body lg:text-xl text-medium font-light text-primary text-white">
                   Talk about business ? can contact me on various platforms to

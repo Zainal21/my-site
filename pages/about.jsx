@@ -79,7 +79,7 @@ export default function About() {
                       (November 2022 - Present)
                     </li>
                     <li className="pt-5 font-body lg:text-lg text-base font-light text-primary dark:text-white">
-                      Fulltime Software Engineer at{" "}
+                      Software Engineer at{" "}
                       <a
                         href="https://cikajogja.com/"
                         target="_blank"

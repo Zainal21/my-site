@@ -66,7 +66,7 @@ export default function About() {
                     Work Experience 👨‍💻
                   </h3>
                   <ul className="list-disc pl-10">
-                    <li className="font-body lg:text-lg text-base font-light text-primary dark:text-white">
+                    <li className="pt-5 font-body lg:text-lg text-base font-light text-primary dark:text-white">
                       Software Engineer at{" "}
                       <a
                         href="https://oxycreative.com/"
@@ -78,7 +78,7 @@ export default function About() {
                       </a>{" "}
                       (November 2022 - Present)
                     </li>
-                    <li className="font-body lg:text-lg text-base font-light text-primary dark:text-white">
+                    <li className="pt-5 font-body lg:text-lg text-base font-light text-primary dark:text-white">
                       Fulltime Software Engineer at{" "}
                       <a
                         href="https://cikajogja.com/"

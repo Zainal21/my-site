@@ -9,40 +9,40 @@ import PageContent from "@/components/base/page-content";
 import { createClient } from "contentful";
 import Image from "next/image";
 
-const Client = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-});
+// const Client = createClient({
+//   space: process.env.CONTENTFUL_SPACE_ID,
+//   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+// });
 
-export const getStaticPaths = async () => {
-  let response = await Client.getEntries({
-    content_type: "myPersonalBlog",
-  });
-  const paths = response.items.map((item) => ({
-    params: { slug: item.fields.slug },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-};
+// export const getStaticPaths = async () => {
+//   let response = await Client.getEntries({
+//     content_type: "myPersonalBlog",
+//   });
+//   const paths = response.items.map((item) => ({
+//     params: { slug: item.fields.slug },
+//   }));
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
-export const getStaticProps = async ({ params }) => {
-  let response = await Client.getEntries({
-    content_type: "myPersonalBlog",
-    "fields.slug": params.slug,
-  });
-  return {
-    props: {
-      blog: response.items[0],
-    },
-  };
-};
+// export const getStaticProps = async ({ params }) => {
+//   let response = await Client.getEntries({
+//     content_type: "myPersonalBlog",
+//     "fields.slug": params.slug,
+//   });
+//   return {
+//     props: {
+//       blog: response.items[0],
+//     },
+//   };
+// };
 
 export default function index({ blog }) {
-  const { title, publishedAt, markdownContent, thumbnail } = blog.fields;
-  const { url, fileName } = thumbnail[0].fields.file;
-  const { width, height } = thumbnail[0].fields.file.details.image;
+  // const { title, publishedAt, markdownContent, thumbnail } = blog.fields;
+  // const { url, fileName } = thumbnail[0].fields.file;
+  // const { width, height } = thumbnail[0].fields.file.details.image;
   return (
     <Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />

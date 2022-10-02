@@ -7,22 +7,22 @@ import MetaTag from "@/components/base/meta-tag";
 import BlogList from "@/components/base/blog/blog-list";
 import { createClient } from "contentful";
 
-export async function getStaticProps() {
-  const Client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-  });
-  let response = await Client.getEntries({
-    content_type: "myPersonalBlog",
-  });
-  return {
-    props: {
-      posts: response.items,
-    },
-  };
-}
+// export async function getStaticProps() {
+//   const Client = createClient({
+//     space: process.env.CONTENTFUL_SPACE_ID,
+//     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+//   });
+//   let response = await Client.getEntries({
+//     content_type: "myPersonalBlog",
+//   });
+//   return {
+//     props: {
+//       posts: response.items,
+//     },
+//   };
+// }
 
-const indexPage = ({ posts }) => {
+const indexPage = () => {
   return (
     <Fragment>
       <MetaTag title="Blog | Muhamadzain.dev" />
@@ -40,9 +40,12 @@ const indexPage = ({ posts }) => {
               <div className="pt-16 lg:pt-20 relative">
                 <div className="pt-2 lg:pt-4">
                   <ul className="mx-4">
-                    {posts.map((item) => (
+                    <h1 class="text-center text-2xl font-bold">
+                      Under Construction
+                    </h1>
+                    {/* {posts.map((item) => (
                       <BlogList key={item.sys.id} posts={item} />
-                    ))}
+                    ))} */}
                   </ul>
                 </div>
               </div>

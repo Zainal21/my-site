@@ -4,8 +4,8 @@ import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
-import BlogList from "@/components/base/blog/blog-list";
-import { createClient } from "contentful";
+// import BlogList from "@/components/base/blog/blog-list";
+// import { createClient } from "contentful";
 
 // export async function getStaticProps() {
 //   const Client = createClient({
@@ -40,7 +40,7 @@ const indexPage = () => {
               <div className="pt-16 lg:pt-20 relative">
                 <div className="pt-2 lg:pt-4">
                   <ul className="mx-4">
-                    <h1 class="text-center text-2xl font-bold">
+                    <h1 className="text-center text-2xl font-bold">
                       Under Construction
                     </h1>
                     {/* {posts.map((item) => (

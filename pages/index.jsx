@@ -30,7 +30,7 @@ export default function Home() {
             <div>
               <p className="font-body  font-normal text-primary text-gray-200">
                 I&apos;m currently working fulltime Software Enginner at a
-                company in Yogyakarta. Born in{" "}
+                company in Jakaarta. Born in{" "}
                 <a
                   href="https://www.karanganyarkab.go.id"
                   target="_blank"

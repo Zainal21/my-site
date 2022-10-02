@@ -26,7 +26,7 @@ export default function About() {
               <div className="pt-16 lg:pt-20">
                 <p className="font-body lg:text-lg text-medium font-normal text-primary text-gray-200">
                   I&apos;m currently working fulltime Software Enginner at a
-                  company in Yogyakarta. Born in{" "}
+                  company in Jakarta. Born in{" "}
                   <a
                     href="https://www.karanganyarkab.go.id"
                     target="_blank"
@@ -67,6 +67,18 @@ export default function About() {
                   </h3>
                   <ul className="list-disc pl-10">
                     <li className="font-body lg:text-lg text-base font-light text-primary dark:text-white">
+                      Software Engineer at{" "}
+                      <a
+                        href="https://oxycreative.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-semibold text-white hover:underline"
+                      >
+                        OXY Creative.Inc
+                      </a>{" "}
+                      (November 2022 - Present)
+                    </li>
+                    <li className="font-body lg:text-lg text-base font-light text-primary dark:text-white">
                       Fulltime Software Engineer at{" "}
                       <a
                         href="https://cikajogja.com/"
@@ -76,7 +88,7 @@ export default function About() {
                       >
                         Cikajogja.com
                       </a>{" "}
-                      (Juny 2021 - Present)
+                      (Juny 2021 - Sep 2022)
                     </li>
                     <li className="pt-5 font-body lg:text-lg text-basefont-light text-primary dark:text-white">
                       Web Developer Intern at{" "}

@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "../ui/icon";
 import SocialMediaLinks from "../../data/social-media-links.json";
 
@@ -23,8 +22,7 @@ export default function footer() {
           <Icon
             iconClassName={item.name}
             linkIcon={item.link}
-            key={index}
-          ></Icon>
+            key={index}/>
         ))}
       </div>
     </footer>

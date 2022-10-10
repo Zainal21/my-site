@@ -1,4 +1,3 @@
-import React from "react";
 import cn from "classnames";
 import { parseISO, format } from "date-fns";
 

@@ -1,6 +1,6 @@
-import React from "react";
 import Container from "../ui/container";
 import Section from "../ui/section";
+
 export default function ContributionSection() {
   return (
     <Section className="container mt-10 mb-10 bg-transparant dark:bg-gray-800">

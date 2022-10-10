@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import HeaderLink from "../ui/header-link";
 import ButtomLink from "../ui/bottom-link";

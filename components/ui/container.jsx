@@ -1,4 +1,3 @@
-import React from "react";
 import cn from "classnames";
 
 export default function Container({ className, children }) {

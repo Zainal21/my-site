@@ -1,7 +1,7 @@
-import React from "react";
 import Section from "@/components/ui/section";
 import readinglist from "../../data/reading-list.json";
 import ReadingListCard from "../base/home/reading-list-card";
+
 export default function ReadingListSection(props) {
   return (
     <Section className="mt-10  mb-6 bg-transparant dark:bg-gray-800">

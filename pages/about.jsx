@@ -79,14 +79,14 @@ export default function About() {
                       (November 2022 - Present)
                     </li>
                     <li className="pt-5 font-body lg:text-lg text-base font-light text-primary dark:text-white">
-                      Software Engineer at{" "}
+                      Web & Mobile Developer at{" "}
                       <a
                         href="https://cikajogja.com/"
                         target="_blank"
                         rel="noreferrer"
                         className="font-semibold text-white hover:underline"
                       >
-                        Cikajogja.com
+                        CV. Cipta Kary Infotika
                       </a>{" "}
                       (Juny 2021 - Sep 2022)
                     </li>

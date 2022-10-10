@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Icon({ iconClassName, linkIcon }) {
   return (
     <a href={linkIcon} target="_blank" rel="noreferrer">

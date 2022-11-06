@@ -88,7 +88,7 @@ export default function About() {
                       >
                         CV. Cipta Kary Infotika
                       </a>{" "}
-                      (Juny 2021 - Sep 2022)
+                      (Juny 2021 - Oktober 2022)
                     </li>
                     <li className="pt-5 font-body lg:text-lg text-basefont-light text-primary dark:text-white">
                       Web Developer Intern at{" "}

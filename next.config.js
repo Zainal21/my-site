@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   optimizeFonts: true,
   images: {
-    domains: ["ghchart.rshah.org", "images.ctfassets.net"],
+    domains: ["ghchart.rshah.org", "images.ctfassets.net", "i.scdn.co"],
   },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {

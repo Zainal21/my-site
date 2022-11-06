@@ -4,23 +4,6 @@ import MainWrapped from "@/components/base/main-wrapped";
 import PageTitle from "@/components/ui/page-title";
 import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
-// import BlogList from "@/components/base/blog/blog-list";
-// import { createClient } from "contentful";
-
-// export async function getStaticProps() {
-//   const Client = createClient({
-//     space: process.env.CONTENTFUL_SPACE_ID,
-//     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-//   });
-//   let response = await Client.getEntries({
-//     content_type: "myPersonalBlog",
-//   });
-//   return {
-//     props: {
-//       posts: response.items,
-//     },
-//   };
-// }
 
 const indexPage = () => {
   return (
@@ -43,9 +26,6 @@ const indexPage = () => {
                     <h1 className="text-center text-2xl font-bold">
                       Under Construction
                     </h1>
-                    {/* {posts.map((item) => (
-                      <BlogList key={item.sys.id} posts={item} />
-                    ))} */}
                   </ul>
                 </div>
               </div>

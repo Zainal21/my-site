@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import Container from "@/components/ui/container";
 import MainWrapped from "@/components/base/main-wrapped";
 import MetaTag from "@/components/base/meta-tag";
 import ReadingListSection from "@/components/modules/reading-list-section";
+import RecentPlaylist from "@/components/modules/recent-playlist";
 import SEO from "next-seo.config";
 import { DefaultSeo } from "next-seo";
 import { Fragment } from "react";
@@ -50,7 +50,7 @@ export default function Home() {
                 </a>
                 Software Engineering graduated who is interested in the world of
                 technology, especially in the world of programming, and a
-                sofware engineer who is quite experienced in creating,
+                sofware engineer who is quite experienced in creating,2
                 developing web-based and mobile-based applications.
               </p>
               <p className="mt-4">
@@ -70,7 +70,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          {/* recent playlist */}
+          <RecentPlaylist />
+          {/* end recent playlist */}
+          {/* reading list section */}
           <ReadingListSection />
+          {/* end readling list section */}
         </Container>
       </MainWrapped>
     </Fragment>

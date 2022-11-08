@@ -4,13 +4,21 @@ import { PlayCircle } from "react-feather";
 
 export function SpotifyCurrentlyPlaying() {
   const { data } = useCurrentlyPlaying();
+  console.log(data);
   return (
-    <div className="flex items-start relative space-x-4 bg-gray-700 px-5 py-4 rounded-md shadow-single">
+    <div className="flex items-center relative space-x-4 bg-gray-700 px-5 py-4 rounded-md shadow-single">
+      {data?.albumImageUrl ? (
+        <img
+          className="w-12 h-12 rounded-sm"
+          src={data?.albumImageUrl || ""}
+          alt={data?.artist}
+        />
+      ) : null}
       <PlayCircle
         aria-hidden
         size={20}
         className={cn(
-          "flex-shrink-0",
+          "flex-shrink-0 w-10 h-10",
           data?.isPlaying ? "text-blue-500" : "text-gray-500"
         )}
       />
@@ -33,7 +41,7 @@ export function SpotifyCurrentlyPlaying() {
           </a>
         ) : (
           <span className="font-semibold text-white flex-1 min-w-0">
-            Not Playing
+            album Not Playing
           </span>
         )}{" "}
         <span className="text-gray-300">–</span>&nbsp;

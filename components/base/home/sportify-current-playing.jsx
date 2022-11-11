@@ -4,7 +4,6 @@ import { PlayCircle } from "react-feather";
 
 export function SpotifyCurrentlyPlaying() {
   const { data } = useCurrentlyPlaying();
-  console.log(data);
   return (
     <div className="flex items-center relative space-x-4 bg-gray-700 px-5 py-4 rounded-md shadow-single">
       {data?.albumImageUrl ? (
@@ -41,7 +40,7 @@ export function SpotifyCurrentlyPlaying() {
           </a>
         ) : (
           <span className="font-semibold text-white flex-1 min-w-0">
-            album Not Playing
+            Music Not Playing
           </span>
         )}{" "}
         <span className="text-gray-300">–</span>&nbsp;

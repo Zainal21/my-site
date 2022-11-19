@@ -86,7 +86,7 @@ export default function About() {
                         rel="noreferrer"
                         className="font-semibold text-white hover:underline"
                       >
-                        CV. Cipta Kary Infotika
+                        CV. Cipta Karya Infotika
                       </a>{" "}
                       (Juny 2021 - Oktober 2022)
                     </li>

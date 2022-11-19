@@ -4,7 +4,6 @@ const handler = async (req, res) => {
   if (req.method === "GET") {
     try {
       const song = await getNowPlayling();
-      console.log("song =>>" + song);
       const isPlaying = song.is_playing;
       const title = song.item.name;
       const artist = song.item.artists

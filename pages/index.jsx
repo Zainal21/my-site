@@ -46,7 +46,7 @@ export default function Home() {
                   className="font-medium hover:underline"
                   rel="noreferrer"
                 >
-                  VHS 2 Karanganyar{" "}
+                  VHS/SMK 2 Karanganyar{" "}
                 </a>
                 Software Engineering graduated who is interested in the world of
                 technology, especially in the world of programming, and a

@@ -8,28 +8,31 @@ import MetaTag from "@/components/base/meta-tag";
 import { getPostBySlug, getAllPosts } from "@/lib/utils";
 import MDXComponents from "@/components/base/mdx-components";
 import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import SyntaxHighlighter from "react-syntax-highlighter";
 
-const BlogItem = ({ blog }) => {
+const components = { SyntaxHighlighter, code };
+
+const BlogItem = ({ frontMatter: { title, publishedOn }, mdxSource }) => {
   return (
     <Fragment>
-      <MetaTag title="Lorem ipsum | Muhamadzain.dev" />
+      <MetaTag title={`${title} | Muhamadzain.dev`} />
       <MainWrapped>
         <PageContent>
           <Container className="mx-auto">
-            <div className="py-10  lg:py-10 flex flex-col">
-              <PageTitle title="/Lorem ipsum 📖" />
+            <div className="py-9 lg:py-10 flex flex-col">
+              <PageTitle title={`${title} 📖`} />
               <div className="pt-3">
                 <span className="font-body lg:text-xl text-medium sm:text-medium font-light text-primary dark:text-white"></span>
               </div>
               <div className="pt-16 lg:pt-20 relative">
                 <div className="pt-2 lg:pt-4">
-                  <ul className="mx-4">
-                    <h1 className="text-center text-2xl font-bold">
-                      Under Construction
-                    </h1>
-                    {blog.content}
-                    {/* <MDXRemote {...blog} components={MDXComponents} /> */}
-                  </ul>
+                  {/* <ul className="mx-4"> */}
+                  <MDXRemote {...mdxSource} components={components} />
+                  {/* </ul> */}
                 </div>
               </div>
             </div>
@@ -40,18 +43,45 @@ const BlogItem = ({ blog }) => {
   );
 };
 
-export async function getStaticProps({ params }) {
-  const blog = getPostBySlug(params.slug, [
-    "title",
-    "excerpt",
-    "publishedOn",
-    "content",
-  ]);
+function code({ className, ...props }) {
+  const match = /language-(\w+)/.exec(className || "");
+  return match ? (
+    <SyntaxHighlighter language={match[1]} PreTag="div" {...props} />
+  ) : (
+    <code className={className} {...props} />
+  );
+}
+
+// export async function getStaticProps({ params }) {
+//   const blog = getPostBySlug(params.slug, [
+//     "title",
+//     "excerpt",
+//     "publishedOn",
+//     "content",
+//   ]);
+
+//   return {
+//     props: { blog },
+//   };
+// }
+
+export const getStaticProps = async ({ params: { slug } }) => {
+  const markdownWithMeta = fs.readFileSync(
+    path.join("contents/posts", slug + ".mdx"),
+    "utf-8"
+  );
+
+  const { data: frontMatter, content } = matter(markdownWithMeta);
+  const mdxSource = await serialize(content);
 
   return {
-    props: { blog },
+    props: {
+      frontMatter,
+      slug,
+      mdxSource,
+    },
   };
-}
+};
 
 export async function getStaticPaths() {
   const posts = getAllPosts(["slug"]);

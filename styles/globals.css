@@ -22,3 +22,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+ol,
+ul,
+menu {
+  list-style: disc !important;
+  margin: 1rem !important;
+  padding: 0 !important;
+}

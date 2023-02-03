@@ -26,13 +26,5 @@
   {
     "name": "LinkedIn",
     "redirect": "https://www.linkedin.com/in/muhammad-zainal-arifin"
-  },
-  {
-    "name": "Facebook",
-    "redirect": "#"
-  },
-  {
-    "name": "Download My CV",
-    "redirect": "https://muhamadzain-dev.vercel.app/CV_MUHAMAD_ZAINAL_ARIFIN_WEB_DEV.pdf"
   }
 ]

@@ -1,5 +1,9 @@
 [
   {
+    "link": "/blog",
+    "name": "Blog"
+  },
+  {
     "link": "/projects",
     "name": "Projects"
   },

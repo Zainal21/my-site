@@ -50,7 +50,7 @@ export default function Home() {
                 </a>
                 Software Engineering graduated who is interested in the world of
                 technology, especially in the world of programming, and a
-                sofware engineer who is quite experienced in creating,2
+                sofware engineer who is quite experienced in creating,
                 developing web-based and mobile-based applications.
               </p>
               <p className="mt-4">

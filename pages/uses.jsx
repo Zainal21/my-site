@@ -72,16 +72,8 @@ export default function uses() {
                       >
                         DBeaver
                       </a>{" "}
-                      for my database management apps when using PostgreSQL, and{" "}
-                      <a
-                        href="https://www.phpmyadmin.net/"
-                        className="font-bold hover:underline"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        PhpMyAdmin
-                      </a>{" "}
-                      when i using MySQL
+                      for my database management apps when using
+                      PostgreSQL,MySQL and MariaDB
                     </span>
                   </li>
                   <li className="pt-5 font-body lg:text-lg text-md font-light text-primary dark:text-white">

@@ -1,10 +1,18 @@
 [
   {
+    "link": "/about",
+    "name": "About"
+  },
+  {
     "link": "/projects",
     "name": "Projects"
   },
   {
-    "link": "/linktree",
-    "name": "linktree"
+    "link": "/uses",
+    "name": "Uses"
+  },
+  {
+    "link": "/contact",
+    "name": "contact"
   }
 ]

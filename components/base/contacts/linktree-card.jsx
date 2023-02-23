@@ -33,6 +33,9 @@ export default function LinktreeCard({ name, link }) {
     case "Telegram":
       color = "bg-blue-500";
       break;
+    case "Link.tree":
+      color = "bg-blue-900";
+      break;
     default:
       color = "bg-blue-500";
       break;

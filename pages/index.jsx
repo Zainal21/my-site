@@ -46,7 +46,7 @@ export default function Home() {
                   className="font-medium hover:underline"
                   rel="noreferrer"
                 >
-                  VHS/SMK 2 Karanganyar{" "}
+                  (Vocational High School / SMK Negeri) 2 Karanganyar,{" "}
                 </a>
                 Software Engineering graduated who is interested in the world of
                 technology, especially in the world of programming, and a

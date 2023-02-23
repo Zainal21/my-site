@@ -24,7 +24,7 @@ export default function About() {
                 </span>
               </div>
               <div className="pt-16 lg:pt-20">
-                <p className="font-body lg:text-lg text-medium font-normal text-primary text-gray-200">
+                <p className="font-body lg:text-lg text-medium font-normal text-primary text-gray-200 tracking-tight">
                   I&apos;m currently working fulltime Software Enginner at a
                   company in Jakarta. Born in{" "}
                   <a
@@ -42,7 +42,7 @@ export default function About() {
                     className="font-medium hover:underline"
                     rel="noreferrer"
                   >
-                    VHS/SMK 2 Karanganyar{" "}
+                    (Vocational High School / SMK Negeri) 2 Karanganyar,{" "}
                   </a>
                   Software Engineering graduated who is interested in the world
                   of technology, especially in the world of programming, and a
@@ -81,12 +81,12 @@ export default function About() {
                     <li className="pt-5 font-body lg:text-lg text-base font-light text-primary dark:text-white">
                       Web & Mobile Developer at{" "}
                       <a
-                        href="https://cikajogja.com/"
+                        href="#"
                         target="_blank"
                         rel="noreferrer"
                         className="font-semibold text-white hover:underline"
                       >
-                        CV. Cipta Karya Infotika
+                        CV. Cipta Karya Infotika / Cikajogja
                       </a>{" "}
                       (Juny 2021 - Oktober 2022)
                     </li>
@@ -123,7 +123,7 @@ export default function About() {
                     </li>
                   </ul>
                 </div>
-                <p className="mt-10">
+                <p className="mt-10 text-xl">
                   Read more about me or my experience on{" "}
                   <a
                     href="https://www.linkedin.com/in/muhammad-zainal-arifin"

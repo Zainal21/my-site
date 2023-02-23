@@ -1,5 +1,9 @@
 [
   {
+    "name": "Link.tree",
+    "redirect": "https://zain-my-linktree.vercel.app/"
+  },
+  {
     "name": "E-mail",
     "redirect": "mailto:Muhammadzaindev@gmail.com"
   },

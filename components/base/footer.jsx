@@ -19,10 +19,7 @@ export default function footer() {
       <br />
       <div className="flex items-center">
         {SocialMediaLinks.map((item, index) => (
-          <Icon
-            iconClassName={item.name}
-            linkIcon={item.link}
-            key={index}/>
+          <Icon iconClassName={item.name} linkIcon={item.link} key={index} />
         ))}
       </div>
     </footer>

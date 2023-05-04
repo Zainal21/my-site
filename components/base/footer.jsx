@@ -1,6 +1,5 @@
 import Icon from "../ui/icon";
 import SocialMediaLinks from "../../data/social-media-links.json";
-
 export default function footer() {
   return (
     <footer className="flex flex-col items-center py-8 my-16 text-2xs text-center text-neutral-400 mt-10 mx-8">
@@ -8,7 +7,7 @@ export default function footer() {
         Made using Next.js and Tailwind CSS. Hosted on Vercel.
       </p>
       <p>
-        <a
+      <a
           className="hover:text-neutral-300 underline"
           href="https://github.com/Zainal21"
         >

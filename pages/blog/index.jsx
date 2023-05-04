@@ -6,6 +6,7 @@ import PageContent from "@/components/base/page-content";
 import MetaTag from "@/components/base/meta-tag";
 import { getPosts } from "../../lib/utils";
 import { DefaultSeo } from "next-seo";
+import SEO from "next-seo.config";
 import Link from "next/link";
 
 const indexPage = ({ posts }) => {

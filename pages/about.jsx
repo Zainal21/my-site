@@ -69,7 +69,7 @@ export default function About() {
                     <li className="pt-5 font-body lg:text-lg text-base font-light text-primary dark:text-white">
                       Software Engineer at{" "}
                       <a
-                        href="https://oxycreative.com/"
+                        href="https://www.oxy.digital/"
                         target="_blank"
                         rel="noreferrer"
                         className="font-semibold text-white hover:underline"

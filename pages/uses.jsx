@@ -28,10 +28,8 @@ export default function uses() {
                 </h3>
                 <ul className="list-disc pl-10">
                   <li className="font-body lg:text-lg text-md font-light text-primary dark:text-white">
-                    <span className="font-medium">
-                      Lenovo Thinkpad T480s + Ubuntu OS
-                    </span>{" "}
-                    I with specifications (i5/16GB/256gb) for everything (work +
+                    <span className="font-medium">Apple Macbook Air M1</span>{" "}
+                    with specifications (M1/8GB/256gb) for everything (work +
                     personal).
                   </li>
                   <li className="pt-5 font-body lg:text-lg text-md font-light text-primary dark:text-white">

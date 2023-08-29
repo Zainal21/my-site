@@ -5,7 +5,7 @@ import ReadingListCard from "../base/home/reading-list-card";
 export default function ReadingListSection(props) {
   return (
     <Section className="mt-10 mb-6 bg-transparant dark:bg-gray-800">
-      <h2 className="text-gray-100 lg:text-2xl text-lg text-medium font-bold mb-8  mt-8 underline">
+      <h2 className="text-gray-100 lg:text-2xl text-lg text-medium font-bold mb-8  mt-8">
         My Recent Reading list
       </h2>
       {readinglist.map((item, index) => (

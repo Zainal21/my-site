@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
           {/* recent playlist */}
-          <RecentPlaylist />
+          {/* <RecentPlaylist /> */}
           {/* end recent playlist */}
           {/* reading list section */}
           <ReadingListSection />

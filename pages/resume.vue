@@ -133,9 +133,10 @@ const experiences = [
     from: "Nov 2022",
     to: "Present",
     responsibilities: [
-      "Redesigned and developed a mobile-first business website using frontend technologies.",
-      "Debugged and optimized code to increase performance and reduce loading times by 12%.",
-      "Refactored legacy code to cut project file size by 46%, lowering hosting costs and load times.",
+      "Collaborate with Project Owner, Project Manager to create Software as a Service (SaaS).",
+      "Carrying out database design and creating application requirements.",
+      "Carry out maintenance and add features to the application.",
+      "Making and adding features to the application utility",
     ],
   },
   {
@@ -144,9 +145,9 @@ const experiences = [
     from: "Jul 2021",
     to: "Oct 2022",
     responsibilities: [
-      "Developed and deployed a mobile-first, component-based and interactive SPA using Vue.js.",
-      "Engineered a backend using a REST API and Node.js serverless functions to reduce latency by 19%.",
-      "Integrated client-side routing and state management using Vue libraries to improve overall UX.",
+      "Collaborate with the Project Manager in making applications.",
+      "Carrying out database design and creating application requirements.",
+      "Carry out maintenance and add features to the application.",
     ],
   },
   {
@@ -155,8 +156,8 @@ const experiences = [
     from: "Jan 2020",
     to: "Apr 2020",
     responsibilities: [
-      "Contributed 11 new in-depth technical articles to OpenGenus IQ covering different web development concepts.",
-      "Explored different JavaScript web APIs to generate workable solutions to improve web performance.",
+      "Carrying out database design and creating application requirements.",
+      "Collaborate with the Project Manager in making applications.",
     ],
   },
 ];

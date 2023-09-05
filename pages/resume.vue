@@ -4,168 +4,171 @@
     <Title>{{ seoMeta.title }}</Title>
     <Meta name="description" :content="seoMeta.description" />
     <AppNav class="md:flex flex-col" />
-    <div class="introduction mt-5 p-8">
-      <!-- Name  -->
-      <h1 class="font-bold text-2xl">Hi, my name is Muhamad Zain 👋</h1>
-      <!-- Professional Summary -->
-      <p class="w-full my-5 md:text-md mt-5">
-        I am a seasoned Software Engineer based in Jakarta, Indonesia, with a
-        strong dedication to backend development and DevOps practices.
-        Originally hailing from Karanganyar, Central Java, I began my journey
-        into software engineering at (Vocational High School / SMK Negeri) 2
-        Karanganyar.
-      </p>
-      <p class="w-full my-5 md:text-md">
-        As a Software Engineering graduate, I have cultivated my skills and
-        expertise in crafting robust backend systems and implementing efficient
-        DevOps workflows. My experience spans a spectrum of technologies, with a
-        current focus on harnessing the power of backend technologies such as
-        Node.js, Laravel, TypeScript, and Express.js, while also excelling in
-        the realm of DevOps.
-      </p>
-      <p class="w-full mb-2 md:text-md">
-        With a solid foundation in backend development and a keen interest in
-        DevOps methodologies, I am committed to delivering reliable and
-        efficient solutions, contributing to the ever-evolving landscape of
-        software engineering.
-      </p>
+    <div class="p-8">
+      <div class="introduction my-10">
+        <!-- Name  -->
+        <h1 class="font-bold text-2xl">Hi, my name is Muhamad Zain 👋</h1>
+        <!-- Professional Summary -->
+        <p class="w-full my-5 text-sm leading-relaxed mt-5">
+          I am a seasoned Software Engineer based in Jakarta, Indonesia, with a
+          strong dedication to backend development and DevOps practices.
+          Originally hailing from Karanganyar, Central Java, I began my journey
+          into software engineering at (Vocational High School / SMK Negeri) 2
+          Karanganyar.
+        </p>
+        <p class="w-full my-5 text-sm leading-relaxed">
+          As a Software Engineering graduate, I have cultivated my skills and
+          expertise in crafting robust backend systems and implementing
+          efficient DevOps workflows. My experience spans a spectrum of
+          technologies, with a current focus on harnessing the power of backend
+          technologies such as Node.js, Laravel, TypeScript, and Express.js,
+          while also excelling in the realm of DevOps.
+        </p>
+        <p class="w-full mb-2 text-sm leading-relaxed">
+          With a solid foundation in backend development and a keen interest in
+          DevOps methodologies, I am committed to delivering reliable and
+          efficient solutions, contributing to the ever-evolving landscape of
+          software engineering.
+        </p>
+      </div>
+      <!-- Skillset -->
+      <section class="my-4 w-full">
+        <h2 class="font-bold text-2xl my-6 flex items-center">
+          Skills
+          <Icon name="heroicons:wrench-screwdriver-solid" class="ml-3" />
+        </h2>
+
+        <div
+          class="mb-1 text-sm"
+          v-for="(skills, category) in skillset"
+          :key="category"
+        >
+          <h3
+            class="inline-block font-semibold mr-2 text-zinc-700 dark:text-zinc-200 text-sm"
+          >
+            {{ category }}:
+          </h3>
+          <ul class="inline-block p-0">
+            <li
+              v-for="skill in skills"
+              :key="skill"
+              class="px-3 py-[.125rem] inline-block dark:border dark:border-green-500 bg-green-300 dark:bg-transparent text-zinc-800 dark:text-green-500 font-medium rounded-full text-sm mr-1 mb-1"
+            >
+              {{ skill }}
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience timeline -->
+      <section class="md:my-10 my-5 w-full">
+        <h2 class="font-bold text-2xl my-6 flex items-center">
+          Work Experience
+          <Icon name="heroicons:briefcase-solid" class="ml-3" />
+        </h2>
+        <div
+          v-for="(experience, expIndex) in experiences"
+          :key="expIndex"
+          class="timeline-item text-sm"
+        >
+          <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
+            {{ experience.role }}
+            <br />
+            <span class="text-green-600 dark:text-green-500">
+              {{ experience.company }}
+            </span>
+            <br />
+            <span class="text-zinc-500 dark:text-zinc-400">
+              ({{ experience.from }} - {{ experience.to }})
+            </span>
+          </h3>
+          <ul
+            v-if="experience.responsibilities.length > 0"
+            class="list-disc p-0 pl-4 pt-2"
+          >
+            <li
+              class="text-zinc-400 dark:text-zinc-500"
+              v-for="(responsibility, respIndex) in experience.responsibilities"
+              :key="respIndex"
+            >
+              <span class="text-zinc-800 dark:text-zinc-100">{{
+                responsibility
+              }}</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="md:my-10 my-5 w-full">
+        <h2 class="font-bold text-2xl my-6 flex items-center">
+          Community Experience
+          <Icon name="heroicons:briefcase-solid" class="ml-3" />
+        </h2>
+        <div
+          v-for="(experience, expIndex) in community_experiens"
+          :key="expIndex"
+          class="timeline-item text-sm"
+        >
+          <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
+            {{ experience.role }}
+            <br />
+            <span class="text-green-600 dark:text-green-500">
+              {{ experience.company }}
+            </span>
+            <br />
+            <span class="text-zinc-500 dark:text-zinc-400">
+              ({{ experience.from }} - {{ experience.to }})
+            </span>
+          </h3>
+          <ul
+            v-if="experience.responsibilities.length > 0"
+            class="list-disc p-0 pl-4 pt-2"
+          >
+            <li
+              class="text-zinc-400 dark:text-zinc-500"
+              v-for="(responsibility, respIndex) in experience.responsibilities"
+              :key="respIndex"
+            >
+              <span class="text-zinc-800 dark:text-zinc-100">{{
+                responsibility
+              }}</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education Timeline -->
+      <section class="md:my-10 my-5 w-full">
+        <h2 class="font-bold text-2xl my-6 flex items-center">
+          Education
+          <Icon name="heroicons:academic-cap-solid" class="ml-3" />
+        </h2>
+        <div class="timeline-item text-sm">
+          <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
+            {{ education.institution }}
+            <br />
+            <span class="text-green-600 dark:text-green-500">
+              {{ education.degree }} - {{ education.major }}
+            </span>
+            <br />
+            <span class="text-zinc-500 dark:text-zinc-400">
+              ({{ education.from }} - {{ education.to }})
+            </span>
+          </h3>
+        </div>
+      </section>
+      <AppFooter />
     </div>
-    <!-- Skillset -->
-    <section class="my-4 w-full p-8">
-      <h2 class="font-bold text-2xl my-6 flex items-center">
-        Skills
-        <Icon name="heroicons:wrench-screwdriver-solid" class="ml-3" />
-      </h2>
-
-      <div class="mb-1" v-for="(skills, category) in skillset" :key="category">
-        <h3
-          class="inline-block font-semibold text-lg mr-2 text-zinc-700 dark:text-zinc-200"
-        >
-          {{ category }}:
-        </h3>
-        <ul class="inline-block p-0">
-          <li
-            v-for="skill in skills"
-            :key="skill"
-            class="px-3 py-[.125rem] inline-block dark:border dark:border-green-500 bg-green-300 dark:bg-transparent text-zinc-800 dark:text-green-500 font-medium rounded-full text-sm mr-1 mb-1"
-          >
-            {{ skill }}
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Experience timeline -->
-    <section class="ml-2 my-4 w-full p-8">
-      <h2 class="font-bold text-2xl my-6 flex items-center">
-        Work Experience
-        <Icon name="heroicons:briefcase-solid" class="ml-3" />
-      </h2>
-      <div
-        v-for="(experience, expIndex) in experiences"
-        :key="expIndex"
-        class="timeline-item"
-      >
-        <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
-          {{ experience.role }}
-          <br />
-          <span class="text-green-600 dark:text-green-500">
-            {{ experience.company }}
-          </span>
-          <br />
-          <span class="text-zinc-500 dark:text-zinc-400">
-            ({{ experience.from }} - {{ experience.to }})
-          </span>
-        </h3>
-        <ul
-          v-if="experience.responsibilities.length > 0"
-          class="list-disc p-0 pl-4 pt-2"
-        >
-          <li
-            class="text-zinc-400 dark:text-zinc-500"
-            v-for="(responsibility, respIndex) in experience.responsibilities"
-            :key="respIndex"
-          >
-            <span class="text-zinc-800 dark:text-zinc-100">{{
-              responsibility
-            }}</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="ml-2 my-4 w-full p-8">
-      <h2 class="font-bold text-2xl my-6 flex items-center">
-        Community Experience
-        <Icon name="heroicons:briefcase-solid" class="ml-3" />
-      </h2>
-      <div
-        v-for="(experience, expIndex) in community_experiens"
-        :key="expIndex"
-        class="timeline-item"
-      >
-        <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
-          {{ experience.role }}
-          <br />
-          <span class="text-green-600 dark:text-green-500">
-            {{ experience.company }}
-          </span>
-          <br />
-          <span class="text-zinc-500 dark:text-zinc-400">
-            ({{ experience.from }} - {{ experience.to }})
-          </span>
-        </h3>
-        <ul
-          v-if="experience.responsibilities.length > 0"
-          class="list-disc p-0 pl-4 pt-2"
-        >
-          <li
-            class="text-zinc-400 dark:text-zinc-500"
-            v-for="(responsibility, respIndex) in experience.responsibilities"
-            :key="respIndex"
-          >
-            <span class="text-zinc-800 dark:text-zinc-100">{{
-              responsibility
-            }}</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Education Timeline -->
-    <section class="ml-2 my-4 w-full p-8">
-      <h2 class="font-bold text-2xl my-6 flex items-center">
-        Education
-        <Icon name="heroicons:academic-cap-solid" class="ml-3" />
-      </h2>
-      <div class="timeline-item">
-        <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
-          {{ education.institution }}
-          <br />
-          <span class="text-green-600 dark:text-green-500">
-            {{ education.degree }} - {{ education.major }}
-          </span>
-          <br />
-          <span class="text-zinc-500 dark:text-zinc-400">
-            ({{ education.from }} - {{ education.to }})
-          </span>
-        </h3>
-      </div>
-    </section>
-    <AppFooter />
   </main>
 </template>
 
 <script setup>
-// dark theme attribute
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
-
 const seoMeta = {
   title: "Muhamad Zain - Software Enginner",
   description: "👨‍💻 Coding life in PHP, JavaScript, and TypeScript 🚀",
   image: "/og-image.png",
   page: "resume",
 };
+
 useServerSeoMeta({
   title: seoMeta.title,
   ogTitle: seoMeta.title,
@@ -220,7 +223,7 @@ const community_experiens = [
   {
     role: "CO-Organizer",
     company: "RPL Skandakra Dev",
-    from: "Jan 2017",
+    from: "Jan 2021",
     to: "Present",
     responsibilities: [
       "Collaborate with Project Owner, Project Manager to create Software as a Service (SaaS).",

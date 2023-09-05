@@ -3,7 +3,7 @@
     <Title>{{ seoMeta.title }}</Title>
     <Meta name="description" :content="seoMeta.description" />
     <AppNav class="md:flex flex-col" />
-    <section id="picks-container" class="h-screen p-8">
+    <section id="bookmark-container" class="p-8">
       <h1 class="font-bold text-2xl mb-6">Bookmarks</h1>
       <blockquote>Content from across the web I found interesting.</blockquote>
       <br />

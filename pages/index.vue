@@ -9,7 +9,7 @@
       <h1 class="font-semibold text-2xl mb-6">
         Hi, my name is Muhamad Zain 👋
       </h1>
-      <p class="text-xl">
+      <p class="text-md">
         I'm a Software Engineer based in Jakarta, Indonesia, with a deep passion
         for programming. Over the years, I've honed my skills and expertise, and
         my current focus is on backend development and DevOps practices. With a
@@ -21,7 +21,7 @@
     </section>
     <!-- Skills -->
     <section class="p-8">
-      <h2 class="font-semibold text-xl mb-2 py-2">Skills</h2>
+      <h2 class="font-semibold text-md mb-2 py-2">Skills</h2>
       <ul class="p-0">
         <li
           v-for="skill in skills"
@@ -35,7 +35,7 @@
 
     <!-- Status -->
     <section class="p-8">
-      <h2 class="font-semibold text-xl mb-2 py-2">Currently</h2>
+      <h2 class="font-semibold text-md mb-2 py-2">Currently</h2>
       <div class="columns-1 lg:columns-2 gap-6">
         <statusCard
           v-for="(content, type) in currently"
@@ -47,7 +47,7 @@
     </section>
     <!-- book marks -->
     <section class="p-8">
-      <h2 class="font-semibold text-xl mb-2 py-2">Latest Bookmarks</h2>
+      <h2 class="font-semibold text-md mb-2 py-2">Latest Bookmarks</h2>
       <template v-if="pending">
         <PickSkeleton v-for="skeleton in skeletons" :key="skeleton" />
       </template>

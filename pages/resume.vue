@@ -6,16 +6,16 @@
     <AppNav class="md:flex flex-col" />
     <div class="introduction mt-5 p-8">
       <!-- Name  -->
-      <h1 class="font-bold text-3xl">Hi, my name is Muhamad Zain 👋</h1>
+      <h1 class="font-bold text-2xl">Hi, my name is Muhamad Zain 👋</h1>
       <!-- Professional Summary -->
-      <p class="w-full my-5 md:text-xl mt-5">
+      <p class="w-full my-5 md:text-md mt-5">
         I am a seasoned Software Engineer based in Jakarta, Indonesia, with a
         strong dedication to backend development and DevOps practices.
         Originally hailing from Karanganyar, Central Java, I began my journey
         into software engineering at (Vocational High School / SMK Negeri) 2
         Karanganyar.
       </p>
-      <p class="w-full my-5 md:text-xl">
+      <p class="w-full my-5 md:text-md">
         As a Software Engineering graduate, I have cultivated my skills and
         expertise in crafting robust backend systems and implementing efficient
         DevOps workflows. My experience spans a spectrum of technologies, with a
@@ -23,7 +23,7 @@
         Node.js, Laravel, TypeScript, and Express.js, while also excelling in
         the realm of DevOps.
       </p>
-      <p class="w-full mb-2 md:text-xl">
+      <p class="w-full mb-2 md:text-md">
         With a solid foundation in backend development and a keen interest in
         DevOps methodologies, I am committed to delivering reliable and
         efficient solutions, contributing to the ever-evolving landscape of

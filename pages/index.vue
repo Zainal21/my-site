@@ -5,20 +5,22 @@
     <Meta name="description" :content="seoMeta.description" />
     <AppNav />
     <ProfileCard />
-    <section>
+    <section class="p-8">
       <h1 class="font-semibold text-2xl mb-6">
         Hi, my name is Muhamad Zain 👋
       </h1>
-      <p class="text-md">
-        I'm currently working fulltime Software Enginner at a company in
-        Jakarta. Born in Karanganyar, Central Java, Indonesia. Interested in the
-        world of technology, especially in the world of programming, and a
-        sofware engineer who is quite experienced in creating, developing
-        web-based and mobile-based applications.
+      <p class="text-xl">
+        I'm a Software Engineer based in Jakarta, Indonesia, with a deep passion
+        for programming. Over the years, I've honed my skills and expertise, and
+        my current focus is on backend development and DevOps practices. With a
+        strong foundation in creating web and mobile applications, I'm now
+        dedicated to crafting robust backend systems and implementing efficient
+        DevOps workflows. Here, I share my experiences, insights, and projects
+        that showcase my commitment to these exciting fields.
       </p>
     </section>
     <!-- Skills -->
-    <section>
+    <section class="p-8">
       <h2 class="font-semibold text-xl mb-2 py-2">Skills</h2>
       <ul class="p-0">
         <li
@@ -32,7 +34,7 @@
     </section>
 
     <!-- Status -->
-    <section>
+    <section class="p-8">
       <h2 class="font-semibold text-xl mb-2 py-2">Currently</h2>
       <div class="columns-1 lg:columns-2 gap-6">
         <statusCard
@@ -43,11 +45,27 @@
         />
       </div>
     </section>
+    <!-- book marks -->
+    <section class="p-8">
+      <h2 class="font-semibold text-xl mb-2 py-2">Latest Bookmarks</h2>
+      <template v-if="pending">
+        <PickSkeleton v-for="skeleton in skeletons" :key="skeleton" />
+      </template>
+      <template v-else>
+        <BookmarkCard
+          v-for="bookmark in bookmarks.slice(1, 5)"
+          :key="bookmark.link"
+          :bookmark="bookmark"
+        />
+      </template>
+    </section>
     <AppFooter />
   </main>
 </template>
 
 <script setup>
+import BookmarkCard from "~/components/cards/BookmarkCard.vue";
+
 const seoMeta = {
   title: "Muhamad Zain - Software Enginner",
   description: "👨‍💻 Coding life in PHP, JavaScript, and TypeScript 🚀",
@@ -92,4 +110,9 @@ const currently = {
   Listening: "Jadi Developer Tanpa Background IT Ala Diva Fathan Margono",
   Playing: "Hindia - Dehidrasi",
 };
+
+// Skeletons
+const skeletons = [...Array(5).fill(Math.random())];
+
+const { pending, data: bookmarks } = await useLazyFetch("/api/bookmarks");
 </script>

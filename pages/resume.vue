@@ -4,14 +4,34 @@
     <Title>{{ seoMeta.title }}</Title>
     <Meta name="description" :content="seoMeta.description" />
     <AppNav class="md:flex flex-col" />
-    <div class="introduction mt-5">
+    <div class="introduction mt-5 p-8">
       <!-- Name  -->
       <h1 class="font-bold text-3xl">Hi, my name is Muhamad Zain 👋</h1>
       <!-- Professional Summary -->
-      <p class="w-full my-6">{{ summary }}</p>
+      <p class="w-full my-5 md:text-xl mt-5">
+        I am a seasoned Software Engineer based in Jakarta, Indonesia, with a
+        strong dedication to backend development and DevOps practices.
+        Originally hailing from Karanganyar, Central Java, I began my journey
+        into software engineering at (Vocational High School / SMK Negeri) 2
+        Karanganyar.
+      </p>
+      <p class="w-full my-5 md:text-xl">
+        As a Software Engineering graduate, I have cultivated my skills and
+        expertise in crafting robust backend systems and implementing efficient
+        DevOps workflows. My experience spans a spectrum of technologies, with a
+        current focus on harnessing the power of backend technologies such as
+        Node.js, Laravel, TypeScript, and Express.js, while also excelling in
+        the realm of DevOps.
+      </p>
+      <p class="w-full mb-2 md:text-xl">
+        With a solid foundation in backend development and a keen interest in
+        DevOps methodologies, I am committed to delivering reliable and
+        efficient solutions, contributing to the ever-evolving landscape of
+        software engineering.
+      </p>
     </div>
     <!-- Skillset -->
-    <section class="my-4 w-full">
+    <section class="my-4 w-full p-8">
       <h2 class="font-bold text-2xl my-6 flex items-center">
         Skills
         <Icon name="heroicons:wrench-screwdriver-solid" class="ml-3" />
@@ -36,9 +56,9 @@
     </section>
 
     <!-- Experience timeline -->
-    <section class="ml-2 my-4 w-full">
+    <section class="ml-2 my-4 w-full p-8">
       <h2 class="font-bold text-2xl my-6 flex items-center">
-        Experience
+        Work Experience
         <Icon name="heroicons:briefcase-solid" class="ml-3" />
       </h2>
       <div
@@ -73,9 +93,46 @@
         </ul>
       </div>
     </section>
+    <section class="ml-2 my-4 w-full p-8">
+      <h2 class="font-bold text-2xl my-6 flex items-center">
+        Community Experience
+        <Icon name="heroicons:briefcase-solid" class="ml-3" />
+      </h2>
+      <div
+        v-for="(experience, expIndex) in community_experiens"
+        :key="expIndex"
+        class="timeline-item"
+      >
+        <h3 class="font-bold text-zinc-700 dark:text-zinc-200">
+          {{ experience.role }}
+          <br />
+          <span class="text-green-600 dark:text-green-500">
+            {{ experience.company }}
+          </span>
+          <br />
+          <span class="text-zinc-500 dark:text-zinc-400">
+            ({{ experience.from }} - {{ experience.to }})
+          </span>
+        </h3>
+        <ul
+          v-if="experience.responsibilities.length > 0"
+          class="list-disc p-0 pl-4 pt-2"
+        >
+          <li
+            class="text-zinc-400 dark:text-zinc-500"
+            v-for="(responsibility, respIndex) in experience.responsibilities"
+            :key="respIndex"
+          >
+            <span class="text-zinc-800 dark:text-zinc-100">{{
+              responsibility
+            }}</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Education Timeline -->
-    <section class="ml-2 my-4 w-full">
+    <section class="ml-2 my-4 w-full p-8">
       <h2 class="font-bold text-2xl my-6 flex items-center">
         Education
         <Icon name="heroicons:academic-cap-solid" class="ml-3" />
@@ -123,9 +180,6 @@ useServerSeoMeta({
   twitterCard: "summary_large_image",
 });
 
-const summary =
-  "I'm currently working fulltime Software Enginner at a company in Jakarta. Born in Karanganyar, Central Java, Indonesia Graduated Software Engineering student from (Vocational High School / SMK Negeri) 2 Karanganyar, Software Engineering graduated who is interested in the world of technology, especially in the world of programming, and a sofware engineer who is quite experienced in creating, developing web-based and mobile-based applications. Recently, the focus has been on coding using Javascript with JAMStack (Javascript, API, Markup) and Some Web Development Technology such as NodeJS, Laravel, Typescript, React, ExpressJS etc.";
-
 const experiences = [
   {
     role: "Software Engineer",
@@ -134,8 +188,8 @@ const experiences = [
     to: "Present",
     responsibilities: [
       "Collaborate with Project Owner, Project Manager to create Software as a Service (SaaS).",
-      "Carrying out database design and creating application requirements.",
-      "Carry out maintenance and add features to the application.",
+      "Making database design and creating application requirements.",
+      "Maintenance and add features to the application.",
       "Making and adding features to the application utility",
     ],
   },
@@ -146,8 +200,8 @@ const experiences = [
     to: "Oct 2022",
     responsibilities: [
       "Collaborate with the Project Manager in making applications.",
-      "Carrying out database design and creating application requirements.",
-      "Carry out maintenance and add features to the application.",
+      "Making database design and creating application requirements.",
+      "Maintenance and add features to the application.",
     ],
   },
   {
@@ -156,8 +210,23 @@ const experiences = [
     from: "Jan 2020",
     to: "Apr 2020",
     responsibilities: [
-      "Carrying out database design and creating application requirements.",
+      "Making database design and creating application requirements.",
       "Collaborate with the Project Manager in making applications.",
+    ],
+  },
+];
+
+const community_experiens = [
+  {
+    role: "CO-Organizer",
+    company: "RPL Skandakra Dev",
+    from: "Jan 2017",
+    to: "Present",
+    responsibilities: [
+      "Collaborate with Project Owner, Project Manager to create Software as a Service (SaaS).",
+      "Making database design and creating application requirements.",
+      "Maintenance and add features to the application.",
+      "Making and adding features to the application utility",
     ],
   },
 ];
@@ -186,7 +255,17 @@ const skillset = {
     "Vue.js",
     "React.js",
   ],
-  Familiarity: ["Git", "Jira", "Node.js", "PostgreSQL", "MySQL"],
+  Familiarity: [
+    "Git",
+    "Jira",
+    "Node.js",
+    "PostgreSQL",
+    "MySQL",
+    "Docker",
+    "Docker Swarm",
+    "Jenkins",
+    "Gitlab CI",
+  ],
 };
 </script>
 

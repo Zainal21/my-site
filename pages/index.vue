@@ -4,9 +4,9 @@
     <Title>{{ seoMeta.title }}</Title>
     <Meta name="description" :content="seoMeta.description" />
     <AppNav />
-    <div class="p-8">
+    <div class="md:p-8 p-3">
       <ProfileCard />
-      <section class="p-8">
+      <section class="md:p-8 p-3">
         <h1 class="font-semibold text-2xl mb-6">
           Hi, my name is Muhamad Zain 👋
         </h1>
@@ -21,22 +21,8 @@
           fields.
         </p>
       </section>
-      <!-- Skills -->
-      <section class="p-8">
-        <h2 class="font-semibold text-sm leading-relaxed mb-2 py-2">Skills</h2>
-        <ul class="p-0">
-          <li
-            v-for="skill in skills"
-            :key="skill"
-            class="px-3 py-1 inline-block dark:border dark:border-green-500 bg-green-300 dark:bg-transparent text-zinc-800 dark:text-green-500 font-medium rounded-full text-sm mr-1 mb-1"
-          >
-            {{ skill }}
-          </li>
-        </ul>
-      </section>
-
       <!-- Status -->
-      <section class="p-8">
+      <section class="md:p-8 p-3">
         <h2 class="font-semibold text-sm leading-relaxed mb-2 py-2">
           Currently
         </h2>
@@ -50,7 +36,7 @@
         </div>
       </section>
       <!-- book marks -->
-      <section class="p-8">
+      <section class="md:p-8 p-3">
         <h2 class="font-semibold text-sm leading-relaxed mb-2 py-2">
           Latest Bookmarks
         </h2>
@@ -94,22 +80,6 @@ useServerSeoMeta({
   ogLocale: "en_US",
   twitterCard: "summary_large_image",
 });
-
-const skills = ref([
-  "Laravel",
-  "Vue.JS",
-  "Codeigniter",
-  "Git",
-  "HTML",
-  "CSS",
-  "SQL",
-  "Node.js",
-  "Kotlin",
-  "Express.js",
-  "Jenkins",
-  "Docker",
-  "Docker Swarm",
-]);
 
 const currently = {
   Learning: "Kubernetes",

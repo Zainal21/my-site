@@ -226,10 +226,8 @@ const community_experiens = [
     from: "Jan 2021",
     to: "Present",
     responsibilities: [
-      "Collaborate with Project Owner, Project Manager to create Software as a Service (SaaS).",
-      "Making database design and creating application requirements.",
-      "Maintenance and add features to the application.",
-      "Making and adding features to the application utility",
+      "Coordinating community meeting events.",
+      "Teaching coding to community members.",
     ],
   },
 ];
@@ -256,7 +254,7 @@ const skillset = {
     "Codeigniter 3",
     "Nest.js",
     "Vue.js",
-    "React.js",
+    "Nuxt.JS",
   ],
   Familiarity: [
     "Git",

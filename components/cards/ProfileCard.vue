@@ -10,10 +10,12 @@
       alt="Profile Picture"
       class="md:w-36 w-2/5 max-w-[8rem] min-w-[5rem] rounded-full border-[.05rem] border-zinc-300 dark:border-none"
     />
-    <h2 class="text-xl md:text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+    <h2
+      class="text-md md:text-2xl md:text-left text-center font-bold text-zinc-900 dark:text-zinc-100"
+    >
       Muhamad Zainal Arifin
     </h2>
-    <h2 class="text-lg md:text-xl font-medium text-zinc-700 dark:text-zinc-400">
+    <h2 class="text-md md:text-xl font-medium text-zinc-700 dark:text-zinc-400">
       Software Engineer
     </h2>
     <div

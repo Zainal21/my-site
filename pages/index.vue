@@ -1,10 +1,10 @@
 <!-- Landing Page -->
 <template>
-  <main id="home" class="[&>*]:mb-6 last:[&>*]:mb-0">
+  <main id="home">
     <Title>{{ seoMeta.title }}</Title>
     <Meta name="description" :content="seoMeta.description" />
+    <AppNav />
     <div class="p-8">
-      <AppNav />
       <ProfileCard />
       <section class="p-8">
         <h1 class="font-semibold text-2xl mb-6">

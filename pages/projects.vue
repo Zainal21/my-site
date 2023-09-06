@@ -10,7 +10,7 @@
       </blockquote>
       <div class="my-4 w-full p-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ProjectCard
-          img-url="https://raw.githubusercontent.com/Zainal21/anggit-febriyanto-indri-wedding-site/main/screenshot/screenshot-result.png"
+          img-url="content/weeding-invitation.png"
           project-title="Wedding Invitation"
           project-description="Showcasing a modern and elegant design with features
         such as RSVP management, event details, and photo galleries"
@@ -25,7 +25,7 @@
           :tags="['Laravel', 'Next.JS', 'Chakra UI']"
         />
         <ProjectCard
-          img-url="https://raw.githubusercontent.com/erpeel-a/Sistem-Pengaduan-Sekolah-SMKN2Karanganyar-Frontend/main/images/mockup.png"
+          img-url="content/complaint-school.png"
           project-title="Pengaduan Sekolah"
           project-description="A platform for reporting school-related issues swiftly and effectively, promoting a responsive and accountable school community."
           project-url="https://pengaduan-smkn2kra.netlify.app"
@@ -55,6 +55,7 @@
         />
       </div>
     </section>
+    <AppFooter />
   </main>
 </template>
 

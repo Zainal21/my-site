@@ -12,7 +12,7 @@
         </h1>
         <p class="text-sm leading-relaxed">
           I'm a Software Engineer based in Jakarta, Indonesia, with a deep
-          passion for programming. Over the years, I've honed my skills and
+          passion for programming. More than 3 years, I've honed my skills and
           expertise, and my current focus is on backend development and DevOps
           practices. With a strong foundation in creating web and mobile
           applications, I'm now dedicated to crafting robust backend systems and

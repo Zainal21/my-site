@@ -21,7 +21,7 @@
           img-url="content/school-compro.png"
           project-title="SMKN 2 Karanganyar"
           project-description="A school's company profile website, showcasing essential information about the institution, its history, mission, and educational offerings"
-          project-url="#"
+          project-url="https://smkn2kra.sch.id"
           :tags="['Laravel', 'Next.JS', 'Chakra UI']"
         />
         <ProjectCard

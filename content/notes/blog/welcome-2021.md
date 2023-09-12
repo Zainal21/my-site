@@ -5,7 +5,7 @@ description: "Welcome to 2021! It's time to reflect on our achievements and impr
 updated: 1688877769873
 created: 1686355733170
 image: "/content/cover/_thumbnail.png"
-cover_image: "/content/cover/_thumbnail.png"
+cover_image: https://raw.githubusercontent.com/Zainal21/Muhamadzain.dev/main/public/content/cover/_thumbnail.jpg
 head:
   meta:
     - name: "keywords"

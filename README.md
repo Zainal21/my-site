@@ -1,63 +1,29 @@
-# Nuxt 3 Minimal Starter
+# Muhamad Zain's Web Profile
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my personal web profile repository! This is where I showcase my personal website and share some of the projects I've been working on.
 
-## Setup
+## About Me
 
-Make sure to install the dependencies:
+I'm Muhamad Zain, a web developer passionate about creating interactive and engaging web experiences. My goal is to leverage technology to solve real-world problems and create beautiful user interfaces.
 
-```bash
-# npm
-npm install
+## Website
 
-# pnpm
-pnpm install
+You can visit my personal website at [muhamadzain.site](https://muhamadzain.site). Here, you'll find information about me, my skills, and the projects I've been involved in. Feel free to explore and get in touch!
 
-# yarn
-yarn install
-```
+## Getting in Touch
 
-## Development Server
+If you want to collaborate on a project, have a question, or just want to say hi, you can reach out to me through:
 
-Start the development server on `http://localhost:3000`:
+- Email: [your.email@example.com](mailto:muhamadzaindev@gmail.com)
+- LinkedIn: [Muhamad Zain](https://www.linkedin.com/in/muhammad-zainal-arifin/)
+- Twitter: [@penulisduduk](https://twitter.com/penulisduduk)
 
-```bash
-# npm
-npm run dev
+## Contributions
 
-# pnpm
-pnpm run dev
+If you have any suggestions, improvements, or bug fixes for my website or projects, please feel free to create a pull request or open an issue. Contributions are welcome!
 
-# yarn
-yarn dev
-```
+## License
 
-## Production
+This project is licensed under the [MIT License](LICENSE.md).
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Thank you for visiting my GitHub repository and checking out my personal web profile!

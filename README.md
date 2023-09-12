@@ -14,7 +14,7 @@ You can visit my personal website at [muhamadzain.site](https://muhamadzain.site
 
 If you want to collaborate on a project, have a question, or just want to say hi, you can reach out to me through:
 
-- Email: [your.email@example.com](mailto:muhamadzaindev@gmail.com)
+- Email: [muhamadzaindev@gmail.com](mailto:muhamadzaindev@gmail.com)
 - LinkedIn: [Muhamad Zain](https://www.linkedin.com/in/muhammad-zainal-arifin/)
 - Twitter: [@penulisduduk](https://twitter.com/penulisduduk)
 

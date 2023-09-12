@@ -4,8 +4,11 @@
     <Meta name="description" :content="seoMeta.description" />
     <AppNav class="md:flex flex-col" />
     <section id="blog-container" class="p-8">
-      <h1 class="font-bold text-2xl mb-6">Bookmarks</h1>
-      <blockquote>Content from across the web I found interesting.</blockquote>
+      <h1 class="font-bold text-2xl mb-6">Blog</h1>
+      <blockquote>
+        ome of the tweets in the form of stories, experiences and knowledge that
+        I can share
+      </blockquote>
       <br />
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <template v-if="pending">

@@ -4,7 +4,7 @@ title: Welcome to 2021! Setting New Goals
 description: "Welcome to 2021! It's time to reflect on our achievements and improvements from 2020. Let's introspect."
 updated: 1688877769873
 created: 1686355733170
-image: "/content/cover/_thumbnail.png"
+image: https://raw.githubusercontent.com/Zainal21/Muhamadzain.dev/main/public/content/cover/_thumbnail.jpg
 cover_image: https://raw.githubusercontent.com/Zainal21/Muhamadzain.dev/main/public/content/cover/_thumbnail.jpg
 head:
   meta:
@@ -52,4 +52,4 @@ Many goals were left unachieved in 2020, and I don't have clear plans for 2021 y
 - Actively contributing to Open Source projects
 - And much more
 
-## Please keep me in your prayers, and I hope to achieve all of these. Aamiin ☺️
+#### Please keep me in your prayers, and I hope to achieve all of these. Aamiin ☺️

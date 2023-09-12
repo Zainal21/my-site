@@ -23,10 +23,10 @@
       </section>
       <!-- Status -->
       <section class="md:p-8 p-3">
-        <h2 class="font-semibold text-sm leading-relaxed mb-2 py-2">
+        <h2 class="font-semibold text-base leading-relaxed mb-2 py-2">
           Currently
         </h2>
-        <div class="columns-1 lg:columns-2 gap-6">
+        <div class="columns-1 lg:columns-2 gap-6 text-md">
           <statusCard
             v-for="(content, type) in currently"
             :key="type"
@@ -37,7 +37,7 @@
       </section>
       <!-- book marks -->
       <section class="md:p-8 p-3">
-        <h2 class="font-semibold text-sm leading-relaxed mb-2 py-2">
+        <h2 class="font-semibold text-base leading-relaxed mb-2 py-2">
           Latest Bookmarks
         </h2>
         <template v-if="pending">

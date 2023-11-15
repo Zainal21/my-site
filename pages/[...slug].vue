@@ -1,7 +1,7 @@
 <script setup>
-  definePageMeta({
-    layout: "blog-post-layout"
-  });
+definePageMeta({
+  layout: "blog-post-layout",
+});
 </script>
 
 <template>
@@ -80,28 +80,28 @@
 </template>
 
 <style scoped>
-  img {
-    @apply w-full object-cover bg-cover origin-center border-[.75px] border-zinc-300 dark:border-zinc-600;
-  }
+img {
+  @apply w-full object-cover bg-cover origin-center border-[.75px] border-zinc-300 dark:border-zinc-600;
+}
 
-  details > summary::marker,
-  details > summary::-webkit-details-marker {
-    @apply hidden;
-  }
+details > summary::marker,
+details > summary::-webkit-details-marker {
+  @apply hidden;
+}
 
-  /* Collapsed */
-  details > summary .arrow-right {
-    @apply inline-block;
-  }
-  details > summary .arrow-down {
-    @apply hidden;
-  }
+/* Collapsed */
+details > summary .arrow-right {
+  @apply inline-block;
+}
+details > summary .arrow-down {
+  @apply hidden;
+}
 
-  /* Expanded */
-  details[open] > summary .arrow-down {
-    @apply inline-block;
-  }
-  details[open] > summary .arrow-right {
-    @apply hidden;
-  }
+/* Expanded */
+details[open] > summary .arrow-down {
+  @apply inline-block;
+}
+details[open] > summary .arrow-right {
+  @apply hidden;
+}
 </style>

@@ -82,10 +82,10 @@ useServerSeoMeta({
 });
 
 const currently = {
-  Learning: "Kubernetes",
+  Learning: "Go-Lang with GoFiber",
   Reading: "The Pragmatic Programmer",
   Listening: "Jadi Developer Tanpa Background IT Ala Diva Fathan Margono",
-  Playing: "Hindia - Dehidrasi",
+  Playing: "Big Data, Jammie Lidell - Clean",
 };
 
 // Skeletons

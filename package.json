@@ -1,26 +1,27 @@
 {
-  "name": "nuxt-app",
+  "name": "muhamad-zain.site",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/content": "^2.7.0",
-    "@nuxt/image": "^1.0.0-rc.1",
-    "@nuxtjs/partytown": "^1.3.0",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@tailwindcss/typography": "^0.5.9",
-    "@vueuse/nuxt": "^10.2.0",
-    "nuxt": "^3.7.0",
-    "nuxt-icon": "^0.4.1",
-    "@nuxt/devtools": "latest"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@vueuse/components": "^10.2.0",
-    "axios": "^1.4.0"
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.0.4"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
   }
 }

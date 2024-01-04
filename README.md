@@ -1,29 +1,40 @@
-# Muhamad Zain's Web Profile
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Welcome to my personal web profile repository! This is where I showcase my personal website and share some of the projects I've been working on.
+## Getting Started
 
-## About Me
+First, run the development server:
 
-I'm Muhamad Zain, a web developer passionate about creating interactive and engaging web experiences. My goal is to leverage technology to solve real-world problems and create beautiful user interfaces.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Website
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can visit my personal website at [muhamadzain.site](https://muhamadzain.site). Here, you'll find information about me, my skills, and the projects I've been involved in. Feel free to explore and get in touch!
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-## Getting in Touch
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-If you want to collaborate on a project, have a question, or just want to say hi, you can reach out to me through:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- Email: [muhamadzaindev@gmail.com](mailto:muhamadzaindev@gmail.com)
-- LinkedIn: [Muhamad Zain](https://www.linkedin.com/in/muhammad-zainal-arifin/)
-- Twitter: [@penulisduduk](https://twitter.com/penulisduduk)
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Contributions
+## Learn More
 
-If you have any suggestions, improvements, or bug fixes for my website or projects, please feel free to create a pull request or open an issue. Contributions are welcome!
+To learn more about Next.js, take a look at the following resources:
 
-## License
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-This project is licensed under the [MIT License](LICENSE.md).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Thank you for visiting my GitHub repository and checking out my personal web profile!
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -1,4 +1,3 @@
-// Next.js
 import Image from "next/image";
 import { Border } from "../Border";
 

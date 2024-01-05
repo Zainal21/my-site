@@ -3,7 +3,7 @@ export const HomePageLayout: React.FC<{
 }> = ({ children }) => {
   return (
     <div className="flex flex-col items-center justify-center h-screen scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-800 scrollbar-thumb-rounded-full">
-      <div className="flex flex-col h-full py-20 w-[90%] md:w-[40rem] mt-12">
+      <div className="flex flex-col h-full w-[90%] md:w-[40rem] mt-12">
         {children}
       </div>
     </div>

@@ -9,9 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.4",
     "@headlessui/react": "^1.6.4",
     "@headlessui/tailwindcss": "^0.1.0",
     "@next/font": "^13.1.0",
@@ -19,6 +16,7 @@
     "@tippyjs/react": "^4.2.6",
     "@types/bad-words": "^3.0.1",
     "@vercel/og": "^0.0.21",
+    "@vercel/speed-insights": "^1.0.2",
     "bad-words": "^3.0.4",
     "canvas-confetti": "^1.6.0",
     "copy-to-clipboard": "^3.3.2",
@@ -26,7 +24,10 @@
     "file-saver": "^2.0.5",
     "framer-motion": "^7.6.1",
     "gray-matter": "^4.0.3",
+    "next": "14.0.4",
     "nprogress": "^0.2.0",
+    "react": "^18",
+    "react-dom": "^18",
     "react-icons": "^4.3.1",
     "react-type-animation": "^2.1.1",
     "remark": "^14.0.2",
@@ -35,15 +36,15 @@
     "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/react-dom": "^18",
     "@types/file-saver": "^2.0.5",
     "@types/node": "17.0.31",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18",
+    "@types/react-dom": "^18",
     "autoprefixer": "^10.4.13",
     "eslint": "8.15.0",
     "eslint-config-next": "^13.0.7",
-    "postcss": "^8.4.21"
+    "postcss": "^8.4.21",
+    "typescript": "^5"
   }
 }

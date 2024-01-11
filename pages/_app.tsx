@@ -1,4 +1,5 @@
 import { Inter, Roboto } from "@next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { AppProps } from "next/app";
 import { Router } from "next/router";
 import NProgress from "nprogress";
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main className={inter.className}>
       <Component {...pageProps} />
+      <SpeedInsights />
     </main>
   );
 }

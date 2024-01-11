@@ -1,6 +1,6 @@
 import { FiMoon, FiSun } from "react-icons/fi";
 import { useEffect, useState } from "react";
-import { RoundedButtonBox } from "../design-system";
+import { RoundedButtonBox } from "../../design-system";
 
 const ToggleNav = () => {
   const [theme, setTheme] = useState<string | null>(null);

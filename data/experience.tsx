@@ -1,0 +1,53 @@
+import { Experience } from "@/types/experience";
+
+export const experienceList: Experience[] = [
+  {
+    id: 1,
+    name: "Pando Akar Teknologi (OXY Creative Outsource)",
+    description: "Software Developer",
+    year: 2023,
+    employmentType: "contract",
+    location: "Jakarta Selatan, Indonesia",
+    remote: true,
+    current: true,
+    link: "https://pando.id",
+    task: "Develop an eKYC (electronic Know Your Customer) service API for identity verification",
+  },
+  {
+    id: 2,
+    name: "OXY Creative Inc",
+    description: "Software Developer",
+    year: 2022,
+    employmentType: "full-time",
+    location: "Jakarta Selatan - Indonesia",
+    remote: true,
+    current: true,
+    link: "https://www.oxycreative.com",
+    task: "Develop a software product with specified features and functionalities meeting project requirements and deadlines",
+  },
+
+  {
+    id: 3,
+    name: "Cipta Karya Infotika (Cikajogja)",
+    description: "Software Engineer",
+    year: 2020,
+    employmentType: "full-time",
+    location: "Sleman, Yogyakarta - Indonesia",
+    remote: false,
+    current: false,
+    link: "#",
+    task: "Create a software solution, adhering to project requirements and deadlines, with defined features.",
+  },
+  {
+    id: 4,
+    name: "Kadang Koding Indonesia",
+    description: "Web Developer",
+    year: 2020,
+    employmentType: "internship",
+    location: "Surakarta, Jawa Tengah - Indonesia",
+    remote: false,
+    current: false,
+    link: "#",
+    task: "Create a software solution, adhering to project requirements and deadlines, with defined features.",
+  },
+];

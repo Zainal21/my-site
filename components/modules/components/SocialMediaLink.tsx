@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { links } from "@/libs/links";
+import { links } from "@/data/links";
 
 const SocialMediaLink = () => {
   return (
@@ -25,7 +25,7 @@ const LinkWrapper: React.FC<LinkWrapperProps> = ({ href, children, title }) => {
     <Link
       href={href}
       className={`text-2xl duration-300 focus:ring-4 focus:ring-offset-4 dark:ring-offset-black rounded
-      ring-[#f54bff}] outline-none cursor-pointer mr-6 hover:text-black dark:hover:text-white text-gray-600
+      ring-[#10161a}] outline-none cursor-pointer mr-6 hover:text-black dark:hover:text-white text-gray-600
       dark:text-gray-300 hover:scale-110`}
       title={title}
       target="_blank"

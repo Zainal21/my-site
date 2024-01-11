@@ -1,5 +1,5 @@
 import { Heading } from "@/components/design-system/components";
-import { SocialMediaLink } from ".";
+import { SocialMediaLink } from "..";
 
 const MainSection: React.FC = () => {
   return (

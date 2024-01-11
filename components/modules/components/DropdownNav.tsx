@@ -2,23 +2,17 @@ import { Menu } from "@headlessui/react";
 import { FiMenu } from "react-icons/fi";
 
 import Link from "next/link";
-
-interface Item {
-  id: number;
-  text: string;
-  dropdown?: string | undefined;
-  to: string;
-}
+import { NavItemType } from "@/types/navbar";
 
 interface DropdownNavProps {
-  items: Item[];
+  items: NavItemType[];
 }
 
 const DropdownNav: React.FC<DropdownNavProps> = ({ items }) => {
   return (
     <div className="flex relative items-center justify-center">
       <Menu>
-        <Menu.Button className="focus:ring-4 ring-[#f54bff] focus:ring-offset-2 dark:ring-offset-black rounded outline-none duration-300">
+        <Menu.Button className="focus:ring-4 ring-[#10161a] focus:ring-offset-2 dark:ring-offset-black rounded outline-none duration-300">
           <FiMenu className="text-xl text-gray-600 dark:text-gray-300 cursor-pointer hover:text-black dark:hover:text-white duration-300" />
         </Menu.Button>
         <Menu.Items>
@@ -29,7 +23,7 @@ const DropdownNav: React.FC<DropdownNavProps> = ({ items }) => {
                   <Link
                     className={`p-2 px-3 text-gray-600 dark:text-gray-300 ${
                       active
-                        ? "bg-[#f54bff] dark:bg-[#f54bff] duration-300 text-white"
+                        ? "bg-[#10161a] dark:bg-[#10161a] duration-300 text-white"
                         : " "
                     }`}
                     href={item.to}

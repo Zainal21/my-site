@@ -17,8 +17,8 @@ const TagLink: React.FC<TagLinkProps> = ({
 }) => {
   return (
     <Link
-      className={`font-bold focus:ring-offset-2 dark:ring-offset-black rounded inline-flex items-center w-fit text-[#f54bff}]
-      hover:underline focus:ring-4 ring-[#f54bff}] outline-none duration-300`}
+      className={`font-bold focus:ring-offset-2 dark:ring-offset-black rounded inline-flex items-center w-fit text-[#10161a}]
+      hover:underline focus:ring-4 ring-[#10161a}] outline-none duration-300 font-bold`}
       style={style}
       target={target}
       href={href}

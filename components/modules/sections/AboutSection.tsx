@@ -6,9 +6,8 @@ const AboutSection = () => {
       <Heading>About 💭</Heading>
 
       <Text style={{ marginBottom: `1.5rem` }}>
-        I'm a {new Date().getFullYear() - 2003} a passionate individual
-        exploring the realms of technology, with a specific interest in web and
-        mobile application development.
+        I'm a 21 y.o, a passionate individual exploring the realms of
+        technology, with a specific interest in software development.
       </Text>
 
       <Text style={{ marginBottom: `1.5rem` }}>

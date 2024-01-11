@@ -4,3 +4,6 @@ export * from "./Heading";
 export * from "./Text";
 export * from "./TagLink";
 export * from "./RoundedButtonBox";
+export * from "./Link";
+export * from "./ButtonLink";
+export * from "./Tag";

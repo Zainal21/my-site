@@ -1,4 +1,5 @@
 import { FiInstagram, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const links = [
   {
@@ -24,5 +25,11 @@ export const links = [
     title: "LinkedIn",
     href: "https://www.linkedin.com/in/muhammad-zainal-arifin/",
     icon: <FiLinkedin />,
+  },
+  {
+    id: 5,
+    title: "Whatsapp",
+    href: "https://wa.me/6288216756214",
+    icon: <FaWhatsapp />,
   },
 ];

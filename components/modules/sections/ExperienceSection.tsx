@@ -27,7 +27,6 @@ export default function ExperienceSection(): React.JSX.Element {
       </Text>
       <div className="content">
         {experienceList.map((item) => {
-          console.log(item);
           return (
             <ExperienceCard
               key={item.id}
@@ -86,8 +85,8 @@ const ExperienceCard: React.FC<Experience> = (props) => {
       ) : (
         <div></div>
       )}
-      <div className="ml-8 w-full text-center sm:text-left">
-        <div className="flex items-center justify-center sm:justify-start mb-3 sm:mb-0">
+      <div className="ml-8 w-full text-left">
+        <div className="flex items-center justify-start mb-3 sm:mb-0">
           <h1 className="text-2xl font-bold dark:text-white mr-3">
             {props.name}
           </h1>
@@ -100,7 +99,7 @@ const ExperienceCard: React.FC<Experience> = (props) => {
         <div className="relative mt-2">
           <Text>{props.task}</Text>
         </div>
-        <div className="w-full flex flex-col sm:flex-row items-center justify-between mt-2">
+        <div className="w-full flex-row items-center justify-between mt-2">
           <div className="flex items-center mb-4 sm:mb-0">
             <FiMapPin className="text-gray-600 dark:text-gray-300 mr-2" />
             <Text>{props.location}</Text>

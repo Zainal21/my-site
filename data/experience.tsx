@@ -3,7 +3,7 @@ import { Experience } from "@/types/experience";
 export const experienceList: Experience[] = [
   {
     id: 1,
-    name: "Pando Akar Teknologi (OXY Creative Outsource)",
+    name: "Pando Akar Teknologi",
     description: "Software Developer",
     year: 2023,
     employmentType: "contract",

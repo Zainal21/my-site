@@ -3,7 +3,7 @@ import { SocialMediaLink } from "..";
 
 const MainSection: React.FC = () => {
   return (
-    <main className=" flex md:flex-row md:flex-start flex-col-reverse items-start md:items-center w-full justify-between mb-12 mt-20">
+    <main className=" flex md:flex-row md:flex-start flex-col-reverse items-start md:items-center w-full justify-between mb-12 mt-24">
       <div className="flex flex-col">
         <Heading style={{ marginBottom: "0.5rem" }}>
           Hi, I&apos;m Muhamad Zainal Arifin! <span className="wave">👋</span>

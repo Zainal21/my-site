@@ -85,7 +85,7 @@ const ExperienceCard: React.FC<Experience> = (props) => {
       ) : (
         <div></div>
       )}
-      <div className="ml-8 w-full text-left">
+      <div className="w-full text-left">
         <div className="flex items-center justify-start mb-3">
           <h1 className="text-2xl font-bold dark:text-white mr-3">
             {props.name}

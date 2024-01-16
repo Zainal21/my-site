@@ -72,7 +72,7 @@ const ExperienceCard: React.FC<Experience> = (props) => {
         <div className="mb-5">
           <Border>
             <Image
-              className="rounded-full h-fit sm:mb-0"
+              className="rounded-full h-fit"
               src={props.logo}
               width={100}
               height={100}
@@ -86,7 +86,7 @@ const ExperienceCard: React.FC<Experience> = (props) => {
         <div></div>
       )}
       <div className="ml-8 w-full text-left">
-        <div className="flex items-center justify-start mb-3 sm:mb-0">
+        <div className="flex items-center justify-start mb-3">
           <h1 className="text-2xl font-bold dark:text-white mr-3">
             {props.name}
           </h1>
@@ -100,7 +100,7 @@ const ExperienceCard: React.FC<Experience> = (props) => {
           <Text>{props.task}</Text>
         </div>
         <div className="w-full flex-row items-center justify-between mt-2">
-          <div className="flex items-center mb-4 sm:mb-0">
+          <div className="flex items-center mb-4">
             <FiMapPin className="text-gray-600 dark:text-gray-300 mr-2" />
             <Text>{props.location}</Text>
           </div>

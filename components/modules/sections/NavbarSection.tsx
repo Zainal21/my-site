@@ -14,7 +14,7 @@ const NavbarSection = () => {
   return (
     <nav
       className="flex px-6 top-8 fixed border bg-gray-100 dark:bg-[#10161a]/50 z-10 w-[90%] md:w-[40rem] border-stone-200
-    dark:border-stone-900 backdrop-blur-md mb-12 rounded-lg justify-between h-14 items-center"
+    dark:border-stone-900 backdrop-blur-md mb-12 rounded-lg justify-between h-14 items-center "
     >
       <div className="flex lg:hidden">
         <DropDownNav items={navlinks} />
@@ -24,7 +24,7 @@ const NavbarSection = () => {
           <LinkTag
             key={nav.id}
             className={`${
-              router.pathname.includes(nav.to) && "dark:bg-gray-800 bg-gray-100"
+              router.pathname.includes(nav.to) && "dark:bg-gray-800 bg-gray-300"
             }`}
             to={nav.to}
           >

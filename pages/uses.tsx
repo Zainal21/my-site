@@ -102,7 +102,7 @@ const Uses: NextPage = () => {
                 <li>
                   <a
                     className="dark:text-white text-black"
-                    href="https://github.com/newmarcel/KeepingYouAwake"
+                    href="#"
                     target="_blank"
                   >
                     <strong className="dark:text-white text-black">
@@ -123,7 +123,7 @@ const Uses: NextPage = () => {
                 <li>
                   <a
                     className="dark:text-white text-black"
-                    href="https://github.com/iina/iina"
+                    href="#"
                     target="_blank"
                   >
                     <strong>Samsung LED S24R350</strong>
@@ -133,7 +133,7 @@ const Uses: NextPage = () => {
                 <li>
                   <a
                     className="dark:text-white text-black"
-                    href="https://getkap.co/"
+                    href="#"
                     target="_blank"
                   >
                     <strong>Keyboard Rexus RX -D68SF</strong>

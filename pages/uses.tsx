@@ -15,7 +15,7 @@ const Uses: NextPage = () => {
               <Text>
                 This page contains a list of applications that I usually use..
               </Text>
-              <h2 className="dark:text-white text-black">Terminal & Editor</h2>
+              <h2 className="dark:text-white text-black">Development Tools</h2>
               <ul>
                 <li className=" dark:text-white text-black">
                   <strong className="dark:text-white text-black">
@@ -58,6 +58,18 @@ const Uses: NextPage = () => {
                     target="_blank"
                   >
                     Sublime Merge
+                  </a>
+                </li>
+                <li>
+                  <strong className="dark:text-white text-black">
+                    Android Text Editor:{" "}
+                  </strong>{" "}
+                  <a
+                    className="dark:text-white text-black"
+                    href="https://developer.android.com/studio"
+                    target="_blank"
+                  >
+                    Android Studio
                   </a>
                 </li>
                 <li>

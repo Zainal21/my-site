@@ -7,6 +7,13 @@ export default function FooterSection(): React.JSX.Element {
     <footer className="flex w-full sm:flex-row flex-col items-center justify-between border-t py-10 text-sm border-color dark:text-gray-100">
       <div className="flex gap-3 sm:mb-0 mb-6">
         <Link
+          href="/"
+          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          rel="noopener noreferrer"
+        >
+          /
+        </Link>
+        <Link
           href="/source"
           className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
           rel="noopener noreferrer"

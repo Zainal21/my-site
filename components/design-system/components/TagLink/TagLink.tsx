@@ -21,7 +21,7 @@ const TagLink: React.FC<TagLinkProps> = ({
       hover:underline focus:ring-4 ring-[#10161a}] outline-none duration-300 font-bold`}
       style={style}
       target={target}
-      href={href}
+      href={href || ""}
       onClick={onClick}
       rel="noreferrer"
     >

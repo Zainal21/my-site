@@ -8,19 +8,20 @@ import {
   ExperienceSection,
 } from "@/components/modules";
 import { Animate } from "@/components/design-system/utils";
+import { Heading } from "@/components/design-system";
 
-const Home: NextPage = () => {
+const BlogPage: NextPage = () => {
   return (
     <>
       <HomePageLayout>
         <Animate>
-          <MainSection />
-          <AboutSection short={true} />
-          <ExperienceSection />
+          <section className="flex flex-col mb-12 mt-10 w-screen h-screen">
+            <Heading>Cooming Soon 💭</Heading>
+          </section>
         </Animate>
       </HomePageLayout>
     </>
   );
 };
 
-export default Home;
+export default BlogPage;

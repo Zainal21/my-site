@@ -1,4 +1,10 @@
-import { FiInstagram, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import {
+  FiInstagram,
+  FiMail,
+  FiGithub,
+  FiTwitter,
+  FiLinkedin,
+} from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 export const links = [
@@ -31,5 +37,11 @@ export const links = [
     title: "Whatsapp",
     href: "https://wa.me/6288216756214",
     icon: <FaWhatsapp />,
+  },
+  {
+    id: 6,
+    title: "Whatsapp",
+    href: "https://mail:to=muhammadzaindev@gmail.com",
+    icon: <FiMail />,
   },
 ];

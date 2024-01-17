@@ -6,7 +6,9 @@ import { NavItemType } from "@/types/navbar";
 
 const NavbarSection = () => {
   const navlinks: NavItemType[] = [
-    { id: 1, text: "Home", to: "/", dropdown: "Home" },
+    { id: 1, text: "About", to: "about", dropdown: "About" },
+    { id: 2, text: "Blog", to: "blog", dropdown: "Blog" },
+    { id: 3, text: "Uses", to: "uses", dropdown: "Uses" },
   ];
 
   const router = useRouter();

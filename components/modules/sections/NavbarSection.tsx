@@ -11,6 +11,7 @@ const NavbarSection = () => {
     { id: 3, text: "Projects", to: "projects", dropdown: "Projects" },
     { id: 4, text: "Blog", to: "blog", dropdown: "Blog" },
     { id: 5, text: "Uses", to: "uses", dropdown: "Uses" },
+    { id: 6, text: "Activity", to: "activity", dropdown: "Activity" },
   ];
 
   const router = useRouter();

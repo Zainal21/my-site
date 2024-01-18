@@ -29,6 +29,13 @@ export default function FooterSection(): React.JSX.Element {
           /about
         </Link>
         <Link
+          href="/projects"
+          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          rel="noopener noreferrer"
+        >
+          /projects
+        </Link>
+        <Link
           href="/blog"
           className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
           rel="noopener noreferrer"

@@ -1,12 +1,15 @@
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
-import { ExperienceSection, UsesSection } from "@/components/modules";
-import { Animate } from "@/components/design-system/utils";
+import { Animate, SeoMeta } from "@/components/design-system/utils";
 import { Heading, Text } from "@/components/design-system";
 
 const Uses: NextPage = () => {
   return (
     <>
+      <SeoMeta
+        description={"Uses - Muhamad Zainal Arifin"}
+        title={"Muhamad Zain - Software Engineer"}
+      />
       <HomePageLayout>
         <Animate>
           <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0">

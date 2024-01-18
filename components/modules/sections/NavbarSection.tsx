@@ -6,7 +6,7 @@ import { NavItemType } from "@/types/navbar";
 
 const NavbarSection = () => {
   const navlinks: NavItemType[] = [
-    { id: 1, text: "/", to: "/", dropdown: "Me" },
+    { id: 1, text: "/Me", to: "/", dropdown: "Me" },
     { id: 2, text: "About", to: "about", dropdown: "About" },
     { id: 3, text: "Projects", to: "projects", dropdown: "Projects" },
     { id: 4, text: "Blog", to: "blog", dropdown: "Blog" },

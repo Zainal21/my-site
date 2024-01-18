@@ -1,13 +1,17 @@
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
 import { ProjectList } from "@/components/modules";
-import { Animate } from "@/components/design-system/utils";
-import { Heading, Tag, Text } from "@/components/design-system";
+import { Animate, SeoMeta } from "@/components/design-system/utils";
+import { Heading, Text } from "@/components/design-system";
 import { projects } from "@/data/projects";
 
 const Projects: NextPage = () => {
   return (
     <>
+      <SeoMeta
+        description={"Project - Muhamad Zainal Arifin"}
+        title={"Muhamad Zain - Software Engineer"}
+      />
       <HomePageLayout>
         <Animate>
           <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0">

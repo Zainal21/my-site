@@ -1,12 +1,5 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
-import {
-  MainSection,
-  AboutSection,
-  ExperienceSection,
-} from "@/components/modules";
 import { Animate } from "@/components/design-system/utils";
 import { Heading } from "@/components/design-system";
 

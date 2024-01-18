@@ -30,6 +30,7 @@ const ProjectList: React.FC<ProjectProps> = ({ project }) => {
               sizes="100vw"
               style={{ width: "100%", height: "auto" }}
               alt={project.name}
+              placeholder="blur"
             />
           )}
         </div>

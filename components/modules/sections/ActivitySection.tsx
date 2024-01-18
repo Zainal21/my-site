@@ -11,11 +11,11 @@ export default function ActivitySection(): React.JSX.Element {
         {/* <SpotifyPlaylist /> */}
         <h2 className="dark:text-white text-dark">Spotify Playlist</h2>
         <iframe
+          className="max-w-full relative md:min-h-screen min-h-16"
           title="Spotify Embed: Recommendation Playlist "
           src={`https://open.spotify.com/embed/playlist/1nWEPUfaPWELV5V6yF7EKn?utm_source=generator&theme=0`}
-          width="100%"
+          width="90%"
           height="100%"
-          style={{ minHeight: '560px' }}
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"

@@ -4,7 +4,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 
 export default function FooterSection(): React.JSX.Element {
   return (
-    <footer className="flex w-full sm:flex-row flex-col items-center justify-between border-t py-10 text-sm border-color dark:text-gray-100">
+    <footer className="relative flex w-full sm:flex-row flex-col items-center justify-between border-t py-10 text-sm border-color dark:text-gray-100">
       <div className="flex gap-3 sm:mb-0 mb-6">
         <Link
           href="/"

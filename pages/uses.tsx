@@ -10,10 +10,10 @@ const Uses: NextPage = () => {
       <HomePageLayout>
         <Animate>
           <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0">
-            <Heading>Uses 💻</Heading>
+            <Heading className="mt-5">Uses 💻</Heading>
             <div className="mt-5 prose max-w-none dark:text-white text-black">
               <Text>
-                This page contains a list of applications that I usually use..
+                This page contains a list of applications that I usually use.
               </Text>
               <h2 className="dark:text-white text-black">Development Tools</h2>
               <ul>
@@ -114,7 +114,7 @@ const Uses: NextPage = () => {
                 <li>
                   <a
                     className="dark:text-white text-black"
-                    href="#"
+                    href="https://ibox.co.id/product/MBA-M1-IB-CON"
                     target="_blank"
                   >
                     <strong className="dark:text-white text-black">
@@ -135,7 +135,7 @@ const Uses: NextPage = () => {
                 <li>
                   <a
                     className="dark:text-white text-black"
-                    href="#"
+                    href="https://www.samsung.com/id/monitors/flat/sr35-24-inch-ips-fhd-1080p-freesync-ls24r350fzexxd/"
                     target="_blank"
                   >
                     <strong>Samsung LED S24R350</strong>
@@ -145,7 +145,7 @@ const Uses: NextPage = () => {
                 <li>
                   <a
                     className="dark:text-white text-black"
-                    href="#"
+                    href="https://rexus.id/produk/keyboard-rexus-daiva-d68sf-max/"
                     target="_blank"
                   >
                     <strong>Keyboard Rexus RX -D68SF</strong>

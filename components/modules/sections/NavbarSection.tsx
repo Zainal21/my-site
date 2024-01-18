@@ -8,8 +8,9 @@ const NavbarSection = () => {
   const navlinks: NavItemType[] = [
     { id: 1, text: "/", to: "/", dropdown: "Me" },
     { id: 2, text: "About", to: "about", dropdown: "About" },
-    { id: 3, text: "Blog", to: "blog", dropdown: "Blog" },
-    { id: 4, text: "Uses", to: "uses", dropdown: "Uses" },
+    { id: 3, text: "Projects", to: "projects", dropdown: "Projects" },
+    { id: 4, text: "Blog", to: "blog", dropdown: "Blog" },
+    { id: 5, text: "Uses", to: "uses", dropdown: "Uses" },
   ];
 
   const router = useRouter();

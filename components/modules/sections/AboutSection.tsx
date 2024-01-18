@@ -1,4 +1,4 @@
-import { Heading, Text } from "@/components/design-system";
+import { Heading, LinkTarget, Text } from "@/components/design-system";
 import React from "react";
 
 const AboutSection: React.FC<{ short: boolean }> = ({ short }) => {
@@ -30,8 +30,9 @@ const AboutSection: React.FC<{ short: boolean }> = ({ short }) => {
       ) : (
         <>
           <Text style={{ marginBottom: `1.5rem` }}>
-            I'm a More 21 y.o, a passionate individual exploring the realms of
-            technology, with a specific interest in software development.
+            I'm a 21 y.o Indonesian 🇮🇩 Developer, a passionate individual
+            exploring the realms of technology, with a specific interest in
+            software development.
           </Text>
 
           <Text style={{ marginBottom: `1.5rem` }}>
@@ -40,6 +41,17 @@ const AboutSection: React.FC<{ short: boolean }> = ({ short }) => {
             Codeigniter, Laravel, Vue JS, React JS, Kotlin, Express JS, Nest JS,
             and Go Fiber, among others. Currently, I am dedicated to deepening
             my expertise in Backend Development and DevOps
+          </Text>
+
+          <Text style={{ marginBottom: `1.5rem` }}>
+            Professionally, I'm contributing my skills as a Software Engineer at{" "}
+            <LinkTarget href="https://oxycreative.com" target="_blank">
+              OXY Creative
+            </LinkTarget>{" "}
+            , where I actively engage in innovative projects and contribute to
+            the dynamic tech landscape. In addition to my full-time role, I also
+            take on freelance projects, allowing me to further diversify my
+            experience as a software developer.
           </Text>
 
           <Text>

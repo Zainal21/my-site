@@ -10,5 +10,5 @@ export { default as ErrorSection } from "./sections/ErrorSection";
 export { default as DropDownNav } from "./components/DropdownNav";
 export { default as ToogleNav } from "./components/ToogleNav";
 export { default as SocialMediaLink } from "./components/SocialMediaLink";
-export { default as ProjectCard } from "./components/ProjectCard";
+export { default as ProjectList } from "./components/ProjectList";
 export { default as BlogCard } from "./components/BlogCard";

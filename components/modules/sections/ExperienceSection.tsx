@@ -96,11 +96,11 @@ const ExperienceCard: React.FC<Experience> = (props) => {
           {props.description} &bull; {props.year} &bull;{" "}
           {getEmploymentTypeString()} &bull; {props.remote && "Remote"}
         </Text>
-        <div className="relative mt-2">
+        <div className="relative my-4">
           <Text>{props.task}</Text>
         </div>
         <div className="w-full flex-row items-center justify-between mt-2">
-          <div className="flex items-center mb-4">
+          <div className="flex items-center mb-4 mt-2">
             <FiMapPin className="text-gray-600 dark:text-gray-300 mr-2" />
             <Text>{props.location}</Text>
           </div>

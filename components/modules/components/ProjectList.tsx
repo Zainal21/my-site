@@ -1,12 +1,14 @@
 import { ProjectType } from "@/types/projects";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export type ProjectProps = {
   project: ProjectType;
 };
 
 const ProjectList: React.FC<ProjectProps> = ({ project }) => {
+  const [isLoading, setLoading] = useState(true);
+
   return (
     <a
       href={project.link}
@@ -21,13 +23,22 @@ const ProjectList: React.FC<ProjectProps> = ({ project }) => {
         <p className="text-sm leading-normal dark:text-white text-black">
           {project.description}
         </p>
-        <div className="mt-0 bg-gray-50 rounded-md">
+        <div className="mt-0 bg-gray-50 rounded-md w-full  md:w-[38.5rem]">
           {project.img && (
             <Image
               src={`/images/projects/${project.img}`}
               width={0}
               height={0}
+              objectFit="cover"
               sizes="100vw"
+              className={`
+              duration-700 ease-in-out group-hover:opacity-75
+              ${
+                isLoading
+                  ? "scale-110 blur-2xl grayscale"
+                  : "scale-100 blur-0 grayscale-0"
+              })`}
+              onLoadingComplete={() => setLoading(false)}
               style={{ width: "100%", height: "auto" }}
               alt={project.name}
             />

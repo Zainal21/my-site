@@ -29,7 +29,6 @@ async function getAccessToken() {
   }
 }
 
-
 export async function getPlaylist(range = "medium_term") {
   const { access_token } = await getAccessToken();
   const url = qs.stringifyUrl({
@@ -42,8 +41,6 @@ export async function getPlaylist(range = "medium_term") {
     },
   });
 
-  console.log("response :", response)
-
   return response;
 }
 
@@ -54,8 +51,6 @@ export async function getNowPlayling() {
       Authorization: `Bearer ${access_token}`,
     },
   });
-
-  console.log("response : ", response)
 
   return response;
 }

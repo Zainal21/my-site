@@ -9,6 +9,9 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
+  corePlugins: {
+    aspectRatio: false,
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -21,9 +24,11 @@ const config: Config = {
     require("@headlessui/tailwindcss"),
     require("@headlessui/tailwindcss")({ prefix: "ui" }),
     require("tailwind-scrollbar"),
+    require("@tailwindcss/aspect-ratio"),
   ],
   variants: {
     scrollbar: ["rounded"],
   },
 };
+
 export default config;

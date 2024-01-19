@@ -2,6 +2,18 @@ import { ProjectType } from "@/types/projects";
 
 export const projects: ProjectType[] = [
   {
+    name: "(NON DISCLOSURE AGREEMENT)",
+    description:
+      "Application used by police officers from the Indonesian government",
+    link: "#",
+  },
+  {
+    name: "(NON DISCLOSURE AGREEMENT)",
+    description:
+      "Application used by security forces from the Indonesian government.",
+    link: "#",
+  },
+  {
     name: "KMS Kadin Indonesia",
     description: "Portal Registration for Kadin Member",
     link: "https://anggota.kadin.id",
@@ -18,6 +30,12 @@ export const projects: ProjectType[] = [
     description: "Portal housing and bill payment management",
     link: "https://tatangga.com",
     img: "tatangga.png",
+  },
+  {
+    name: "Geographic Information System Magelang",
+    description: "Magelang city geographic government portal system",
+    link: "http://sigtatu.dpupr.magelangkota.go.id/tataruang/",
+    img: "tata-ruang-magelang.png",
   },
   {
     name: "SIMPraja Satpol PP Yogyakarta",
@@ -43,5 +61,11 @@ export const projects: ProjectType[] = [
     description: "Official Android Apps JTLExpress",
     link: "https://play.google.com/store/apps/details?id=com.jtlexpress.jtl_express_mobile&hl=id&gl=US",
     img: "android-jtlexpress.png",
+  },
+  {
+    name: "SMKN 2 Karanganyar",
+    description: "Portal my vocational school information website",
+    link: "https://smkn2kra.sch.id",
+    img: "smkn2kra.png",
   },
 ];

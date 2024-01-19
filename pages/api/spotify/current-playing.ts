@@ -5,7 +5,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
   if (req.method === "GET") {
     try {
       const song = await getNowPlayling();
-      console.log("song =>>" + song);
       const isPlaying = song.is_playing;
       const title = song.item.name;
       const artist = song.item.artists
@@ -26,7 +25,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
         id,
       });
     } catch (err) {
-      return res.status(200).json({ isPlaying: false});
+      return res.status(200).json({ isPlaying: false });
     }
   }
 

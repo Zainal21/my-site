@@ -26,10 +26,10 @@ const ProjectList: React.FC<ProjectProps> = ({ project }) => {
         <div className="mt-0 bg-gray-50 rounded-md w-full  md:w-[38.5rem]">
           {project.img && (
             <Image
+              loading="lazy"
               src={`/images/projects/${project.img}`}
               width={0}
               height={0}
-              objectFit="cover"
               sizes="100vw"
               className={`
               duration-700 ease-in-out group-hover:opacity-75

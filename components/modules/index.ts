@@ -13,4 +13,4 @@ export { default as ToogleNav } from "./components/ToogleNav";
 export { default as SocialMediaLink } from "./components/SocialMediaLink";
 export { default as ProjectList } from "./components/ProjectList";
 export { default as BlogCard } from "./components/BlogCard";
-export { default as SpotifyPlaylist } from "./components/SpotifyPlaylist";
+export { default as SpotifyCurrentPlaying } from "./components/SpotifyCurrentPlaying";

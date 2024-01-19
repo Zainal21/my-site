@@ -5,10 +5,10 @@ import cn from "classnames";
 export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
   const { data } = useCurrentlyPlaying();
   return (
-    <div className="flex items-center relative space-x-4 bg-gray-700 px-5 py-4 rounded-md shadow-single">
+    <div className="w-[90%] md:w-[40rem]  flex items-center relative space-x-4 bg-[#10161a] dark:bg-[#10161a] px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900">
       {data?.albumImageUrl ? (
         <img
-          className="w-12 h-12 rounded-sm"
+          className="w-12 h-10 rounded-sm"
           src={data?.albumImageUrl || ""}
           alt={data?.artist}
         />
@@ -18,11 +18,11 @@ export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
         size={20}
         className={cn(
           "flex-shrink-0 w-10 h-10",
-          data?.isPlaying ? "text-blue-500" : "text-gray-500"
+          data?.isPlaying ? "text-blue-500" : "text-gray-600"
         )}
       />
       <p
-        className="leading-tight"
+        className="leading-tight dark:text-white text-gray-600"
         title={
           data
             ? `${data.title || "Not Playing"} - ${data.artist || "Spotify"}`
@@ -34,17 +34,17 @@ export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-white flex-1 min-w-0 hover:underline helper-link-cover"
+            className="font-semibold dark:text-white text-black flex-1 min-w-0 hover:underline helper-link-cover"
           >
             {data.title}
           </a>
         ) : (
-          <span className="font-semibold text-white flex-1 min-w-0">
+          <span className="font-semibold dark:text-white text-black flex-1 min-w-0">
             Music Not Playing
           </span>
         )}{" "}
-        <span className="text-gray-300">–</span>&nbsp;
-        <span className="text-gray-300">{data?.artist ?? "Spotify"}</span>
+        <span className="dark:text-gray-300 text-black">–</span>&nbsp;
+        <span className="dark:text-gray-300 text-black">{data?.artist ?? "Spotify"}</span>
       </p>
     </div>
   );

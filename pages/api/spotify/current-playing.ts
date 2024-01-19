@@ -1,4 +1,4 @@
-import { getNowPlayling } from "@/libs/sportify";
+import { getNowPlayling } from "@/libs/spotify";
 import { NextApiRequest, NextApiResponse } from "next";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {

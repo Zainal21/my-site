@@ -29,6 +29,24 @@ async function getAccessToken() {
   }
 }
 
+
+export async function getPlaylist(range = "medium_term") {
+  const { access_token } = await getAccessToken();
+  const url = qs.stringifyUrl({
+    url: PLAYLIST_ENDPOINT,
+  });
+
+  const response = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
+
+  console.log("response :", response)
+
+  return response;
+}
+
 export async function getNowPlayling() {
   const { access_token } = await getAccessToken();
   const response = await fetch(NOW_PLAYING_ENDPOINT, {

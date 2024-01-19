@@ -10,7 +10,7 @@ export const projects: ProjectType[] = [
   {
     name: "(NON DISCLOSURE AGREEMENT)",
     description:
-      "Application used by security forces from the Indonesian government.",
+      "Application used by Office of the Attorney General of the Republic of Indonesia.",
     link: "#",
   },
   {

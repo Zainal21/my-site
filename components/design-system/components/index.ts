@@ -7,3 +7,4 @@ export * from "./RoundedButtonBox";
 export * from "./Link";
 export * from "./ButtonLink";
 export * from "./Tag";
+export * from "./Button";

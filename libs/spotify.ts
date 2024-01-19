@@ -29,7 +29,7 @@ async function getAccessToken() {
   }
 }
 
-export async function getPlaylist(range = "medium_term") {
+export async function getPlaylist() {
   const { access_token } = await getAccessToken();
   const url = qs.stringifyUrl({
     url: PLAYLIST_ENDPOINT,

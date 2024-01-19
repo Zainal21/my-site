@@ -1,14 +1,28 @@
 import { getNowPlayling } from "@/libs/spotify";
+import { SpotifyTrackArtist, SpotifyCurrentNowPlaying } from "@/types/spotify";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
+type HandlerResponseCurrentPlaying = {
+  album?: string;
+  albumImageUrl?: string;
+  artist?: string;
+  isPlaying: boolean;
+  songUrl?: string;
+  title?: string;
+  id?: string;
+};
+
+const handler = async (
+  req: NextApiRequest,
+  res: NextApiResponse<HandlerResponseCurrentPlaying>
+) => {
   if (req.method === "GET") {
     try {
-      const song = await getNowPlayling();
+      const song: SpotifyCurrentNowPlaying = await getNowPlayling();
       const isPlaying = song.is_playing;
       const title = song.item.name;
       const artist = song.item.artists
-        .map((_artist: any) => _artist.name)
+        .map((_artist: SpotifyTrackArtist) => _artist.name)
         .join(", ");
       const album = song.item.album.name;
       const albumImageUrl = song.item.album.images[0].url;
@@ -28,8 +42,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<any>) => {
       return res.status(200).json({ isPlaying: false });
     }
   }
-
-  return res.status(404).json({ message: "Not found" });
 };
 
 export default handler;

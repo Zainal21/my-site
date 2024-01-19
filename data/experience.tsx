@@ -25,7 +25,6 @@ export const experienceList: Experience[] = [
     link: "https://www.oxycreative.com",
     task: "Develop a software product with specified features and functionalities meeting project requirements and deadlines",
   },
-
   {
     id: 3,
     name: "Cipta Karya Infotika (Cikajogja)",

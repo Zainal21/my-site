@@ -6,7 +6,6 @@ import {
   ExperienceSection,
 } from "@/components/modules";
 import { Animate, SeoMeta } from "@/components/design-system/utils";
-import { Suspense } from "react";
 
 const Home: NextPage = () => {
   return (

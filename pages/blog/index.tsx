@@ -8,7 +8,7 @@ const BlogPage: NextPage = () => {
     <>
       <HomePageLayout>
         <Animate>
-          <section className="flex flex-col mb-12 mt-10 w-screen h-screen">
+          <section className="flex flex-col mb-12 mt-10 w-full h-screen">
             <Heading>Cooming Soon 💭</Heading>
           </section>
         </Animate>

@@ -6,10 +6,12 @@ import Image from "next/image";
 export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
   const { data } = useCurrentlyPlaying();
   return (
-    <div className="w-[90%] md:w-[40rem]  flex items-center relative space-x-4 bg-[#10161a] dark:bg-[#10161a] px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900">
+    <div className="text-center w-full md:w-[40rem] flex md:flex-row flex-col items-center relative space-x-2 bg-[#10161a] dark:bg-[#10161a] px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900">
       {data?.albumImageUrl ? (
         <Image
-          className="w-12 h-10 rounded-sm"
+          width={80}
+          height={80}
+          className="w-12 h-12 rounded-sm"
           src={data?.albumImageUrl || ""}
           alt={data?.artist}
         />
@@ -45,7 +47,9 @@ export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
           </span>
         )}{" "}
         <span className="dark:text-gray-300 text-black">–</span>&nbsp;
-        <span className="dark:text-gray-300 text-black">{data?.artist ?? "Spotify"}</span>
+        <span className="dark:text-gray-300 text-black">
+          {data?.artist ?? "Spotify"}
+        </span>
       </p>
     </div>
   );

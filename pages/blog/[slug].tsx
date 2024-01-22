@@ -11,20 +11,16 @@ import { HomePageLayout } from "@/layouts/HomePageLayout";
 import { Animate } from "@/components/design-system/utils";
 import { Text } from "@/components/design-system";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import {
-  dark,
-  duotoneLight,
-} from "react-syntax-highlighter/dist/esm/styles/prism";
-// import { dark, a11yLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { dark, a11yLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useTheme } from "@/context/ThemeContext";
+import { frontMatterPost } from "@/types/posts";
 
 interface BlogDetailProps {
-  frontMatter: any;
+  frontMatter: frontMatterPost;
   mdxSource: any;
 }
 
 const BlogDetail: NextPage<BlogDetailProps> = (props) => {
-  console.log(props);
   const [isLoading, setLoading] = useState(true);
   const { theme } = useTheme();
 
@@ -74,7 +70,7 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                     </Text>
                   ),
                   blockquote: ({ children }) => (
-                    <blockquote className="mt-4 border-l-4 border-l-teal-600 py-1 pl-2 bg-color-secondary dark:border-l-teal-500">
+                    <blockquote className="mt-4 border-l-4 border-l-teal-600 py-1 pl-2 bg-color-secondary dark:border-l-blue-500">
                       {children}
                     </blockquote>
                   ),
@@ -89,7 +85,7 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                         <SyntaxHighlighter
                           language="javascript"
                           className="rounded-md border-2 w-[38.5rem]"
-                          style={theme == "dark" ? dark : duotoneLight}
+                          style={theme == "dark" ? dark : a11yLight}
                         >
                           {children}
                         </SyntaxHighlighter>

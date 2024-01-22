@@ -3,6 +3,7 @@ import {
   SpotifyCurrentPlaying,
   SpotifyPlaylistCard,
 } from "@/components/modules";
+
 export default function ActivitySection(): React.JSX.Element {
   return (
     <section className="flex flex-col mb-12 w-full">

@@ -6,7 +6,7 @@ const SpotifyPlaylistCard: React.FC = () => {
   const { data } = useSpotifyPlaylist();
   return (
     <React.Fragment>
-      {data.map((data: SpotifyPlaylist) => (
+      {(data || [])?.map((data: SpotifyPlaylist) => (
         <div
           key={data.id}
           className="flex items-center relative space-x-4 my-2 dark:bg-[#10161a]/50 px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900"

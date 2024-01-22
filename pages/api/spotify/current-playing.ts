@@ -22,7 +22,7 @@ const handler = async (
       const isPlaying = song.is_playing;
       const title = song.item.name;
       const artist = song.item.artists
-        .map((_artist: SpotifyTrackArtist) => _artist.name)
+        ?.map((_artist: SpotifyTrackArtist) => _artist.name)
         .join(", ");
       const album = song.item.album.name;
       const albumImageUrl = song.item.album.images[0].url;

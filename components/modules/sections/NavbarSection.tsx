@@ -25,7 +25,7 @@ const NavbarSection = () => {
         <DropDownNav items={navlinks} />
       </div>
       <div className="hidden lg:flex">
-        {navlinks.map((nav) => (
+        {navlinks?.map((nav) => (
           <LinkTag
             key={nav.id}
             className={`${

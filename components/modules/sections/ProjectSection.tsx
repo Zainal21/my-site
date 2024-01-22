@@ -10,7 +10,7 @@ export default function ProjectSection() {
       <div className="mt-5 prose max-w-none dark:text-white text-black">
         <Text>This page contains a list of applications I have worked on.</Text>
         <div className="space-y-8">
-          {projects.map((project, index) => (
+          {projects?.map((project, index) => (
             <ProjectList project={project} key={index} />
           ))}
         </div>

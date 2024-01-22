@@ -17,7 +17,7 @@ const DropdownNav: React.FC<DropdownNavProps> = ({ items }) => {
         </Menu.Button>
         <Menu.Items>
           <div className="flex flex-col absolute top-8 w-36 text-sm justify-between left-0 py-2  rounded-lg bg-white border border-teal-100 dark:bg-[#10161a]/100 dark:border-teal-900">
-            {items.map((item) => (
+            {items?.map((item) => (
               <Menu.Item key={item.id}>
                 {({ active }) => (
                   <Link

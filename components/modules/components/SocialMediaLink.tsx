@@ -5,7 +5,7 @@ import { links } from "@/data/links";
 const SocialMediaLink = () => {
   return (
     <div className="flex">
-      {links.map((link) => (
+      {links?.map((link) => (
         <LinkWrapper key={link.id} href={link.href} title={link.title}>
           {link.icon}
         </LinkWrapper>

@@ -26,7 +26,7 @@ export default function ExperienceSection(): React.JSX.Element {
         </LinkTarget>{" "}
       </Text>
       <div className="content">
-        {experienceList.map((item) => {
+        {experienceList?.map((item) => {
           return (
             <ExperienceCard
               key={item.id}

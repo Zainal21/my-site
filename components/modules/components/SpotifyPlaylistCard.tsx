@@ -4,10 +4,12 @@ import { useSpotifyPlaylist } from "@/hooks/useSpotifyPlaylist";
 import "react-loading-skeleton/dist/skeleton.css";
 import Skeleton from "react-loading-skeleton";
 import Image from "next/image";
+import { useTheme } from "@/context/ThemeContext";
 
 const SpotifyPlaylistCard: React.FC = () => {
   const { data, isLoading, isError } = useSpotifyPlaylist();
   const [isLoadingImage, setLoadingImage] = useState(true);
+  const { theme } = useTheme();
 
   const renderSkeletons = () => {
     const skeletons = [];
@@ -16,6 +18,8 @@ const SpotifyPlaylistCard: React.FC = () => {
         <div key={i} className="mb-4">
           <Skeleton
             style={{ marginTop: "0.5rem" }}
+            highlightColor={theme == "dark" ? "light" : "black"}
+            baseColor={theme == "dark" ? "light" : "black"}
             className=" w-12 h-10 p-14 dark:bg-gray-800 bg-gray-200"
           />
         </div>

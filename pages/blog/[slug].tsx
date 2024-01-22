@@ -9,27 +9,42 @@ import { MDXRemote } from "next-mdx-remote";
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
 import { Animate } from "@/components/design-system/utils";
+import { Text } from "@/components/design-system";
+import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  dark,
+  duotoneLight,
+} from "react-syntax-highlighter/dist/esm/styles/prism";
+// import { dark, a11yLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { useTheme } from "@/context/ThemeContext";
 
-const BlogDetail: NextPage<any> = (props) => {
+interface BlogDetailProps {
+  frontMatter: any;
+  mdxSource: any;
+}
+
+const BlogDetail: NextPage<BlogDetailProps> = (props) => {
+  console.log(props);
   const [isLoading, setLoading] = useState(true);
+  const { theme } = useTheme();
 
   return (
     <HomePageLayout>
       <Animate>
-        <div className="container  mx-auto mt-10 dark:text-white text-black">
+        <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0 h-full">
           {props.frontMatter && props.mdxSource && (
             <div>
               <Head>
                 <title>{props.frontMatter.title}</title>
               </Head>
-              <div className="mt-0 bg-gray-50 rounded-md w-full  md:w-[38.5rem]">
+              <div className="mt-0 bg-gray-50 rounded-md w-screen p-10 md:w-[38.5rem]">
                 <Image
                   loading="lazy"
                   src={props.frontMatter.thumbnail}
                   alt={"thumbnail"}
                   width={0}
                   height={0}
-                  sizes="100vw"
+                  sizes="80"
                   className={`
               duration-700 ease-in-out group-hover:opacity-75
               ${
@@ -45,10 +60,48 @@ const BlogDetail: NextPage<any> = (props) => {
                 {props.frontMatter.title}
               </h1>
 
-              <MDXRemote {...props.mdxSource} />
+              <MDXRemote
+                {...props.mdxSource}
+                components={{
+                  p: ({ children }) => (
+                    <Text
+                      style={{
+                        marginTop: 16,
+                        lineHeight: 2,
+                      }}
+                    >
+                      {children}
+                    </Text>
+                  ),
+                  blockquote: ({ children }) => (
+                    <blockquote className="mt-4 border-l-4 border-l-teal-600 py-1 pl-2 bg-color-secondary dark:border-l-teal-500">
+                      {children}
+                    </blockquote>
+                  ),
+                  ul: ({ children }) => (
+                    <ul className="list-disc ml-10 dark:text-white text-black">
+                      {children}
+                    </ul>
+                  ),
+                  code: ({ children }) => {
+                    if (typeof children === "string") {
+                      return (
+                        <SyntaxHighlighter
+                          language="javascript"
+                          className="rounded-md border-2 w-[38.5rem]"
+                          style={theme == "dark" ? dark : duotoneLight}
+                        >
+                          {children}
+                        </SyntaxHighlighter>
+                      );
+                    }
+                    return children;
+                  },
+                }}
+              />
             </div>
           )}
-        </div>
+        </section>
       </Animate>
     </HomePageLayout>
   );

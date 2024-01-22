@@ -13,10 +13,9 @@ const BlogSection: React.FC<{ posts: Post[] }> = ({ posts }) => {
           share.
         </Text>
         <div className="space-y-8">
-          <Heading>Comming Soon☁️</Heading>
-          {/* {posts?.map((post) => (
-            <BlogCard post={post} />
-          ))} */}
+          {posts?.map((post, index) => (
+            <BlogCard post={post} key={index} />
+          ))}
         </div>
       </div>
     </section>

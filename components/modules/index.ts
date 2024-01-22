@@ -14,3 +14,4 @@ export { default as SocialMediaLink } from "./components/SocialMediaLink";
 export { default as ProjectList } from "./components/ProjectList";
 export { default as BlogCard } from "./components/BlogCard";
 export { default as SpotifyCurrentPlaying } from "./components/SpotifyCurrentPlaying";
+export { default as SpotifyPlaylistCard } from "./components/SpotifyPlaylistCard";

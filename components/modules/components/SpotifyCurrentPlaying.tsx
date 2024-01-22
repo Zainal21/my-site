@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
   const { data } = useCurrentlyPlaying();
   return (
-    <div className="text-center w-full md:w-[40rem] flex md:flex-row flex-col items-center relative space-x-2 bg-[#10161a] dark:bg-[#10161a] p-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900">
+    <div className="text-center w-full md:w-[40rem] flex md:flex-row flex-col items-center relative space-x-2 dark:bg-[#10161a]/50 p-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900">
       {data?.albumImageUrl ? (
         <Image
           width={80}

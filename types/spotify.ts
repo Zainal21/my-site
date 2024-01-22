@@ -64,3 +64,15 @@ export type SpotifyCurrentNowPlaying = {
   currently_playing_type: "track" | "episode";
   is_playing: boolean;
 };
+
+export type SpotifyTopTracks = {
+  items: SpotifyTrack[];
+};
+
+export type SpotifyPlaylist = {
+  albumImageUrl?: string;
+  artist?: string;
+  id?: string;
+  title?: string;
+  songUrl?: string;
+};

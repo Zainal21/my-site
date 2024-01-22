@@ -9,6 +9,8 @@ export default async function handler(
   try {
     const response = await getPlaylist();
     return res.status(200).json(response);
-  } catch (err) {}
-  return res.status(404).json({ message: "Not found" });
+  } catch (err) {
+    console.log(err);
+    return res.status(404).json({ message: "Not found" });
+  }
 }

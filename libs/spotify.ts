@@ -1,5 +1,6 @@
 import qs from "query-string";
 import fetch from "./fetch";
+import { SpotifyTopTracks } from "@/types/spotify";
 
 const client_id = process.env.SPOTIFY_CLIENT_ID;
 const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
@@ -7,7 +8,7 @@ const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
-const PLAYLIST_ENDPOINT = `https://api.spotify.com/v1/me/playlists`;
+const PLAYLIST_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?time_range=short_term&limit=10`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 async function getAccessToken() {
@@ -31,17 +32,22 @@ async function getAccessToken() {
 
 export async function getPlaylist() {
   const { access_token } = await getAccessToken();
-  const url = qs.stringifyUrl({
-    url: PLAYLIST_ENDPOINT,
-  });
 
-  const response = await fetch(url, {
+  const response = await fetch(PLAYLIST_ENDPOINT, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
   });
 
-  return response;
+  const { items }: SpotifyTopTracks = await response;
+
+  return items.map((track: any) => ({
+    albumImageUrl: track.album.images[0].url,
+    artist: track.artists.map((_artist: any) => _artist.name).join(", "),
+    songUrl: track.external_urls.spotify,
+    title: track.name,
+    id: track.id,
+  }));
 }
 
 export async function getNowPlayling() {

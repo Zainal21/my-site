@@ -16,7 +16,7 @@ const SpotifyPlaylistCard: React.FC = () => {
         <div key={i} className="mb-4">
           <Skeleton
             style={{ marginTop: "0.5rem" }}
-            className=" w-12 h-10 p-14"
+            className=" w-12 h-10 p-14 dark:bg-gray-800 bg-gray-200"
           />
         </div>
       );

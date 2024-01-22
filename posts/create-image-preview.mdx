@@ -1,0 +1,51 @@
+---
+date: "2021-05-17"
+thumbnail: /images/posts/create-image-preview.png
+title: Creating a Simple Image Preview
+description: Image upload is one of the features in an application. Sometimes, we are unsure whether the image we input is correct. It's a good idea to provide an image preview feature before users submit the data. Let's dive into it.
+readTime: 8
+---
+
+Assalamualaikum warahmatullahi wabarokatuh, Hello Everyone! 👋 How are you doing? I hope everything is going well. Have you ever created a website that includes a file input for images? Sometimes, we don't know if the file or image we input is correct.
+
+Therefore, we need an **Image Preview** to display the image before the user submits it. This time, I will share how to do it using JavaScript, leveraging the DOM (Document Object Model) Manipulation feature. However, we will also use the JQuery and Bootstrap libraries.
+
+The required components include:
+
+- JQuery
+- Bootstrap
+
+Here's an example implementation.
+
+```html
+<div class="form-group">
+  <label>Cover</label>
+  <div class="mb-2">
+    <!-- Image preview placeholder -->
+    <img
+      src=""
+      class="img-fluid"
+      alt=""
+      id="upload-img-preview"
+      style="display: none; width: 200px;"
+    /><br />
+    <!-- Link used to delete the temporary image -->
+    <a href="#" class="text-danger" id="upload-img-delete" style="display: none"
+      >Delete Cover Image</a
+    >
+  </div>
+  <!-- File input tag -->
+  <div class="custom-file">
+    <input
+      type="file"
+      accept="image/*"
+      name="thumbnail"
+      id="cover"
+      class="custom-file-input js-upload-image form-control"
+    />
+    <label class="custom-file-label" for="cover">Choose file</label>
+  </div>
+</div>
+```
+
+Now, the user can preview the image before submitting it. This feature enhances the user experience on our website. That's all I can share with you for now. I hope it's helpful, and see you in the next post. Thank you! 🙌

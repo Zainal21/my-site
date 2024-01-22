@@ -14,7 +14,7 @@ const ProjectList: React.FC<ProjectProps> = ({ project }) => {
       href={project.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="block p-3 no-underline transition border duration-300 dark:bg-[#10161a]/50 rounded-lg border-teal-100 dark:border-teal-900"
+      className="block p-3 shadow-lg hover:shadow-xl no-underline transition border duration-300 dark:bg-[#10161a]/50 bg-gray-100/50 rounded-lg border-teal-100 dark:border-teal-900"
     >
       <div className="flex flex-col">
         <h3 className="text-xl font-semibold dark:text-white text-black hover:underline">

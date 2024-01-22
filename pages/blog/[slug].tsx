@@ -16,7 +16,7 @@ const BlogDetail: NextPage<any> = (props) => {
   return (
     <HomePageLayout>
       <Animate>
-        <div className="container w-[80%] mx-auto mt-10 dark:text-white text-black">
+        <div className="container  mx-auto mt-10 dark:text-white text-black">
           {props.frontMatter && props.mdxSource && (
             <div>
               <Head>
@@ -27,8 +27,8 @@ const BlogDetail: NextPage<any> = (props) => {
                   loading="lazy"
                   src={props.frontMatter.thumbnail}
                   alt={"thumbnail"}
-                  width={100}
-                  height={100}
+                  width={0}
+                  height={0}
                   sizes="100vw"
                   className={`
               duration-700 ease-in-out group-hover:opacity-75

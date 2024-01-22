@@ -9,7 +9,7 @@ const SpotifyPlaylistCard: React.FC = () => {
       {(data || [])?.map((data: SpotifyPlaylist) => (
         <div
           key={data.id}
-          className="flex items-center relative space-x-4 my-2 dark:bg-[#10161a]/50 px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900"
+          className="flex items-center relative space-x-4 my-2 dark:bg-[#10161a]/50 bg-gray-100/50 px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900"
         >
           {data?.albumImageUrl ? (
             <img

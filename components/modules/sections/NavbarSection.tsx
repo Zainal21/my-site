@@ -1,7 +1,7 @@
 // Next.js
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { DropDownNav, ToogleNav } from "..";
+import { DropDownNav, ToogleNav } from "@/components/modules";
 import { NavItemType } from "@/types/navbar";
 
 const NavbarSection = () => {
@@ -18,7 +18,7 @@ const NavbarSection = () => {
 
   return (
     <nav
-      className="flex px-6 top-8 fixed border bg-gray-100 dark:bg-[#10161a]/50 z-10 w-[90%] md:w-[40rem] border-stone-200
+      className="flex px-6 top-8 fixed border bg-gray-100 dark:bg-[#10161a]/50 bg-gray-100/50 z-10 w-[90%] md:w-[40rem] border-stone-200
     dark:border-stone-900 backdrop-blur-md mb-12 rounded-lg justify-between h-14 items-center "
     >
       <div className="flex lg:hidden">

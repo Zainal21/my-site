@@ -7,9 +7,9 @@ const BlogCard: React.FC<{ post: Post }> = ({ post }) => {
   return (
     <React.Fragment>
       <div className="flex flex-col gap-16 mt-10">
-        <article className="group relative  flex flex-col items-start  my-4">
+        <article className="group relative  flex flex-col items-start  my-4 ">
           <h2 className="text-base font-semibold tracking-tight text-black dark:text-white">
-            <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-[#10161a] opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-[#10161a]/50 rounded-lg sm:-inset-x-6 sm:rounded-2xl"></div>
+            <div className="absolute -inset-y-6 -inset-x-4 z-0 scale-95 dark:bg-[#10161a] opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-[#10161a]/50 bg-gray-100/50 rounded-lg sm:-inset-x-6 sm:rounded-2xl"></div>
             <Link
               href={`/blog/${post.slug}`}
               className="dark:text-white text-black"

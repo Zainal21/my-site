@@ -7,6 +7,7 @@ export { default as FooterSection } from "./sections/FooterSection";
 export { default as UsesSection } from "./sections/UsesSection";
 export { default as ErrorSection } from "./sections/ErrorSection";
 export { default as ActivitySection } from "./sections/ActivitySection";
+export { default as BlogSection } from "./sections/BlogSection";
 // components
 export { default as DropDownNav } from "./components/DropdownNav";
 export { default as ToogleNav } from "./components/ToogleNav";

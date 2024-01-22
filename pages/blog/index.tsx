@@ -1,16 +1,41 @@
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
-import { Animate } from "@/components/design-system/utils";
-import { Heading } from "@/components/design-system";
+import { Animate, SeoMeta } from "@/components/design-system/utils";
+import matter from "gray-matter";
+import fs from "fs";
+import path from "path";
+import { Post } from "@/types/posts";
+import { BlogSection } from "@/components/modules";
 
-const BlogPage: NextPage = () => {
+export async function getStaticProps() {
+  let files = fs.readdirSync(path.join("posts"));
+  files = files.filter((file) => file.split(".")[1] == "mdx");
+  const posts = files.map((file) => {
+    const fileData = fs.readFileSync(path.join("posts", file), "utf-8");
+    const { data } = matter(fileData);
+    return {
+      frontMatter: data,
+      slug: file.split(".")[0],
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+const BlogPage: NextPage<{ posts: Post[] }> = ({ posts }) => {
   return (
     <>
+      <SeoMeta
+        description={"Posts - Muhamad Zainal Arifin"}
+        title={"Muhamad Zain - Software Engineer"}
+      />
       <HomePageLayout>
         <Animate>
-          <section className="flex flex-col mb-12 mt-10 w-full h-screen">
-            <Heading>Cooming Soon 💭</Heading>
-          </section>
+          <BlogSection posts={posts} />
         </Animate>
       </HomePageLayout>
     </>

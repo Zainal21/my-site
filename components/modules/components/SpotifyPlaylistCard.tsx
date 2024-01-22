@@ -1,52 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import { SpotifyPlaylist } from "@/types/spotify";
 import { useSpotifyPlaylist } from "@/hooks/useSpotifyPlaylist";
+import "react-loading-skeleton/dist/skeleton.css";
+import Skeleton from "react-loading-skeleton";
+import Image from "next/image";
 
 const SpotifyPlaylistCard: React.FC = () => {
-  const { data } = useSpotifyPlaylist();
+  const { data, isLoading, isError } = useSpotifyPlaylist();
+  const [isLoadingImage, setLoadingImage] = useState(true);
+
+  const renderSkeletons = () => {
+    const skeletons = [];
+    for (let i = 0; i < 5; i++) {
+      skeletons.push(
+        <div key={i} className="mb-4">
+          <Skeleton
+            style={{ marginTop: "0.5rem" }}
+            className=" w-12 h-10 p-14"
+          />
+        </div>
+      );
+    }
+    return skeletons;
+  };
+
   return (
     <React.Fragment>
-      {(data || [])?.map((data: SpotifyPlaylist) => (
-        <div
-          key={data.id}
-          className="flex items-center relative space-x-4 my-2 dark:bg-[#10161a]/50 bg-gray-100/50 px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900"
-        >
-          {data?.albumImageUrl ? (
-            <img
-              className="w-12 h-10 rounded-sm"
-              src={data?.albumImageUrl || ""}
-              alt={data?.artist}
-            />
-          ) : null}
-          <p
-            className="leading-tight dark:text-white text-gray-600"
-            title={
-              data
-                ? `${data.title || "Not Playing"} - ${data.artist || "Spotify"}`
-                : undefined
-            }
+      {isError && (
+        <div className="text-black dark:text-white">Failed Fetch Data</div>
+      )}
+      {isLoading ? (
+        <div className="text-black dark:text-white">{renderSkeletons()}</div>
+      ) : (
+        (data || [])?.map((data: SpotifyPlaylist) => (
+          <div
+            key={data.id}
+            className="flex items-center relative space-x-4 my-2 dark:bg-[#10161a]/50 bg-gray-100/50 px-5 rounded-md shadow-single border border-teal-100 dark:border-teal-900"
           >
-            {data?.songUrl ? (
-              <a
-                href={data.songUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold dark:text-white text-black flex-1 min-w-0 hover:underline helper-link-cover"
-              >
-                {data.title}
-              </a>
-            ) : (
-              <span className="font-semibold dark:text-white text-black flex-1 min-w-0">
-                Music Not Playing
+            {data?.albumImageUrl ? (
+              <Image
+                width={100}
+                height={100}
+                src={data?.albumImageUrl || ""}
+                alt={data?.artist || ""}
+                className={`
+                duration-700 ease-in-out group-hover:opacity-75 w-12 h-10 rounded-sm
+                ${
+                  isLoadingImage
+                    ? "scale-110 blur-2xl grayscale"
+                    : "scale-100 blur-0 grayscale-0"
+                })`}
+                onLoadingComplete={() => setLoadingImage(false)}
+                style={{ width: "10%", height: "auto" }}
+              />
+            ) : null}
+            <p
+              className="leading-tight dark:text-white text-gray-600"
+              title={
+                data
+                  ? `${data.title || "Not Playing"} - ${
+                      data.artist || "Spotify"
+                    }`
+                  : undefined
+              }
+            >
+              {data?.songUrl ? (
+                <a
+                  href={data.songUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold dark:text-white text-black flex-1 min-w-0 hover:underline helper-link-cover"
+                >
+                  {data.title}
+                </a>
+              ) : (
+                <span className="font-semibold dark:text-white text-black flex-1 min-w-0">
+                  Music Not Playing
+                </span>
+              )}{" "}
+              <span className="dark:text-gray-300 text-black">–</span>&nbsp;
+              <span className="dark:text-gray-300 text-black">
+                {data?.artist ?? "Spotify"}
               </span>
-            )}{" "}
-            <span className="dark:text-gray-300 text-black">–</span>&nbsp;
-            <span className="dark:text-gray-300 text-black">
-              {data?.artist ?? "Spotify"}
-            </span>
-          </p>
-        </div>
-      ))}
+            </p>
+          </div>
+        ))
+      )}
     </React.Fragment>
   );
 };

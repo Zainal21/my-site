@@ -1,4 +1,4 @@
-import { SeoMeta } from "@/components/design-system/utils";
+import { Animate, SeoMeta } from "@/components/design-system/utils";
 import { ActivitySection } from "@/components/modules";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
 import React from "react";
@@ -11,7 +11,9 @@ export default function ServerErrorPage(): React.JSX.Element {
         title={"Muhamad Zain - Software Engineer"}
       />
       <HomePageLayout>
-        <ActivitySection />
+        <Animate>
+          <ActivitySection />
+        </Animate>
       </HomePageLayout>
     </React.Fragment>
   );

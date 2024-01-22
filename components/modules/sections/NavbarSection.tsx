@@ -7,15 +7,15 @@ import { NavItemType } from "@/types/navbar";
 const NavbarSection = () => {
   const navlinks: NavItemType[] = [
     { id: 1, text: "/Me", to: "/", dropdown: "Me" },
-    { id: 2, text: "About", to: "about", dropdown: "About" },
-    { id: 3, text: "Projects", to: "projects", dropdown: "Projects" },
-    { id: 4, text: "Blog", to: "blog", dropdown: "Blog" },
-    { id: 5, text: "Uses", to: "uses", dropdown: "Uses" },
-    { id: 6, text: "Activity", to: "activity", dropdown: "Activity" },
+    { id: 2, text: "About", to: "/about", dropdown: "About" },
+    { id: 3, text: "Projects", to: "/projects", dropdown: "Projects" },
+    { id: 4, text: "Blog", to: "/blog", dropdown: "Blog" },
+    { id: 5, text: "Uses", to: "/uses", dropdown: "Uses" },
+    { id: 6, text: "Activity", to: "/activity", dropdown: "Activity" },
   ];
 
   const router = useRouter();
-
+  console.log(router.pathname);
   return (
     <nav
       className="flex px-6 top-8 fixed border bg-gray-100 dark:bg-[#10161a]/50 bg-gray-100/50 z-10 w-[90%] md:w-[40rem] border-stone-200

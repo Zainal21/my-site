@@ -37,12 +37,12 @@ export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold dark:text-white text-black flex-1 min-w-0 hover:underline helper-link-cover"
+            className="font-semibold dark:text-white text-[#10161a] flex-1 min-w-0 hover:underline helper-link-cover"
           >
             {data.title}
           </a>
         ) : (
-          <span className="font-semibold dark:text-white text-black flex-1 min-w-0">
+          <span className="font-semibold dark:text-white text-[#10161a] flex-1 min-w-0">
             Music Not Playing
           </span>
         )}{" "}

@@ -9,12 +9,13 @@ import { MDXRemote } from "next-mdx-remote";
 import { GetStaticProps, NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
 import { Animate } from "@/components/design-system/utils";
-import { Heading, Text } from "@/components/design-system";
+import { Heading, TagLink, Text } from "@/components/design-system";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark, a11yLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useTheme } from "@/context/ThemeContext";
 import { frontMatterPost } from "@/types/posts";
-import { ParsedUrlQuery } from "querystring";
+import { useRouter } from "next/router";
+import { FiArrowLeft } from "react-icons/fi";
 
 interface BlogDetailProps {
   frontMatter: frontMatterPost;
@@ -22,13 +23,14 @@ interface BlogDetailProps {
 }
 
 const BlogDetail: NextPage<BlogDetailProps> = (props) => {
+  const router = useRouter();
   const [isLoading, setLoading] = useState(true);
   const { theme } = useTheme();
 
   return (
     <HomePageLayout>
       <Animate>
-        <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0">
+        <section className="max-w-3xl p-2 mx-auto -mt-12 md:p-0 md:-mt-0">
           {props.frontMatter && props.mdxSource && (
             <div>
               <Head>
@@ -78,14 +80,14 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                     </blockquote>
                   ),
                   ul: ({ children }) => (
-                    <ul className="list-disc ml-10 dark:text-white text-black">
+                    <ul className="list-disc ml-10 dark:text-white text-[#10161a]">
                       {children}
                     </ul>
                   ),
                   img: ({ src, alt }) => (
-                    <figure className="mt-4 border text-center  dark:text-white text-black">
+                    <figure className="mt-4 border text-center  dark:text-white text-[#10161a]">
                       <img src={src} alt={alt} className="w-full" />
-                      <figcaption className="py-2 text-xs dark:text-white text-black">
+                      <figcaption className="py-2 text-xs dark:text-white text-[#10161a]">
                         {alt}
                       </figcaption>
                     </figure>
@@ -108,6 +110,16 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
               />
             </div>
           )}
+          {/* <div className="border-t text-sm border-color">
+            <TagLink
+              href={""}
+              onClick={() => {
+                !location && router.back();
+              }}
+            >
+              <FiArrowLeft className="text-lg mr-1" /> Go back to
+            </TagLink>
+          </div> */}
         </section>
       </Animate>
     </HomePageLayout>

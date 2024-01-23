@@ -13,7 +13,7 @@ const SpotifyPlaylistCard: React.FC = () => {
 
   const renderSkeletons = () => {
     const skeletons = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
       skeletons.push(
         <div key={i} className="mb-4">
           <Skeleton

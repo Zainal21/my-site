@@ -20,7 +20,7 @@ export default function SpotifyCurrentlyPlaying(): React.JSX.Element {
         aria-hidden
         size={20}
         className={cn(
-          "flex-shrink-0 w-10 h-10",
+          "flex-shrink-0 w-8 h-8",
           data?.isPlaying ? "text-blue-500" : "text-gray-600"
         )}
       />

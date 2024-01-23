@@ -18,9 +18,9 @@ const SpotifyPlaylistCard: React.FC = () => {
         <div key={i} className="mb-4">
           <Skeleton
             style={{ marginTop: "0.5rem" }}
-            highlightColor={theme == "dark" ? "light" : "black"}
-            baseColor={theme == "dark" ? "#10161a" : "white"}
-            className=" w-12 h-10 p-14 dark:bg-gray-800 bg-gray-200"
+            highlightColor={theme === "dark" ? "#000000" : "#F5F5F5"}
+            baseColor={theme === "dark" ? "#10161a" : "#F5F5F5"}
+            className="w-12 h-10 p-14 dark:bg-gray-800 bg-gray-200"
           />
         </div>
       );

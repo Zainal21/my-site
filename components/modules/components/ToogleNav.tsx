@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { RoundedButtonBox } from "../../design-system";
 import { useTheme } from "@/context/ThemeContext";
 
-const ToggleNav = () => {
+const ToggleNav: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (

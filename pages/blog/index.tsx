@@ -10,14 +10,21 @@ import { BlogSection } from "@/components/modules";
 export async function getStaticProps() {
   let files = fs.readdirSync(path.join("posts"));
   files = files.filter((file) => file.split(".")[1] == "mdx");
-  const posts = files.map((file) => {
-    const fileData = fs.readFileSync(path.join("posts", file), "utf-8");
-    const { data } = matter(fileData);
-    return {
-      frontMatter: data,
-      slug: file.split(".")[0],
-    };
-  });
+  const posts = files
+    .map((file) => {
+      const fileData = fs.readFileSync(path.join("posts", file), "utf-8");
+      const { data } = matter(fileData);
+      return {
+        frontMatter: data,
+        slug: file.split(".")[0],
+      };
+    })
+    .filter((post) => new Date(post.frontMatter.date) >= new Date("2021-01-01"))
+    .sort((a, b) => {
+      const dateA = new Date(a.frontMatter.date).getTime();
+      const dateB = new Date(b.frontMatter.date).getTime();
+      return dateB - dateA;
+    });
 
   return {
     props: {

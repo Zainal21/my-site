@@ -2,16 +2,26 @@ export interface HeadingProps {
   children?: React.ReactNode;
   style?: React.CSSProperties | undefined;
   className?: string | undefined;
+  variant?: "h1" | "h2" | "h3";
+  size?: string;
 }
 
-const Heading: React.FC<HeadingProps> = ({ className, children, style }) => {
+const Heading: React.FC<HeadingProps> = ({
+  className,
+  children,
+  style,
+  variant = "h1",
+  size = "text-2xl",
+}) => {
+  const HeadingTag = variant === "h1" ? "h1" : variant === "h2" ? "h2" : "h3";
+
   return (
-    <h1
-      className={`text-4xl font-bold mb-6 dark:text-white ${className}`}
+    <HeadingTag
+      className={`font-bold dark:text-white my-2 ${size} ${className}`}
       style={style}
     >
       {children}
-    </h1>
+    </HeadingTag>
   );
 };
 

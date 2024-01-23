@@ -5,7 +5,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 type HandlerResponsePlaylist = {
   albumImageUrl?: string;
   artist?: string;
-  isPlaying: boolean;
+  isPlaying?: boolean;
   songUrl?: string;
   title?: string;
   id?: string;
@@ -14,7 +14,9 @@ type HandlerResponsePlaylist = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<HandlerResponsePlaylist[] | any>
+  res: NextApiResponse<
+    HandlerResponsePlaylist[] | HandlerResponsePlaylist | null
+  >
 ) {
   try {
     const response = await getPlaylist();

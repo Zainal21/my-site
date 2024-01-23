@@ -28,7 +28,6 @@ export default function ErrorSection({
           !location && router.back();
         }}
       >
-        GObak
         <FiArrowLeft className="text-lg mr-1" /> Go back
       </TagLink>
     </div>

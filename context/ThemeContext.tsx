@@ -9,7 +9,9 @@ interface ThemeContextProps {
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 // create provider
-export const ThemeProvider: React.FC<any> = ({ children }) => {
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {

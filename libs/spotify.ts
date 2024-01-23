@@ -41,9 +41,9 @@ export async function getPlaylist() {
 
   const { items }: SpotifyTopTracks = await response;
 
-  return items?.map((track: any) => ({
+  return items?.map((track) => ({
     albumImageUrl: track.album.images[0].url,
-    artist: track.artists?.map((_artist: any) => _artist.name).join(", "),
+    artist: track.artists?.map((_artist) => _artist.name).join(", "),
     songUrl: track.external_urls.spotify,
     title: track.name,
     id: track.id,

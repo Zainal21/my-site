@@ -1,4 +1,4 @@
-const Tag = ({ title }: { title: string }) => {
+const Tag: React.FC<{ title: string }> = ({ title }) => {
   return (
     <div
       title={title}

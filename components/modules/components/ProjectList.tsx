@@ -2,11 +2,7 @@ import { ProjectType } from "@/types/projects";
 import Image from "next/image";
 import React, { useState } from "react";
 
-export type ProjectProps = {
-  project: ProjectType;
-};
-
-const ProjectList: React.FC<ProjectProps> = ({ project }) => {
+const ProjectList: React.FC<{ project: ProjectType }> = ({ project }) => {
   const [isLoading, setLoading] = useState(true);
 
   return (

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { links } from "@/data/links";
 
-const SocialMediaLink = () => {
+const SocialMediaLink: React.FC = () => {
   return (
     <div className="flex">
       {links?.map((link) => (

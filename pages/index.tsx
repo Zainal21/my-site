@@ -4,10 +4,22 @@ import {
   MainSection,
   AboutSection,
   ExperienceSection,
+  BlogSection,
 } from "@/components/modules";
 import { Animate, SeoMeta } from "@/components/design-system/utils";
+import { Post } from "@/types/posts";
+import { getAllPosts } from "@/libs/blogs";
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const posts = getAllPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+const Home: NextPage<{ posts: Post[] }> = ({ posts }) => {
   return (
     <>
       <SeoMeta
@@ -19,6 +31,7 @@ const Home: NextPage = () => {
           <MainSection />
           <AboutSection short={true} />
           <ExperienceSection />
+          <BlogSection posts={posts} isLimited={true} />
         </Animate>
       </HomePageLayout>
     </>

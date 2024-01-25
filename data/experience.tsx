@@ -11,7 +11,7 @@ export const experienceList: Experience[] = [
     remote: true,
     current: true,
     link: "https://pando.id",
-    task: "Develop an eKYC (electronic Know Your Customer) service API for identity verification",
+    task: "Develop an eKYC (electronic Know Your Customer) or Biometric service API for identity verification",
   },
   {
     id: 2,

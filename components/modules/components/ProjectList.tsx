@@ -13,10 +13,10 @@ const ProjectList: React.FC<{ project: ProjectType }> = ({ project }) => {
       className="block p-3 shadow-lg hover:shadow-xl no-underline transition border duration-300 dark:bg-[#10161a]/50 bg-gray-100/50 rounded-lg border-teal-100 dark:border-teal-900"
     >
       <div className="flex flex-col">
-        <h3 className="text-xl font-semibold dark:text-white text-[#10161a] hover:underline">
+        <h3 className="text-xl font-semibold dark:text-gray-100 text-[#10161a] hover:underline">
           {project.name}
         </h3>
-        <p className="text-sm leading-normal dark:text-white text-[#10161a]">
+        <p className="text-sm leading-normal dark:text-gray-100 text-[#10161a]">
           {project.description}
         </p>
         <div className="mt-0 bg-gray-50 rounded-md w-full  md:w-[38.5rem]">

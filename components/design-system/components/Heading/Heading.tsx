@@ -17,7 +17,7 @@ const Heading: React.FC<HeadingProps> = ({
 
   return (
     <HeadingTag
-      className={`font-bold dark:text-white my-2 ${size} ${className}`}
+      className={`font-bold dark:text-gray-100 my-2 ${size} ${className}`}
       style={style}
     >
       {children}

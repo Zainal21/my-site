@@ -55,7 +55,7 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
-              <h1 className="font-semibold my-8 text-4xl dark:text-white text-dark">
+              <h1 className="font-semibold my-8 text-4xl dark:text-gray-100 text-dark">
                 {props.frontMatter.title}
               </h1>
 
@@ -80,14 +80,14 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                     </blockquote>
                   ),
                   ul: ({ children }) => (
-                    <ul className="list-disc ml-10 dark:text-white text-[#10161a]">
+                    <ul className="list-disc ml-10 dark:text-gray-100 text-[#10161a]">
                       {children}
                     </ul>
                   ),
                   img: ({ src, alt }) => (
-                    <figure className="mt-4 border text-center  dark:text-white text-[#10161a]">
+                    <figure className="mt-4 border text-center  dark:text-gray-100 text-[#10161a]">
                       <img src={src} alt={alt} className="w-full" />
-                      <figcaption className="py-2 text-xs dark:text-white text-[#10161a]">
+                      <figcaption className="py-2 text-xs dark:text-gray-100 text-[#10161a]">
                         {alt}
                       </figcaption>
                     </figure>

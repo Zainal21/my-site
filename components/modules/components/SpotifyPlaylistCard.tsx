@@ -31,10 +31,14 @@ const SpotifyPlaylistCard: React.FC = () => {
   return (
     <React.Fragment>
       {isError && (
-        <div className="text-black dark:text-white">Failed Fetch Data</div>
+        <div className="text-gray-800 dark:text-gray-100">
+          Failed Fetch Data
+        </div>
       )}
       {isLoading ? (
-        <div className="text-black dark:text-white">{renderSkeletons()}</div>
+        <div className="text-gray-800 dark:text-gray-100">
+          {renderSkeletons()}
+        </div>
       ) : (
         (data || [])?.map((data: SpotifyPlaylist) => (
           <div
@@ -59,7 +63,7 @@ const SpotifyPlaylistCard: React.FC = () => {
               />
             ) : null}
             <p
-              className="leading-tight dark:text-white text-gray-600"
+              className="leading-tight dark:text-gray-100 text-gray-600"
               title={
                 data
                   ? `${data.title || "Not Playing"} - ${
@@ -73,17 +77,17 @@ const SpotifyPlaylistCard: React.FC = () => {
                   href={data.songUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold dark:text-white text-[#10161a] flex-1 min-w-0 hover:underline helper-link-cover"
+                  className="font-semibold dark:text-gray-100 text-[#10161a] flex-1 min-w-0 hover:underline helper-link-cover"
                 >
                   {data.title}
                 </a>
               ) : (
-                <span className="font-semibold dark:text-white text-[#10161a] flex-1 min-w-0">
+                <span className="font-semibold dark:text-gray-100 text-[#10161a] flex-1 min-w-0">
                   Music Not Playing
                 </span>
               )}{" "}
-              <span className="dark:text-gray-300 text-black">–</span>&nbsp;
-              <span className="dark:text-gray-300 text-black">
+              <span className="dark:text-gray-300 text-gray-800">–</span>&nbsp;
+              <span className="dark:text-gray-300 text-gray-800">
                 {data?.artist ?? "Spotify"}
               </span>
             </p>

@@ -18,7 +18,7 @@ export default function ErrorSection({
 
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen">
-      <h1 className="text-4xl font-bold text-center tracking-tight dark:text-white">
+      <h1 className="text-4xl font-bold text-center tracking-tight dark:text-gray-100">
         {heading}
       </h1>
       <Text style={{ marginBottom: "1rem" }}>{text}</Text>

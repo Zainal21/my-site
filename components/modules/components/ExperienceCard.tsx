@@ -43,7 +43,7 @@ const ExperienceCard: React.FC<Experience> = (props) => {
       )}
       <div className="w-full text-left">
         <div className="flex items-center justify-start mb-3">
-          <h1 className="text-2xl font-bold dark:text-white mr-3">
+          <h1 className="text-2xl font-bold dark:text-gray-100 mr-3">
             {props.name}
           </h1>
           <Tag title={props.current ? "Current" : "Past"} />

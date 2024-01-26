@@ -8,35 +8,35 @@ export default function FooterSection(): React.JSX.Element {
       <div className="flex gap-3 sm:mb-0 mb-6">
         <Link
           href="/"
-          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
           rel="noopener noreferrer"
         >
           /me
         </Link>
         <Link
           href="/about"
-          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
           rel="noopener noreferrer"
         >
           /about
         </Link>
         <Link
           href="/projects"
-          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
           rel="noopener noreferrer"
         >
           /projects
         </Link>
         <Link
           href="/blog"
-          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
           rel="noopener noreferrer"
         >
           /blog
         </Link>
         <Link
           href="/uses"
-          className="underline-offset-2 transition-colors hover:text-black dark:hover:text-white no-underline hover:underline"
+          className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
           rel="noopener noreferrer"
         >
           /uses

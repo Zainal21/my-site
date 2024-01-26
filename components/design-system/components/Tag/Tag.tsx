@@ -1,4 +1,8 @@
-const Tag: React.FC<{ title: string }> = ({ title }) => {
+interface TagProps {
+  title: string;
+}
+
+const Tag: React.FC<TagProps> = ({ title }) => {
   return (
     <div
       title={title}

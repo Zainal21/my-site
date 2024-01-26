@@ -3,7 +3,11 @@ import { Post } from "@/types/posts";
 import Link from "next/link";
 import React from "react";
 
-const BlogCard: React.FC<{ post: Post }> = ({ post }) => {
+interface BlogCardProps {
+  post: Post;
+}
+
+const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
   return (
     <React.Fragment>
       <div className="flex flex-col gap-16 mt-10">

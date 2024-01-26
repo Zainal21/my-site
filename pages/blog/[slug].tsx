@@ -9,13 +9,11 @@ import { MDXRemote } from "next-mdx-remote";
 import { GetStaticProps, NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
 import { Animate } from "@/components/design-system/utils";
-import { Heading, TagLink, Text } from "@/components/design-system";
+import { Heading, Text } from "@/components/design-system";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark, a11yLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useTheme } from "@/context/ThemeContext";
 import { frontMatterPost } from "@/types/posts";
-import { useRouter } from "next/router";
-import { FiArrowLeft } from "react-icons/fi";
 
 interface BlogDetailProps {
   frontMatter: frontMatterPost;
@@ -23,7 +21,6 @@ interface BlogDetailProps {
 }
 
 const BlogDetail: NextPage<BlogDetailProps> = (props) => {
-  const router = useRouter();
   const [isLoading, setLoading] = useState(true);
   const { theme } = useTheme();
 

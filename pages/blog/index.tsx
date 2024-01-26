@@ -14,7 +14,11 @@ export async function getStaticProps() {
   };
 }
 
-const BlogPage: NextPage<{ posts: Post[] }> = ({ posts }) => {
+interface BlogPageProps {
+  posts: Post[];
+}
+
+const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
   return (
     <>
       <SeoMeta

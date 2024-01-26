@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ServerErrorPage(): React.JSX.Element {
   return (
-    <React.Fragment>
+    <>
       <Animate>
         <SeoMeta
           description={"500 - Muhamad Zainal Arifin"}
@@ -15,6 +15,6 @@ export default function ServerErrorPage(): React.JSX.Element {
           text={"Oops! Internal Server Error."}
         />
       </Animate>
-    </React.Fragment>
+    </>
   );
 }

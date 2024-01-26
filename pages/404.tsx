@@ -4,7 +4,7 @@ import React from "react";
 
 export default function NotFoundPage(): React.JSX.Element {
   return (
-    <React.Fragment>
+    <>
       <Animate>
         <SeoMeta
           description={"404 - Muhamad Zainal Arifin"}
@@ -15,6 +15,6 @@ export default function NotFoundPage(): React.JSX.Element {
           text={"Oops! We couldn't find this page."}
         />
       </Animate>
-    </React.Fragment>
+    </>
   );
 }

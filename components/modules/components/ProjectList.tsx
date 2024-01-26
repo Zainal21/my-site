@@ -2,7 +2,11 @@ import { ProjectType } from "@/types/projects";
 import Image from "next/image";
 import React, { useState } from "react";
 
-const ProjectList: React.FC<{ project: ProjectType }> = ({ project }) => {
+interface ProjectListProps {
+  project: ProjectType;
+}
+
+const ProjectList: React.FC<ProjectListProps> = ({ project }) => {
   const [isLoading, setLoading] = useState(true);
 
   return (

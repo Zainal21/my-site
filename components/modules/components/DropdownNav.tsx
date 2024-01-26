@@ -3,7 +3,11 @@ import { Menu } from "@headlessui/react";
 import { FiMenu } from "react-icons/fi";
 import { NavItemType } from "@/types/navbar";
 
-const DropdownNav: React.FC<{ items: NavItemType[] }> = ({ items }) => {
+interface DropdownNavProps {
+  items: NavItemType[];
+}
+
+const DropdownNav: React.FC<DropdownNavProps> = ({ items }) => {
   return (
     <div className="flex relative items-center justify-center">
       <Menu>

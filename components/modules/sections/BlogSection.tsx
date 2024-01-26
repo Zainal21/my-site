@@ -3,7 +3,12 @@ import { Post } from "@/types/posts";
 import React from "react";
 import { BlogCard } from "@/components/modules";
 
-const BlogSection: React.FC<{ posts: Post[]; isLimited?: boolean }> = ({
+interface BlogSectionProps {
+  posts: Post[];
+  isLimited?: boolean;
+}
+
+const BlogSection: React.FC<BlogSectionProps> = ({
   posts,
   isLimited = false,
 }) => {

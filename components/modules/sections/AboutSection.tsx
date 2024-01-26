@@ -1,7 +1,11 @@
 import { Heading, LinkTarget, Text } from "@/components/design-system";
 import React from "react";
 
-const AboutSection: React.FC<{ short: boolean }> = ({ short }) => {
+interface AboutSectionProps {
+  short: boolean;
+}
+
+const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
   return (
     <section className="flex flex-col mb-12 mt-10">
       <Heading>About 💭</Heading>

@@ -22,7 +22,10 @@ const BlogCard: React.FC<{ post: Post }> = ({ post }) => {
           <p className="mt-2 text-sm text-gray-600 dark:text-gray-100">
             {post.frontMatter.description}
           </p>
-          <div className="mt-4 flex items-center text-sm font-medium text-teal-600 dark:text-teal-400">
+          <Link
+            className="mt-4 flex items-center text-sm font-medium text-teal-600 dark:text-teal-400 no-underline hover:underline"
+            href={`/blog/${post.slug}`}
+          >
             <span>Read article</span>
             <svg
               viewBox="0 0 16 16"
@@ -37,7 +40,7 @@ const BlogCard: React.FC<{ post: Post }> = ({ post }) => {
                 strokeLinejoin="round"
               ></path>
             </svg>
-          </div>
+          </Link>
         </article>
       </div>
     </React.Fragment>

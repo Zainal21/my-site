@@ -7,7 +7,7 @@ export const HomePageLayout: React.FC<{
     <div className="flex flex-col items-center justify-center h-screen  scrollbar-thumb-gray-700 scrollbar-track-gray-800 scrollbar-thumb-rounded-full">
       <div className="flex flex-col h-full w-[90%] md:w-[40rem] mt-12">
         <NavbarSection />
-        <main className="flex md:flex-row md:flex-start flex-col-reverse items-start md:items-center w-full justify-between mb-12 mt-16">
+        <main className="flex md:flex-row md:flex-start flex-col-reverse items-start md:items-center w-full justify-between mb-12 sm:mt-16 mt-20">
           {children}
         </main>
         <FooterSection />

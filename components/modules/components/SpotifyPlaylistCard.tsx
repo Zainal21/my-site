@@ -15,7 +15,7 @@ const SpotifyPlaylistCard: React.FC = () => {
     const skeletons = [];
     for (let i = 0; i < 10; i++) {
       skeletons.push(
-        <div key={i} className="mb-4">
+        <div key={i} className="mb-4  w-[23rem] md:w-[40rem]">
           <Skeleton
             style={{ marginTop: "0.5rem" }}
             highlightColor={theme === "dark" ? "#000000" : "#F5F5F5"}
@@ -29,7 +29,7 @@ const SpotifyPlaylistCard: React.FC = () => {
   };
 
   return (
-    <React.Fragment>
+    <>
       {isError && (
         <div className="text-gray-800 dark:text-gray-100">
           Failed Fetch Data
@@ -94,7 +94,7 @@ const SpotifyPlaylistCard: React.FC = () => {
           </div>
         ))
       )}
-    </React.Fragment>
+    </>
   );
 };
 

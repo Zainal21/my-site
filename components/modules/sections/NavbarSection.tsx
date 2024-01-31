@@ -4,16 +4,16 @@ import Link from "next/link";
 import { DropDownNav, ToogleNav } from "@/components/modules";
 import { NavItemType } from "@/types/navbar";
 
-const NavbarSection: React.FC = () => {
-  const navlinks: NavItemType[] = [
-    { id: 1, text: "/Me", to: "/", dropdown: "Me" },
-    { id: 2, text: "About", to: "/about", dropdown: "About" },
-    { id: 3, text: "Projects", to: "/projects", dropdown: "Projects" },
-    { id: 4, text: "Blog", to: "/blog", dropdown: "Blog" },
-    { id: 5, text: "Uses", to: "/uses", dropdown: "Uses" },
-    { id: 6, text: "Activity", to: "/activity", dropdown: "Activity" },
-  ];
+export const navlinks: NavItemType[] = [
+  { id: 1, text: "/Me", to: "/", dropdown: "Me" },
+  { id: 2, text: "About", to: "/about", dropdown: "About" },
+  { id: 3, text: "Projects", to: "/projects", dropdown: "Projects" },
+  { id: 4, text: "Blog", to: "/blog", dropdown: "Blog" },
+  { id: 5, text: "Uses", to: "/uses", dropdown: "Uses" },
+  { id: 6, text: "Activity", to: "/activity", dropdown: "Activity" },
+];
 
+const NavbarSection: React.FC = () => {
   const router = useRouter();
 
   return (

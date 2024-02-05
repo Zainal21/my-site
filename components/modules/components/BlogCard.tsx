@@ -12,7 +12,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
     <React.Fragment>
       <div className="flex flex-col gap-16 mt-10">
         <article className="group cursor-pointer flex flex-col items-start  my-2 border border-teal-100 hover:bg-gray-100 bg-gray-50 hover:dark:bg-[#10161a]/60 dark:bg-[#10161a]/100 dark:border-teal-900 p-4 rounded-lg group-hover:scale-100 group-hover:opacity-100">
-          <h3 className="text-base font-semibold tracking-tight text-gray-800 dark:text-gray-100">
+          <h3 className="font-semibold tracking-tight text-gray-800 dark:text-gray-100">
             <Link
               href={`/blog/${post.slug}`}
               className="dark:text-gray-100 text-[#10161a] no-underline"

@@ -52,7 +52,7 @@ const SpotifyPlaylistCard: React.FC = () => {
                 src={data?.albumImageUrl || ""}
                 alt={data?.artist || ""}
                 className={`
-                duration-700 ease-in-out group-hover:opacity-75 w-12 h-10 rounded-sm
+                duration-700 ease-in-out group-hover:opacity-75 rounded-sm
                 ${
                   isLoadingImage
                     ? "scale-110 blur-2xl grayscale"

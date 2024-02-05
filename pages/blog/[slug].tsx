@@ -79,7 +79,7 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                       </blockquote>
                     ),
                     ul: ({ children }) => (
-                      <ul className="list-disc ml-10 dark:text-gray-100 text-[#10161a]">
+                      <ul className="list-disc ml-10 dark:text-gray-100 text-[#10161a] text-sm">
                         {children}
                       </ul>
                     ),

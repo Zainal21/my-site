@@ -5,8 +5,16 @@ import { navlinks } from "@/components/modules/sections/NavbarSection";
 
 export default function FooterSection(): React.JSX.Element {
   return (
-    <footer className="flex w-full sm:flex-row flex-col items-center justify-between border-t py-10 text-sm border-color dark:text-gray-100">
+    <footer className="flex w-full sm:flex-row flex-col items-center justify-between border-t py-10 text-sm border-gray-700 dark:text-gray-100">
       <div className="flex gap-3 sm:mb-0 mb-6">
+        <Link
+          target="_blank"
+          href="https://github.com/Zainal21/Site"
+          className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
+          rel="noopener noreferrer"
+        >
+          /source
+        </Link>
         {navlinks
           .filter((item) => item.to != "/")
           .map((item) => (

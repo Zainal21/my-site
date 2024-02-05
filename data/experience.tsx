@@ -1,6 +1,18 @@
 import { Experience } from "@/types/experience";
 
 export const experienceList: Experience[] = [
+  // {
+  //   id: 1,
+  //   name: "TreeAMS PTE. LTD",
+  //   description: "Frontend Developer",
+  //   year: 2023,
+  //   employmentType: "part-time",
+  //   location: "Singapore",
+  //   remote: true,
+  //   current: false,
+  //   link: "https://treeams.com/",
+  //   task: "Develop Dashboard TreeAMS Franchise operations management",
+  // },
   {
     id: 1,
     name: "Pando Akar Teknologi",

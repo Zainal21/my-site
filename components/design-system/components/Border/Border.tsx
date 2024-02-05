@@ -4,7 +4,7 @@ interface BorderProps {
 
 const Border: React.FC<BorderProps> = ({ children }) => {
   return (
-    <div className="flex w-fit border duration-300 border-teal-100 dark:border-teal-900 rounded-full">
+    <div className="flex w-fit  border-4 duration-300 border-teal-200 dark:border-teal-600 rounded-full">
       {children}
     </div>
   );

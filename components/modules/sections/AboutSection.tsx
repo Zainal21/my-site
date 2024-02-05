@@ -11,8 +11,9 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
       <Heading>About 💭</Heading>
       <React.Fragment>
         <Text style={{ marginBottom: `1.5rem` }}>
-          I'm a 21 y.o, a passionate individual exploring the realms of
-          technology, with a specific interest in software development.
+          I'm a 21 y.o, Indonesian Developer🇮🇩, a passionate individual
+          exploring the realms of technology, with a specific interest in
+          software development.
         </Text>
 
         <Text style={{ marginBottom: `1.5rem` }}>

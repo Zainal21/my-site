@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const Animate: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
+interface AnimateProps {
+  children?: React.ReactNode;
+}
+
+const Animate: React.FC<AnimateProps> = ({ children }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}

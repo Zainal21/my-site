@@ -68,4 +68,10 @@ export const projects: ProjectType[] = [
     link: "https://smkn2kra.sch.id",
     img: "smkn2kra.png",
   },
+  {
+    name: "Pengaduan SMKN 2 Karanganyar",
+    description: "Portal complaint system for my vocational school",
+    link: "https://pengaduan-smkn2kra.netlify.app",
+    img: "school-complaint.png",
+  },
 ];

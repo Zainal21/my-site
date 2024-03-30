@@ -1,18 +1,6 @@
 import { Experience } from "@/types/experience";
 
 export const experienceList: Experience[] = [
-  // {
-  //   id: 1,
-  //   name: "TreeAMS PTE. LTD",
-  //   description: "Frontend Developer",
-  //   year: 2023,
-  //   employmentType: "part-time",
-  //   location: "Singapore",
-  //   remote: true,
-  //   current: false,
-  //   link: "https://treeams.com/",
-  //   task: "Develop Dashboard TreeAMS Franchise operations management",
-  // },
   {
     id: 1,
     name: "OXY Creative Inc",
@@ -25,6 +13,7 @@ export const experienceList: Experience[] = [
     link: "https://www.oxycreative.com",
     task: "Develop a software product with specified features and functionalities meeting project requirements and deadlines",
   },
+
   {
     id: 2,
     name: "Pando Akar Teknologi",
@@ -37,8 +26,20 @@ export const experienceList: Experience[] = [
     link: "https://pando.id",
     task: "Develop an eKYC (electronic Know Your Customer) or Biometric service API for identity verification",
   },
+  // {
+  //   id: 3,
+  //   name: "TreeAMS PTE. LTD",
+  //   description: "Frontend Developer",
+  //   year: 2023,
+  //   employmentType: "part-time",
+  //   location: "Singapore",
+  //   remote: true,
+  //   current: false,
+  //   link: "https://treeams.com/",
+  //   task: "Develop Dashboard TreeAMS Franchise operations management",
+  // },
   {
-    id: 3,
+    id: 4,
     name: "Cipta Karya Infotika (Cikajogja)",
     description: "Software Engineer",
     year: 2020,
@@ -50,7 +51,7 @@ export const experienceList: Experience[] = [
     task: "Create a software solution, adhering to project requirements and deadlines, with defined features.",
   },
   {
-    id: 4,
+    id: 5,
     name: "Kadang Koding Indonesia",
     description: "Web Developer",
     year: 2020,

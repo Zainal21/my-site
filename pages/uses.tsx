@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
 import { Animate, SeoMeta } from "@/components/design-system/utils";
-import { Heading, Text } from "@/components/design-system";
 import { UsesSection } from "@/components/modules";
 
 const Uses: NextPage = () => {

@@ -9,7 +9,7 @@ export default function FooterSection(): React.JSX.Element {
       <div className="flex gap-3 sm:mb-0 mb-6">
         <Link
           target="_blank"
-          href="https://github.com/Zainal21/Site"
+          href="https://github.com/Zainal21/my-site"
           className="underline-offset-2 transition-colors hover:text-gray-800 dark:hover:text-gray-100 no-underline hover:underline"
           rel="noopener noreferrer"
         >

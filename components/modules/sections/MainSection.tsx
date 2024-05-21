@@ -9,7 +9,7 @@ const MainSection: React.FC = () => {
           Hi, I&apos;m Muhamad Zainal Arifin! <span className="wave">👋</span>
         </Heading>
         <div className="text-gray-700 flex font-semibold dark:text-gray-100 mb-4">
-          <p>Software Engineer</p>
+          <p>Software Engineer & DevOps Engineer</p>
         </div>
         <SocialMediaLink />
       </div>

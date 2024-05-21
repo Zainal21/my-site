@@ -28,7 +28,7 @@ const Home: NextPage<HomePageProps> = ({ posts }) => {
     <>
       <SeoMeta
         description={"Home - Muhamad Zainal Arifin"}
-        title={"Muhamad Zain - Software Engineer"}
+        title={"Muhamad Zain - Software & DevOps Engineer"}
       />
       <HomePageLayout>
         <Animate>

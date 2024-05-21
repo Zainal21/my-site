@@ -17,7 +17,7 @@ export const experienceList: Experience[] = [
     id: 2,
     name: "Katalis Kreasi Teknologi",
     description: "Web Software Developer",
-    year: 2023,
+    year: 2024,
     employmentType: "part-time",
     location: "Yogyakarta, Indonesia",
     remote: true,

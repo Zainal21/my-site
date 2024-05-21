@@ -17,7 +17,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
         </Text>
 
         <Text style={{ marginBottom: `1.5rem` }}>
-          With over 3 years of hands-on experience in programming, I have honed
+          With over 4 years of hands-on experience in programming, I have honed
           my skills in utilizing frameworks and libraries such as{" "}
           <LinkTarget href="https://codeigniter.com" target="_blank">
             Codeigniter

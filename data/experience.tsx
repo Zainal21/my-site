@@ -15,7 +15,7 @@ export const experienceList: Experience[] = [
   },
   {
     id: 2,
-    name: "Katalis Kreasi Teknologi",
+    name: "PT. Katalis Kreasi Teknologi",
     description: "Web Software Engineer",
     year: 2024,
     employmentType: "full-time",
@@ -27,7 +27,7 @@ export const experienceList: Experience[] = [
   },
   {
     id: 3,
-    name: "Teken Aja (Pando Team)",
+    name: "PT. Djelas Tandatangan Bersama",
     description: "Software Developer",
     year: 2023,
     employmentType: "contract",
@@ -51,7 +51,7 @@ export const experienceList: Experience[] = [
   },
   {
     id: 5,
-    name: "Cipta Karya Infotika (Cikajogja)",
+    name: "CV. Cipta Karya Infotika (Cikajogja)",
     description: "Software Engineer",
     year: 2020,
     employmentType: "full-time",
@@ -63,7 +63,7 @@ export const experienceList: Experience[] = [
   },
   {
     id: 6,
-    name: "Kadang Koding Indonesia",
+    name: "CV. Kadang Koding Indonesia",
     description: "Web Developer",
     year: 2020,
     employmentType: "internship",

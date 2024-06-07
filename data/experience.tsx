@@ -16,9 +16,9 @@ export const experienceList: Experience[] = [
   {
     id: 2,
     name: "Katalis Kreasi Teknologi",
-    description: "Web Software Developer",
+    description: "Web Software Engineer",
     year: 2024,
-    employmentType: "part-time",
+    employmentType: "full-time",
     location: "Yogyakarta, Indonesia",
     remote: true,
     current: true,
@@ -27,14 +27,14 @@ export const experienceList: Experience[] = [
   },
   {
     id: 3,
-    name: "Pando Akar Teknologi",
+    name: "Teken Aja (Pando Team)",
     description: "Software Developer",
     year: 2023,
     employmentType: "contract",
     location: "Jakarta Selatan, Indonesia",
     remote: true,
     current: false,
-    link: "https://pando.id",
+    link: "https://djelas.id",
     task: "Develop an eKYC (electronic Know Your Customer) or Biometric service API for identity verification",
   },
   {

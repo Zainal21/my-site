@@ -5,19 +5,33 @@ export const projects: ProjectType[] = [
     name: "(NON DISCLOSURE AGREEMENT)",
     description:
       "Application used by police officers from the Indonesian government",
-    link: "#",
+    link: "https://dashboard.biometric.internal",
+    img: "biometric-bik.png",
   },
   {
     name: "(NON DISCLOSURE AGREEMENT)",
     description:
       "Application used by Office of the Attorney General of the Republic of Indonesia.",
-    link: "#",
+    link: "https://dashboard.kejagung.internal",
+    img: "kejagung-dashboard.png",
+  },
+  {
+    name: "Control Panel TekenAja",
+    description: "Portal Control Panel of E-KYC services of TekenAja",
+    link: "https://sedo.djelas.id",
+    img: "sedo-tekenaja.png",
   },
   {
     name: "KMS Kadin Indonesia",
     description: "Portal Registration for Kadin Member",
     link: "https://anggota.kadin.id",
     img: "kadin.png",
+  },
+  {
+    name: "TreeAMS Dashboard",
+    description: "Portal Franchise management of TreeAMS Pte LTD",
+    link: "https://tms-v14.coreerp.sg",
+    img: "treeams.png",
   },
   {
     name: "Catatan UMKM",

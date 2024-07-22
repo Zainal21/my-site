@@ -18,7 +18,6 @@ const ExperienceCard: React.FC<Experience> = (props) => {
         return "Contract";
     }
   }
-
   return (
     <div
       className="flex flex-col sm:flex-row w-full items-center dark:bg-[#10161a]/50 bg-gray-100/50 rounded-lg p-6 mt-5

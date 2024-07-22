@@ -2,7 +2,7 @@ export interface Experience {
   id?: number;
   name: string;
   description: string;
-  year: number;
+  year: string;
   employmentType:
     | "contract"
     | "full-time"

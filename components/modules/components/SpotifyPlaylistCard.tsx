@@ -15,7 +15,7 @@ const SpotifyPlaylistCard: React.FC = () => {
     const skeletons = [];
     for (let i = 0; i < 10; i++) {
       skeletons.push(
-        <div key={i} className="mb-4 w-[17rem] md:w-[40rem]">
+        <div key={i} className="mb-4 w-100">
           <Skeleton
             style={{ marginTop: "0.5rem" }}
             highlightColor={theme === "dark" ? "#000000" : "#F5F5F5"}

@@ -4,7 +4,6 @@ import { serialize } from "next-mdx-remote/serialize";
 import path from "path";
 import Image from "next/image";
 import fs from "fs";
-import Head from "next/head";
 import { MDXRemote } from "next-mdx-remote";
 import { GetStaticProps, NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
@@ -85,7 +84,11 @@ const BlogDetail: NextPage<BlogDetailProps> = (props) => {
                     ),
                     img: ({ src, alt }) => (
                       <figure className="mt-4 border text-center  dark:text-gray-100 text-[#10161a]">
-                        <img src={src} alt={alt} className="w-full" />
+                        <Image
+                          src={src as any}
+                          alt={alt as any}
+                          className="w-full"
+                        />
                         <figcaption className="py-2 text-xs dark:text-gray-100 text-[#10161a]">
                           {alt}
                         </figcaption>

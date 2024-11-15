@@ -14,6 +14,47 @@ body {
   display: inline-block;
 }
 
+.text-ochre {
+  --tw-text-opacity: 1;
+  color: rgb(219 124 38 / var(--tw-text-opacity));
+}
+
+@keyframes ping {
+  75%,
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.dark\:border-alter:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(25 26 26 / var(--tw-border-opacity));
+}
+
+.dark\:border-alter-light:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(50 52 52 / var(--tw-border-opacity));
+}
+
+.dark\:bg-alter:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 26 26 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-alter-light:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 52 52 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-alter-light\/60:is(.dark *) {
+  background-color: rgba(50, 52, 52, 0.6);
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);

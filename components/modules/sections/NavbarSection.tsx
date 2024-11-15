@@ -5,7 +5,6 @@ import { DropDownNav, ToogleNav } from "@/components/modules";
 import { NavItemType } from "@/types/navbar";
 
 export const navlinks: NavItemType[] = [
-  { id: 1, text: "/Me", to: "/", dropdown: "Me" },
   { id: 2, text: "About", to: "/about", dropdown: "About" },
   { id: 3, text: "Projects", to: "/projects", dropdown: "Projects" },
   { id: 4, text: "Blog", to: "/blog", dropdown: "Blog" },
@@ -21,6 +20,18 @@ const NavbarSection: React.FC = () => {
       className="flex px-6 top-8 fixed border bg-gray-100 dark:bg-[#10161a]/50 bg-gray-100/50 z-10 w-[80%] md:w-[40rem] border-stone-200
     dark:border-stone-900 backdrop-blur-md mb-12 rounded-lg justify-between h-14 items-center "
     >
+      <div className="flex mx-4">
+        <span className="text-2xl">✌️</span>
+        <div className="flex flex-col justify-start">
+          <Link
+            className="block text-ochre text-2xl font-semibold transition-colors"
+            href="/"
+          >
+            <span className="sr-only"></span>Zein.
+          </Link>
+        </div>
+      </div>
+
       <div className="flex lg:hidden">
         <DropDownNav items={navlinks} />
       </div>

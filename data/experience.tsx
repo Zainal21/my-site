@@ -3,8 +3,8 @@ import { Experience } from "@/types/experience";
 export const experienceList: Experience[] = [
   {
     id: 1,
-    name: "OXY Creative Inc",
-    description: "Software Developer",
+    name: "OXY Creative Inc.",
+    description: "Software Engineer",
     year: "November 2022 - Present",
     employmentType: "full-time",
     location: "Jakarta Selatan - Indonesia",
@@ -15,8 +15,20 @@ export const experienceList: Experience[] = [
   },
   {
     id: 2,
-    name: "PT. Katalis Kreasi Teknologi",
-    description: "Web Software Engineer",
+    name: "Platon.",
+    description: "Backend Developer - Individual Contributor",
+    year: "Oktober 2024 - Present",
+    employmentType: "part-time",
+    location: "Jakarta Selatan - Indonesia",
+    remote: true,
+    current: true,
+    link: "https://platon.co.id",
+    task: "Develop a software product with specified features and functionalities",
+  },
+  {
+    id: 3,
+    name: "PT. Katalis Kreasi Teknologi (Side job)",
+    description: "Software Engineer",
     year: "May 2024 - Present",
     employmentType: "full-time",
     location: "Yogyakarta, Indonesia",
@@ -26,8 +38,8 @@ export const experienceList: Experience[] = [
     task: "Develop a software product with specified features and functionalities meeting project requirements and deadlines",
   },
   {
-    id: 3,
-    name: "PT. Djelas Tandatangan Bersama",
+    id: 4,
+    name: "PT. Djelas Tandatangan Bersama (TekenAja)",
     description: "Software Developer",
     year: "January 2023 - March 2024",
     employmentType: "contract",
@@ -38,7 +50,7 @@ export const experienceList: Experience[] = [
     task: "Develop an eKYC (electronic Know Your Customer) or Biometric service API for identity verification",
   },
   {
-    id: 4,
+    id: 5,
     name: "TreeAMS PTE. LTD",
     description: "Frontend Developer",
     year: "November 2023 - January 2024",
@@ -50,7 +62,7 @@ export const experienceList: Experience[] = [
     task: "Develop Dashboard TreeAMS Franchise operations management",
   },
   {
-    id: 5,
+    id: 6,
     name: "CV. Cipta Karya Infotika (Cikajogja)",
     description: "Software Engineer",
     year: "Juni 2021 - Oktober 2022",
@@ -62,7 +74,7 @@ export const experienceList: Experience[] = [
     task: "Create a software solution, adhering to project requirements and deadlines, with defined features.",
   },
   {
-    id: 6,
+    id: 7,
     name: "CV. Kadang Koding Indonesia",
     description: "Web Developer",
     year: "January 2020 - March 2020",

@@ -11,7 +11,7 @@ interface AvatarProps {
 const Avatar: React.FC<AvatarProps> = ({ border, height, width }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative dark:bg-alter-mid rounded-full border-2 border-teal-200 dark:border-teal-200 text-gray-600 dark:text-gray-200 bg-red-500">
+      <div className="relative dark:bg-alter-mid rounded-full border-2 border-teal-200 dark:border-teal-200 text-gray-600 dark:text-gray-200">
         {border ? (
           <Border>
             <Img height={height} width={width} />

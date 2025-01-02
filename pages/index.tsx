@@ -3,8 +3,8 @@ import { HomePageLayout } from "@/layouts/HomePageLayout";
 import {
   MainSection,
   AboutSection,
-  ExperienceSection,
   BlogSection,
+  SkillSection,
 } from "@/components/modules";
 import { Animate, SeoMeta } from "@/components/design-system/utils";
 import { Post } from "@/types/posts";
@@ -34,6 +34,7 @@ const Home: NextPage<HomePageProps> = ({ posts }) => {
         <Animate>
           <MainSection />
           <AboutSection short={true} />
+          <SkillSection />
           <BlogSection posts={posts} isLimited={true} />
         </Animate>
       </HomePageLayout>

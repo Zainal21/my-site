@@ -8,6 +8,8 @@ export { default as UsesSection } from "./sections/UsesSection";
 export { default as ErrorSection } from "./sections/ErrorSection";
 export { default as ActivitySection } from "./sections/ActivitySection";
 export { default as BlogSection } from "./sections/BlogSection";
+export { default as SkillSection } from "./sections/SkillSection";
+
 // components
 export { default as DropDownNav } from "./components/DropdownNav";
 export { default as ToogleNav } from "./components/ToogleNav";
@@ -17,3 +19,4 @@ export { default as BlogCard } from "./components/BlogCard";
 export { default as SpotifyCurrentPlaying } from "./components/SpotifyCurrentPlaying";
 export { default as SpotifyPlaylistCard } from "./components/SpotifyPlaylistCard";
 export { default as ExperienceCard } from "./components/ExperienceCard";
+export { default as SkillsCard } from "./components/SkillsCard";

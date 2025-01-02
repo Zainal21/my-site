@@ -15,7 +15,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({
   const limitedPosts = isLimited ? posts.slice(0, 5) : posts;
 
   return (
-    <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0 h-full">
+    <section className="flex flex-col mb-12 mt-1">
       <Heading className="mt-5">
         {isLimited ? "Latest Blog ✏️" : "Blog ✏️"}
       </Heading>

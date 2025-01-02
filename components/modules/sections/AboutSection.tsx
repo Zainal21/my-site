@@ -7,7 +7,7 @@ interface AboutSectionProps {
 
 const AboutSection: React.FC<AboutSectionProps> = ({ short }) => {
   return (
-    <section className="flex flex-col mb-12 mt-10">
+    <section className="flex flex-col mb-12 mt-1">
       <Heading>About 💭</Heading>
       <React.Fragment>
         <Text style={{ marginBottom: `1.5rem` }}>

@@ -19,7 +19,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({
       <Heading className="mt-5">
         {isLimited ? "Latest Blog ✏️" : "Blog ✏️"}
       </Heading>
-      <div className="mt-5 prose max-w-none dark:text-gray-100 text-[#10161a]">
+      <div className="mt-5 prosedark:text-gray-100 text-[#10161a]">
         <Text>
           Tweets in the form of my stories, experiences and knowledge that I can
           share.{" "}

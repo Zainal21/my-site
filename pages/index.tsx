@@ -34,7 +34,6 @@ const Home: NextPage<HomePageProps> = ({ posts }) => {
         <Animate>
           <MainSection />
           <AboutSection short={true} />
-          <SkillSection />
           <BlogSection posts={posts} isLimited={true} />
         </Animate>
       </HomePageLayout>

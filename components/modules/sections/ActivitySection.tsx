@@ -6,7 +6,7 @@ import {
 
 export default function ActivitySection(): React.JSX.Element {
   return (
-    <section className="flex flex-col mb-12 mt-1">
+    <section className="flex flex-col mb-12 mt-1 w-[80vw]">
       <Heading className="mt-5">Activity 🎵</Heading>
       <div className="mt-5 prose dark:text-gray-100 text-[#10161a]">
         <Text>This page contains a current activity.</Text>

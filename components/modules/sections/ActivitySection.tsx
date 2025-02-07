@@ -14,7 +14,7 @@ export default function ActivitySection(): React.JSX.Element {
             <h2 className="dark:text-gray-100 text-[#10161a]">Spotify Activity</h2>
               <SpotifyCurrentPlaying />
             <h2 className="dark:text-gray-100 text-dark">Spotify Playlist</h2>
-            <div className="flex flex-col gap-16 mt-10">
+            <div className="flex flex-col gap-2 mt-10">
               <SpotifyPlaylistCard />
             </div>
         </div>

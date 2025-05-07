@@ -21,6 +21,7 @@
     "bad-words": "^3.0.4",
     "canvas-confetti": "^1.6.0",
     "classnames": "^2.5.1",
+    "cloudflare": "^4.2.0",
     "copy-to-clipboard": "^3.3.2",
     "dayjs": "^1.11.2",
     "file-saver": "^2.0.5",

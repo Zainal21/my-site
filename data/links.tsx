@@ -11,7 +11,7 @@ export const links = [
   {
     id: 1,
     title: "Instagram",
-    href: "https://instagram.com/muhamadzain.tsx",
+    href: "https://www.instagram.com/muhamadzain.ariefin",
     icon: <FiInstagram />,
   },
   {

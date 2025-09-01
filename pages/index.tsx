@@ -1,11 +1,6 @@
 import { NextPage } from "next";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
-import {
-  MainSection,
-  AboutSection,
-  BlogSection,
-  SkillSection,
-} from "@/components/modules";
+import { MainSection, AboutSection, BlogSection } from "@/components/modules";
 import { Animate, SeoMeta } from "@/components/design-system/utils";
 import { Post } from "@/types/posts";
 import { getAllPosts } from "@/libs/blogs";

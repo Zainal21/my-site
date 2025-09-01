@@ -8,7 +8,6 @@ export const navlinks: NavItemType[] = [
   { id: 2, text: "About", to: "/about", dropdown: "About" },
   { id: 3, text: "Projects", to: "/projects", dropdown: "Projects" },
   { id: 4, text: "Blog", to: "/blog", dropdown: "Blog" },
-  { id: 4, text: "Activity", to: "/activity", dropdown: "Activity" },
   { id: 5, text: "Uses", to: "/uses", dropdown: "Uses" },
 ];
 

@@ -1,19 +1,23 @@
 import { Animate, SeoMeta } from "@/components/design-system/utils";
-import { ActivitySection } from "@/components/modules";
+import { ChatBotSection, ChatInput } from "@/components/modules";
 import { HomePageLayout } from "@/layouts/HomePageLayout";
+import { NextPage } from "next";
+import React from "react";
 
-export default function ActivityPage(): React.JSX.Element {
+const ChatAIPage: NextPage = () => {
   return (
     <>
       <SeoMeta
-        description={"Activity - Muhamad Zainal Arifin"}
+        description={"TanyaAI - Muhamad Zainal Arifin"}
         title={"Muhamad Zain - Software Engineer"}
       />
       <HomePageLayout>
         <Animate>
-          <ActivitySection />
+          <ChatBotSection />
         </Animate>
       </HomePageLayout>
     </>
   );
-}
+};
+
+export default ChatAIPage;

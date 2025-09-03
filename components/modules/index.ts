@@ -9,6 +9,7 @@ export { default as ErrorSection } from "./sections/ErrorSection";
 export { default as ActivitySection } from "./sections/ActivitySection";
 export { default as BlogSection } from "./sections/BlogSection";
 export { default as SkillSection } from "./sections/SkillSection";
+export { default as ChatBotSection } from "./sections/ChatBotSection";
 
 // components
 export { default as DropDownNav } from "./components/DropdownNav";
@@ -20,3 +21,4 @@ export { default as SpotifyCurrentPlaying } from "./components/SpotifyCurrentPla
 export { default as SpotifyPlaylistCard } from "./components/SpotifyPlaylistCard";
 export { default as ExperienceCard } from "./components/ExperienceCard";
 export { default as SkillsCard } from "./components/SkillsCard";
+export { default as ChatInput } from "./components/ChatInput";

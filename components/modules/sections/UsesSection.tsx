@@ -22,7 +22,7 @@ export default function UsesSection(): React.JSX.Element {
               Visual Studio Code
             </a>{" "}
             With{" "}
-            <a
+          <a
               className="dark:text-gray-100 text-[#10161a]"
               href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl"
               target="_blank"

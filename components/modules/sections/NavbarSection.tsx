@@ -9,6 +9,7 @@ export const navlinks: NavItemType[] = [
   { id: 3, text: "Projects", to: "/projects", dropdown: "Projects" },
   { id: 4, text: "Blog", to: "/blog", dropdown: "Blog" },
   { id: 5, text: "Uses", to: "/uses", dropdown: "Uses" },
+  { id: 6, text: "MuzarAI", to: "/muzar-ai", dropdown: "MuzarAI" },
 ];
 
 const NavbarSection: React.FC = () => {

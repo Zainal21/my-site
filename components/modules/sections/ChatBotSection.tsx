@@ -76,7 +76,7 @@ export default function ChatBotSection() {
   }, [messages, isLoading]);
 
   return (
-    <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0 md:w-[46vw] md:h-[70vh]">
+    <section className="max-w-3xl p-4 mx-auto -mt-12 md:p-0 md:-mt-0 w-[100%] md:w-[100vw]">
       <Heading className="mt-5">Demo : Muzar AI 🤖</Heading>
       <div className="mt-3 prose max-w-none dark:text-gray-100 text-[#10161a]">
         <Text>This page contains a chatbot AI-based assistant.</Text>
